@@ -10,14 +10,24 @@ import Foundation
 extension TwoPointers {
 	struct ValidPalindrome {
 		static func isPalindrome(_ s: String) -> Bool {
-			var left = s.startIndex
-			var right = s.index(before: s.endIndex)
+			let chars = Array(s.lowercased())
+			var left = 0
+			var right = chars.count - 1
 			
 			while left < right {
-				if s[left] != s[right] {
+				while left < right && !chars[left].isLetter && !chars[left].isNumber {
+					left += 1
+				}
+				while left < right && !chars[right].isLetter && !chars[right].isNumber {
+					right -= 1
+				}
+				if chars[left] != chars[right] {
 					return false
 				}
+				left += 1
+				right -= 1
 			}
+			return true
 		}
 	}
 }

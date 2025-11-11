@@ -16,23 +16,23 @@ protocol LinkedListProtocol {
 	func value(at index: Int) -> Int?
 }
 
-class LinkedList: LinkedListProtocol {
-	var node: ListNode?
-	
-	var isEmpty: Bool
-
-	var count: Int
-
-	func append(at index: Int) {
-		<#code#>
-	}
-
-	func remove(at index: Int) -> ListNode? {
-		<#code#>
-	}
-
-	func value(at index: Int) -> Int? {
-		<#code#>
-	}
-
-}
+//class LinkedList: LinkedListProtocol {
+//	var node: ListNode?
+//	
+//	var isEmpty: Bool
+//
+//	var count: Int
+//
+//	func append(at index: Int) {
+//		<#code#>
+//	}
+//
+//	func remove(at index: Int) -> ListNode? {
+//		<#code#>
+//	}
+//
+//	func value(at index: Int) -> Int? {
+//		<#code#>
+//	}
+//
+//}
