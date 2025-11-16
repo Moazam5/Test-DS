@@ -66,8 +66,6 @@
 		FFAF221A2EC282C6000E86D4 /* InvertTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF22182EC282C6000E86D4 /* InvertTree.swift */; };
 		FFAF465F2EC3C78E000E86D4 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF465E2EC3C78E000E86D4 /* BFS.swift */; };
 		FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF465E2EC3C78E000E86D4 /* BFS.swift */; };
-		FFAF46622EC3C972000E86D4 /* BFSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF46612EC3C972000E86D4 /* BFSTests.swift */; };
-		FFAF46632EC3C972000E86D4 /* BFSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAF46612EC3C972000E86D4 /* BFSTests.swift */; };
 		FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */; };
 		FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD82DA725CB00D2C7A8 /* Playground.swift */; };
 		FFC2103C2D861F9600A9337D /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2103B2D861F9600A9337D /* Page5.swift */; };
@@ -127,7 +125,6 @@
 		FFAC3E4F2E392172001214BB /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		FFAF22182EC282C6000E86D4 /* InvertTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertTree.swift; sourceTree = "<group>"; };
 		FFAF465E2EC3C78E000E86D4 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
-		FFAF46612EC3C972000E86D4 /* BFSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFSTests.swift; sourceTree = "<group>"; };
 		FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestConsecutiveSubsequence.swift; sourceTree = "<group>"; };
 		FFB34DD82DA725CB00D2C7A8 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		FFC2103B2D861F9600A9337D /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
@@ -269,7 +266,6 @@
 				FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */,
 				FF2736832E66E0FE00E346CB /* DFS.swift */,
 				FFAF465E2EC3C78E000E86D4 /* BFS.swift */,
-				FFAF46612EC3C972000E86D4 /* BFSTests.swift */,
 			);
 			path = Trees;
 			sourceTree = "<group>";
@@ -419,7 +415,6 @@
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
 				FF2061D02E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
-				FFAF46632EC3C972000E86D4 /* BFSTests.swift in Sources */,
 				FFA067FF2DCFFC8500881478 /* CarFleet.swift in Sources */,
 				FFAC3E512E392172001214BB /* TreeNode.swift in Sources */,
 				FFAC3E4E2E392146001214BB /* Trees.swift in Sources */,
@@ -466,7 +461,6 @@
 				FF230B7F2DE3C9BC00AB74FC /* BinarySearch .swift in Sources */,
 				FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */,
-				FFAF46622EC3C972000E86D4 /* BFSTests.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,

@@ -27,20 +27,20 @@ extension TreesProblemsImpl {
 @Suite("TreesProblemsImpl.bfs tests")
 struct BFSTests {
 	let treesProblems = TreesProblemsImpl()
-	
+
 	@Test("nil root returns empty array")
 	func testNilRoot() {
 		let result = treesProblems.bfs(nil)
 		#expect(result == [])
 	}
-	
+
 	@Test("single node returns [value]")
 	func testSingleNode() {
 		let root = TreeNode(value: 42)
 		let result = treesProblems.bfs(root)
 		#expect(result == [42])
 	}
-	
+
 	@Test("balanced tree returns level-order")
 	func testBalancedTree() {
 		//        1
@@ -58,7 +58,7 @@ struct BFSTests {
 		let result = treesProblems.bfs(root)
 		#expect(result == [1,2,3,4,5,6,7])
 	}
-	
+
 	@Test("unbalanced tree returns correct BFS order")
 	func testUnbalancedTree() {
 		//        10
