@@ -27,8 +27,20 @@ protocol TreesProblems {
 	func isBalanced(_ root: TreeNode?) -> Bool
 
 	func bfs(_ root: TreeNode?) -> [Int]
+
+	func rightSideView(_ root: TreeNode?) -> [Int]
+
+	/// Within a binary tree, a node x is considered good if the path from the root of the tree to the node x contains no nodes with a value greater than the value of node x
+	/// Given the root of a binary tree root, return the number of good nodes within the tree.
+	func goodNodes(_ root: TreeNode?) -> Int
+
+	/// Given the root of a binary tree, return true if it is a valid binary search tree, otherwise return false.
+	///	A valid binary search tree satisfies the following constraints:
+	///
+	/// The left subtree of every node contains only nodes with keys less than the node's key.
+	/// The right subtree of every node contains only nodes with keys greater than the node's key.
+	/// Both the left and right subtrees are also binary search trees.
+	func isValidBST(_ root: TreeNode?) -> Bool
 }
-
-
 
 
