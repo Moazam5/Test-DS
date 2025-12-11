@@ -10,26 +10,38 @@ import Testing
 
 
 func playground() {
-
-	print("------ \(Int(8/3))------------" )
-
-	func divideString(_ s: String, _ k: Int, _ fill: Character) -> [String] {
-		var result: [String] = []
-		let groupSize = Int(ceil(Double(s.count)/Double(k) ))
-		for i in 0...groupSize {
-			var str = ""
-			for j in 0...k {
-				let offset = j * i
-				if offset < s.count {
-					str.append(s[s.index(s.startIndex, offsetBy: offset)])
+	func knapsackTopDown(weights: [Int], values: [Int], capacity: Int) -> Int {
+		let numRows = 1 + values.count
+		let numCols = 1 + capacity
+		var dp: [[Int]] = (0..<numRows).map { i in
+			(0..<numCols).map { j in
+				if i == 0 || j == 0 {
+					// Set first row or first column to the base value
+					return 0 // This might seem redundant for now but can be replaced later with a different base case.
 				} else {
-					str.append(fill)
+					return 0 // All other cells are 0
 				}
 			}
-			result.append(str)
 		}
-		return result
+
+		for i in 1...values.count {
+			for j in 0...capacity {
+				if weights[i - 1] <= j {
+					let includeItem = values[i - 1] + dp[i - 1][j - weights[i - 1]]
+					let excludeItem = dp[i - 1][j]
+					dp[i][j] = max(includeItem, excludeItem)
+				} else {
+					dp[i][j] = dp[i - 1][j]
+				}
+			}
+		}
+
+		print(dp)
+		return dp[numRows - 1][numCols - 1]
+
 	}
+	let maxVal = knapsackTopDown(weights: [1,2,6], values: [1,2,2], capacity: 7)
+	print(maxVal)
 }
 
 @Suite struct Playground {

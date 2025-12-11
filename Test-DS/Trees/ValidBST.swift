@@ -22,7 +22,6 @@ extension TreesProblemsImpl {
 		return validate(root, min: nil, max: nil)
 	}
 
-
 	func isValidBST(_ root: TreeNode?) -> Bool {
 		var prevValue: Int?
 		func inOrder(_ root: TreeNode?, prevValue: inout Int?) -> Bool {
