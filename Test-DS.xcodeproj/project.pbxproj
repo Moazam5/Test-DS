@@ -13,6 +13,8 @@
 		FF0CC8C72EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */; };
 		FF0CC8C92EE5960200C5870D /* KnapsackTopDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */; };
 		FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */; };
+		FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */; };
+		FF0CC8E62EEB824D00C5870D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */; };
 		FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
 		FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
 		FF127BDD2DAD6BE700F203EF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF127BDC2DAD6BE700F203EF /* TwoSum.swift */; };
@@ -105,6 +107,7 @@
 		FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursive.swift; sourceTree = "<group>"; };
 		FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursiveTests.swift; sourceTree = "<group>"; };
 		FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackTopDown.swift; sourceTree = "<group>"; };
+		FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 		FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesProblemsTests.swift; sourceTree = "<group>"; };
 		FF127BDC2DAD6BE700F203EF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		FF127BDF2DAD7C8100F203EF /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
@@ -201,6 +204,7 @@
 			children = (
 				FF1FC3042E24CA8200951B00 /* LinkedListNode.swift */,
 				FF1FC3072E24CADE00951B00 /* LinkedList.swift */,
+				FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -467,6 +471,7 @@
 				FF2061D32E9C4B6E008DA0FA /* DiameterOfBinaryTree.swift in Sources */,
 				FFB124C42EDCF3C700CD04C7 /* Subsets.swift in Sources */,
 				FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */,
+				FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FF0CC8C62EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
@@ -499,6 +504,7 @@
 				FF1FC3082E24CADE00951B00 /* LinkedList.swift in Sources */,
 				FF2736842E66E0FE00E346CB /* DFS.swift in Sources */,
 				FF127BE02DAD7C8100F203EF /* ThreeSum.swift in Sources */,
+				FF0CC8E62EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FFAC3E4D2E392146001214BB /* Trees.swift in Sources */,
 				FF0CC8C42EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
 				FFC2103C2D861F9600A9337D /* Page5.swift in Sources */,
