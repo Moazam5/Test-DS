@@ -14,6 +14,7 @@ extension Knapsack {
 		}
 		let numRows = 1 + values.count
 		let numCols = 1 + capacity
+		// Initialize the array with the base case
 		var dp: [[Int]] = (0..<numRows).map { i in
 			(0..<numCols).map { j in
 				if i == 0 || j == 0 {
@@ -27,6 +28,7 @@ extension Knapsack {
 
 		for i in 1...values.count {
 			for j in 0...capacity {
+				// Compare the current item weight with the current column weight
 				if weights[i - 1] <= j {
 					let includeItem = values[i - 1] + dp[i - 1][j - weights[i - 1]]
 					let excludeItem = dp[i - 1][j]

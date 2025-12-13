@@ -15,6 +15,14 @@
 		FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */; };
 		FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */; };
 		FF0CC8E62EEB824D00C5870D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */; };
+		FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */; };
+		FF0CC8E92EEB9D4C00C5870D /* SubsetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */; };
+		FF0CC8EB2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */; };
+		FF0CC8EC2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */; };
+		FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */; };
+		FF0CC8EF2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */; };
+		FF0CC8F12EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */; };
+		FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */; };
 		FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
 		FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
 		FF127BDD2DAD6BE700F203EF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF127BDC2DAD6BE700F203EF /* TwoSum.swift */; };
@@ -108,6 +116,10 @@
 		FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursiveTests.swift; sourceTree = "<group>"; };
 		FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackTopDown.swift; sourceTree = "<group>"; };
 		FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
+		FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetSum.swift; sourceTree = "<group>"; };
+		FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProblemsTests.swift; sourceTree = "<group>"; };
+		FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EqualSumPartition.swift; sourceTree = "<group>"; };
+		FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOfSubsetSum.swift; sourceTree = "<group>"; };
 		FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesProblemsTests.swift; sourceTree = "<group>"; };
 		FF127BDC2DAD6BE700F203EF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		FF127BDF2DAD7C8100F203EF /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
@@ -319,7 +331,11 @@
 				FFB124C22EDCF3C700CD04C7 /* Subsets.swift */,
 				FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */,
 				FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */,
+				FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */,
+				FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */,
+				FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */,
 				FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */,
+				FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -449,10 +465,12 @@
 				FF69F40C2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
 				FF2061D82E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFAF22192EC282C6000E86D4 /* InvertTree.swift in Sources */,
+				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FF2061DB2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
 				FF1FC3092E24CADE00951B00 /* LinkedList.swift in Sources */,
 				FF2736852E66E0FE00E346CB /* DFS.swift in Sources */,
 				FF1FC3062E24CA8200951B00 /* LinkedListNode.swift in Sources */,
+				FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FFB124BD2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
 				FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
@@ -463,6 +481,7 @@
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
 				FF2061D02E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
 				FFA067FF2DCFFC8500881478 /* CarFleet.swift in Sources */,
+				FF0CC8EC2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */,
 				FF0CC8C32EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
 				FFAC3E512E392172001214BB /* TreeNode.swift in Sources */,
 				FFAC3E4E2E392146001214BB /* Trees.swift in Sources */,
@@ -477,6 +496,7 @@
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FF5207622C89871100B140AC /* Addition.swift in Sources */,
+				FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */,
 				FFAF465F2EC3C78E000E86D4 /* BFS.swift in Sources */,
 			);
@@ -523,14 +543,18 @@
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,
+				FF0CC8E92EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF2061DC2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
 				FF0CC8C92EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FF18D0272E0287440054F7F8 /* Problem2.swift in Sources */,
+				FF0CC8EF2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FFB124C32EDCF3C700CD04C7 /* Subsets.swift in Sources */,
+				FF0CC8F12EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FFB124BF2EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FF97D1FD2D566F24009DCDD5 /* Page4.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */,
+				FF0CC8EB2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */,
 				FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */,
 				FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 			);

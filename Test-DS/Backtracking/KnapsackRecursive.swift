@@ -34,7 +34,9 @@ extension Knapsack {
 			let include = firstValue + knapsackRecursive(weights: restWeights, values: restValues, capacity: capacity - firstWeight)
 			// Option B: exclude the first item
 			let exclude = knapsackRecursive(weights: restWeights, values: restValues, capacity: capacity)
+			// NOTE: This is the main part
 			return max(include, exclude)
 		}
 	}
 }
+
