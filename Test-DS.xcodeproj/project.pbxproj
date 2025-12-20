@@ -36,7 +36,6 @@
 		FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1818A52E0482EB0054F7F8 /* Problem4.swift */; };
 		FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1818A52E0482EB0054F7F8 /* Problem4.swift */; };
 		FF1818AA2E0484A00054F7F8 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1818A92E0484A00054F7F8 /* Testing.framework */; };
-		FF18D0212E0215C80054F7F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF18D0202E0215C80054F7F8 /* README.md */; };
 		FF18D0232E0218A00054F7F8 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0222E0218A00054F7F8 /* Problem1.swift */; };
 		FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0222E0218A00054F7F8 /* Problem1.swift */; };
 		FF18D0272E0287440054F7F8 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0252E0287440054F7F8 /* Problem2.swift */; };
@@ -86,6 +85,10 @@
 		FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */; };
 		FFAB5C522EF0D89100F183EC /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C512EF0D89100F183EC /* TargetSum.swift */; };
 		FFAB5C532EF0D89100F183EC /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C512EF0D89100F183EC /* TargetSum.swift */; };
+		FFAB5C602EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */; };
+		FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */; };
+		FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C712EF3F45200F183EC /* UnboundedKnapsack.swift */; };
+		FFAB5C732EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C712EF3F45200F183EC /* UnboundedKnapsack.swift */; };
 		FFAC3E4D2E392146001214BB /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC3E4C2E392146001214BB /* Trees.swift */; };
 		FFAC3E4E2E392146001214BB /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC3E4C2E392146001214BB /* Trees.swift */; };
 		FFAC3E502E392172001214BB /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC3E4F2E392172001214BB /* TreeNode.swift */; };
@@ -169,6 +172,8 @@
 		FFA067FD2DCFFC8500881478 /* CarFleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleet.swift; sourceTree = "<group>"; };
 		FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSuduko.swift; sourceTree = "<group>"; };
 		FFAB5C512EF0D89100F183EC /* TargetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSum.swift; sourceTree = "<group>"; };
+		FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTemplateProtocol.swift; sourceTree = "<group>"; };
+		FFAB5C712EF3F45200F183EC /* UnboundedKnapsack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnboundedKnapsack.swift; sourceTree = "<group>"; };
 		FFAC3E4C2E392146001214BB /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
 		FFAC3E4F2E392172001214BB /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		FFAF22182EC282C6000E86D4 /* InvertTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvertTree.swift; sourceTree = "<group>"; };
@@ -275,6 +280,9 @@
 				FF7155582E374AC500585246 /* Two Pointers */,
 				FFB34DD82DA725CB00D2C7A8 /* Playground.swift */,
 				FF18D01F2E0215390054F7F8 /* Sliding Window */,
+				FFAB5C572EF3415100F183EC /* Templates */,
+				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
+				FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */,
 				FFB124C12EDCF3AC00CD04C7 /* Backtracking */,
 				FF230B7D2DE3C99F00AB74FC /* Binary Search  */,
 				FF1FC3032E24CA6700951B00 /* Linked List */,
@@ -306,6 +314,40 @@
 				FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */,
 			);
 			path = "Two Pointers";
+			sourceTree = "<group>";
+		};
+		FFAB5C572EF3415100F183EC /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */ = {
+			isa = PBXGroup;
+			children = (
+				FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */,
+				FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */,
+				FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */,
+				FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */,
+				FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */,
+				FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */,
+				FFAB5C512EF0D89100F183EC /* TargetSum.swift */,
+				FF0CC8FD2EEEB7A200C5870D /* Permutations.swift */,
+				FF0CC8FA2EEE350F00C5870D /* MinSubsetSumDifference.swift */,
+				FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */,
+				FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */,
+			);
+			path = ZeroOneKnapsack;
+			sourceTree = "<group>";
+		};
+		FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */ = {
+			isa = PBXGroup;
+			children = (
+				FFAB5C712EF3F45200F183EC /* UnboundedKnapsack.swift */,
+			);
+			path = UnboundedKnapsack;
 			sourceTree = "<group>";
 		};
 		FFAC3E4B2E39210E001214BB /* Trees */ = {
@@ -341,17 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				FFB124C22EDCF3C700CD04C7 /* Subsets.swift */,
-				FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */,
-				FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */,
-				FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */,
-				FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */,
-				FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */,
-				FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */,
-				FFAB5C512EF0D89100F183EC /* TargetSum.swift */,
-				FF0CC8FD2EEEB7A200C5870D /* Permutations.swift */,
-				FF0CC8FA2EEE350F00C5870D /* MinSubsetSumDifference.swift */,
-				FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */,
-				FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -425,7 +456,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					FF5207492C89869C00B140AC = {
@@ -467,7 +498,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF18D0212E0215C80054F7F8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,9 +545,11 @@
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
+				FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
 				FF5207622C89871100B140AC /* Addition.swift in Sources */,
 				FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */,
+				FFAB5C732EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFAF465F2EC3C78E000E86D4 /* BFS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +563,7 @@
 				FFB124BC2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
 				FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */,
 				FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */,
+				FFAB5C602EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
 				FF69F4102ECE7B8F00FB87D3 /* RightSideViewTests.swift in Sources */,
 				FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FF2061CF2E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
@@ -550,6 +583,7 @@
 				FFC2103C2D861F9600A9337D /* Page5.swift in Sources */,
 				FF5207652C8CD22300B140AC /* Page2.swift in Sources */,
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
+				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,
 				FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
@@ -751,12 +785,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -841,11 +875,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

@@ -9,7 +9,6 @@ import Foundation
 
 extension KnapsackProblems {
 	/// Given an array `arr[]` of length `n` and an integer `target`, the task is to find the **number of subsets** with a sum equal to target.
-
 	func countOfSubsetSum(_ list: [Int], _ sum: Int) -> Int {
 		// If the target sum is negative, it's impossible to form with non-negative numbers.
 		// This check is mostly for safety, as the `countSubsetsWithGivenDiff` should prevent negative sums.

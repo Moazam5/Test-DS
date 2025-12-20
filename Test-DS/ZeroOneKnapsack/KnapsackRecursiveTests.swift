@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 
-private struct DPTester: DynamicProgramming {}
+private struct DPTester: Knapsack {}
 
 @Suite("Knapsack Recursive")
 struct KnapsackRecursiveTests {
