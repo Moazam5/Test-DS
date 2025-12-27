@@ -9,6 +9,18 @@ import Foundation
 
 extension KnapsackProblems {
 	/// Given an array `arr[]` of length `n` and an integer `target`, the task is to find the **number of subsets** with a sum equal to target.
+	///
+	// We want to know: how many ways to make sum 5 using [2, 3]?
+	// Option 1: Include 3
+	// We need: ways to make (5 - 3 = 2) using previous elements [2]
+	// dp[1][2] = 1  (one way: use the element 2)
+	// This means: "There is 1 way to make sum 2, and if we add 3 to it,
+	//              we get 1 way to make sum 5"
+
+	// Option 2: Exclude 3
+	// dp[1][5] = 0  (zero ways to make sum 5 using just [2])
+
+	// Total: dp[2][5] = 1 + 0 = 1
 	func countOfSubsetSum(_ list: [Int], _ sum: Int) -> Int {
 		// If the target sum is negative, it's impossible to form with non-negative numbers.
 		// This check is mostly for safety, as the `countSubsetsWithGivenDiff` should prevent negative sums.
