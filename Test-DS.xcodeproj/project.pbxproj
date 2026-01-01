@@ -31,11 +31,30 @@
 		FF0CC8FF2EEEB7A200C5870D /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8FD2EEEB7A200C5870D /* Permutations.swift */; };
 		FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
 		FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */; };
+		FF10443D2EFE86F900BD9741 /* CoinChange-I.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10443C2EFE86F900BD9741 /* CoinChange-I.swift */; };
+		FF10443E2EFE86F900BD9741 /* CoinChange-I.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10443C2EFE86F900BD9741 /* CoinChange-I.swift */; };
+		FF1044402EFF39B000BD9741 /* CoinChange-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10443F2EFF39B000BD9741 /* CoinChange-II.swift */; };
+		FF1044412EFF39B000BD9741 /* CoinChange-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10443F2EFF39B000BD9741 /* CoinChange-II.swift */; };
+		FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044442EFFE49800BD9741 /* CodeTemplateImpl.swift */; };
+		FF1044462EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044442EFFE49800BD9741 /* CodeTemplateImpl.swift */; };
+		FF1044472EFFE7C800BD9741 /* Test_DS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF52074A2C89869C00B140AC /* Test_DS.framework */; };
+		FF1044482EFFE7C800BD9741 /* Test_DS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF52074A2C89869C00B140AC /* Test_DS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF10444A2EFFE91400BD9741 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1818A92E0484A00054F7F8 /* Testing.framework */; };
+		FF10444B2EFFE91400BD9741 /* Testing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1818A92E0484A00054F7F8 /* Testing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF10444F2F01100500BD9741 /* LCSRecursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10444E2F01100500BD9741 /* LCSRecursive.swift */; };
+		FF1044502F01100500BD9741 /* LCSRecursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10444E2F01100500BD9741 /* LCSRecursive.swift */; };
+		FF1044522F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */; };
+		FF1044532F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */; };
+		FF1044552F01116500BD9741 /* LCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044542F01116500BD9741 /* LCSProtocol.swift */; };
+		FF1044562F01116500BD9741 /* LCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044542F01116500BD9741 /* LCSProtocol.swift */; };
+		FF1044582F0124E700BD9741 /* LinkedListProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044572F0124E700BD9741 /* LinkedListProblems.swift */; };
+		FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1044572F0124E700BD9741 /* LinkedListProblems.swift */; };
+		FF10445B2F01D98600BD9741 /* LCSProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10445A2F01D98600BD9741 /* LCSProblems.swift */; };
+		FF10445C2F01D98600BD9741 /* LCSProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF10445A2F01D98600BD9741 /* LCSProblems.swift */; };
 		FF127BDD2DAD6BE700F203EF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF127BDC2DAD6BE700F203EF /* TwoSum.swift */; };
 		FF127BE02DAD7C8100F203EF /* ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF127BDF2DAD7C8100F203EF /* ThreeSum.swift */; };
 		FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1818A52E0482EB0054F7F8 /* Problem4.swift */; };
 		FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1818A52E0482EB0054F7F8 /* Problem4.swift */; };
-		FF1818AA2E0484A00054F7F8 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1818A92E0484A00054F7F8 /* Testing.framework */; };
 		FF18D0232E0218A00054F7F8 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0222E0218A00054F7F8 /* Problem1.swift */; };
 		FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0222E0218A00054F7F8 /* Problem1.swift */; };
 		FF18D0272E0287440054F7F8 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF18D0252E0287440054F7F8 /* Problem2.swift */; };
@@ -60,7 +79,6 @@
 		FF2736852E66E0FE00E346CB /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2736832E66E0FE00E346CB /* DFS.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
-		FF5207552C89869C00B140AC /* Test_DS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF52074A2C89869C00B140AC /* Test_DS.framework */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
 		FF52075B2C89869C00B140AC /* Test_DS.h in Headers */ = {isa = PBXBuildFile; fileRef = FF52074D2C89869C00B140AC /* Test_DS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF5207622C89871100B140AC /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207442C89865C00B140AC /* Addition.swift */; };
@@ -122,6 +140,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FF1044492EFFE7C800BD9741 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF1044482EFFE7C800BD9741 /* Test_DS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF10444C2EFFE91400BD9741 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF10444B2EFFE91400BD9741 /* Testing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountNumSubsetsGivenDiff.swift; sourceTree = "<group>"; };
 		FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursive.swift; sourceTree = "<group>"; };
@@ -135,6 +178,14 @@
 		FF0CC8FA2EEE350F00C5870D /* MinSubsetSumDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinSubsetSumDifference.swift; sourceTree = "<group>"; };
 		FF0CC8FD2EEEB7A200C5870D /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		FF0D98EB2E5C3F3800EED894 /* TreesProblemsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesProblemsTests.swift; sourceTree = "<group>"; };
+		FF10443C2EFE86F900BD9741 /* CoinChange-I.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinChange-I.swift"; sourceTree = "<group>"; };
+		FF10443F2EFF39B000BD9741 /* CoinChange-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoinChange-II.swift"; sourceTree = "<group>"; };
+		FF1044442EFFE49800BD9741 /* CodeTemplateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTemplateImpl.swift; sourceTree = "<group>"; };
+		FF10444E2F01100500BD9741 /* LCSRecursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSRecursive.swift; sourceTree = "<group>"; };
+		FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnboundedKnapsackTests.swift; sourceTree = "<group>"; };
+		FF1044542F01116500BD9741 /* LCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSProtocol.swift; sourceTree = "<group>"; };
+		FF1044572F0124E700BD9741 /* LinkedListProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListProblems.swift; sourceTree = "<group>"; };
+		FF10445A2F01D98600BD9741 /* LCSProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSProblems.swift; sourceTree = "<group>"; };
 		FF127BDC2DAD6BE700F203EF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		FF127BDF2DAD7C8100F203EF /* ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSum.swift; sourceTree = "<group>"; };
 		FF1818A52E0482EB0054F7F8 /* Problem4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem4.swift; sourceTree = "<group>"; };
@@ -194,7 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF1818AA2E0484A00054F7F8 /* Testing.framework in Frameworks */,
+				FF10444A2EFFE91400BD9741 /* Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,13 +253,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5207552C89869C00B140AC /* Test_DS.framework in Frameworks */,
+				FF1044472EFFE7C800BD9741 /* Test_DS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF10444D2F010FCF00BD9741 /* LCS */ = {
+			isa = PBXGroup;
+			children = (
+				FF1044542F01116500BD9741 /* LCSProtocol.swift */,
+				FF10444E2F01100500BD9741 /* LCSRecursive.swift */,
+				FF10445A2F01D98600BD9741 /* LCSProblems.swift */,
+			);
+			path = LCS;
+			sourceTree = "<group>";
+		};
 		FF1818A82E0484A00054F7F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +294,7 @@
 			children = (
 				FF1FC3042E24CA8200951B00 /* LinkedListNode.swift */,
 				FF1FC3072E24CADE00951B00 /* LinkedList.swift */,
-				FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */,
+				FF1044572F0124E700BD9741 /* LinkedListProblems.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -284,6 +345,7 @@
 				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
 				FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */,
 				FFB124C12EDCF3AC00CD04C7 /* Backtracking */,
+				FF10444D2F010FCF00BD9741 /* LCS */,
 				FF230B7D2DE3C99F00AB74FC /* Binary Search  */,
 				FF1FC3032E24CA6700951B00 /* Linked List */,
 				FFAC3E4B2E39210E001214BB /* Trees */,
@@ -300,6 +362,8 @@
 				FF2061D42E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift */,
 				FF2061DA2E9C5B9B008DA0FA /* IsBalancedTests.swift */,
 				FF5207592C89869C00B140AC /* Test_DSTests.swift */,
+				FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */,
+				FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */,
 			);
 			path = "Test-DSTests";
 			sourceTree = "<group>";
@@ -307,9 +371,9 @@
 		FF7155582E374AC500585246 /* Two Pointers */ = {
 			isa = PBXGroup;
 			children = (
+				FF7155592E374AF500585246 /* ValidPalindrome.swift */,
 				FF127BDC2DAD6BE700F203EF /* TwoSum.swift */,
 				FF127BDF2DAD7C8100F203EF /* ThreeSum.swift */,
-				FF7155592E374AF500585246 /* ValidPalindrome.swift */,
 				FF71555C2E374B3400585246 /* TwoPointers.swift */,
 				FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */,
 			);
@@ -320,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */,
+				FF1044442EFFE49800BD9741 /* CodeTemplateImpl.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -332,10 +397,10 @@
 				FF0CC8E72EEB9D4C00C5870D /* SubsetSum.swift */,
 				FF0CC8ED2EEBD75E00C5870D /* EqualSumPartition.swift */,
 				FF0CC8F02EEC0EA100C5870D /* CountOfSubsetSum.swift */,
+				FF0CC8FA2EEE350F00C5870D /* MinSubsetSumDifference.swift */,
 				FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */,
 				FFAB5C512EF0D89100F183EC /* TargetSum.swift */,
 				FF0CC8FD2EEEB7A200C5870D /* Permutations.swift */,
-				FF0CC8FA2EEE350F00C5870D /* MinSubsetSumDifference.swift */,
 				FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */,
 				FF0CC8EA2EEBA13100C5870D /* KnapsackProblemsTests.swift */,
 			);
@@ -346,6 +411,8 @@
 			isa = PBXGroup;
 			children = (
 				FFAB5C712EF3F45200F183EC /* UnboundedKnapsack.swift */,
+				FF10443C2EFE86F900BD9741 /* CoinChange-I.swift */,
+				FF10443F2EFF39B000BD9741 /* CoinChange-II.swift */,
 			);
 			path = UnboundedKnapsack;
 			sourceTree = "<group>";
@@ -421,6 +488,7 @@
 				FF5207462C89869C00B140AC /* Sources */,
 				FF5207472C89869C00B140AC /* Frameworks */,
 				FF5207482C89869C00B140AC /* Resources */,
+				FF10444C2EFFE91400BD9741 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -438,6 +506,7 @@
 				FF5207502C89869C00B140AC /* Sources */,
 				FF5207512C89869C00B140AC /* Frameworks */,
 				FF5207522C89869C00B140AC /* Resources */,
+				FF1044492EFFE7C800BD9741 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,9 +587,12 @@
 				FF1FC3092E24CADE00951B00 /* LinkedList.swift in Sources */,
 				FF2736852E66E0FE00E346CB /* DFS.swift in Sources */,
 				FF1FC3062E24CA8200951B00 /* LinkedListNode.swift in Sources */,
+				FF1044582F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FFB124BD2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
+				FF10445C2F01D98600BD9741 /* LCSProblems.swift in Sources */,
+				FF10443D2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
 				FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 				FF2061CD2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FFA067F92DCF211000881478 /* TrappingRainWater.swift in Sources */,
@@ -528,6 +600,7 @@
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
 				FF2061D02E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
+				FF1044402EFF39B000BD9741 /* CoinChange-II.swift in Sources */,
 				FFA067FF2DCFFC8500881478 /* CarFleet.swift in Sources */,
 				FF0CC8EC2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */,
 				FF0C00CA2EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
@@ -546,6 +619,10 @@
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
+				FF1044462EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
+				FF10444F2F01100500BD9741 /* LCSRecursive.swift in Sources */,
+				FF1044522F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */,
+				FF1044562F01116500BD9741 /* LCSProtocol.swift in Sources */,
 				FF5207622C89871100B140AC /* Addition.swift in Sources */,
 				FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */,
@@ -565,11 +642,13 @@
 				FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */,
 				FFAB5C602EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
 				FF69F4102ECE7B8F00FB87D3 /* RightSideViewTests.swift in Sources */,
+				FF1044502F01100500BD9741 /* LCSRecursive.swift in Sources */,
 				FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FF2061CF2E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
 				FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FF69F40D2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
+				FF1044412EFF39B000BD9741 /* CoinChange-II.swift in Sources */,
 				FF0CC8C72EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */,
 				FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */,
@@ -585,8 +664,10 @@
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,
+				FF10445B2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
+				FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
 				FF2061D52E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FF0CC8FF2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FF933B712CB322F800668ACE /* Page3.swift in Sources */,
@@ -597,6 +678,7 @@
 				FF230B7F2DE3C9BC00AB74FC /* BinarySearch .swift in Sources */,
 				FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */,
+				FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,
@@ -604,6 +686,7 @@
 				FF2061DC2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
 				FF0CC8C92EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FF18D0272E0287440054F7F8 /* Problem2.swift in Sources */,
+				FF10443E2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
 				FF0CC8EF2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FFB124C32EDCF3C700CD04C7 /* Subsets.swift in Sources */,
 				FF0CC8F12EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
@@ -611,9 +694,11 @@
 				FF0CC8FB2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
 				FF97D1FD2D566F24009DCDD5 /* Page4.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
+				FF1044552F01116500BD9741 /* LCSProtocol.swift in Sources */,
 				FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */,
 				FF0CC8EB2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */,
 				FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */,
+				FF1044532F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */,
 				FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,6 +773,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -702,11 +788,12 @@
 		FF52075D2C89869C00B140AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -739,6 +826,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L7L29RXQWH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -747,7 +835,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -764,7 +852,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -774,7 +862,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -799,11 +887,12 @@
 		FF52075E2C89869C00B140AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -836,6 +925,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = L7L29RXQWH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -843,8 +933,9 @@
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -855,7 +946,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -865,7 +956,7 @@
 					"@loader_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -942,9 +1033,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1012,9 +1103,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

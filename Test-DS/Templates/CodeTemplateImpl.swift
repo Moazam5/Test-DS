@@ -55,7 +55,10 @@ struct CodeTemplatesImpl: CodeTemplates {
 
 extension CodeTemplatesImpl {
 	func slidingWindow(_ arr: [Int], windowCondition: () -> Bool) -> Int {
-		var (left, current, answer) = (0, 0, 0)
+		var left = 0
+		var current = 0
+		var answer = 0
+
 		for rig in arr {
 			// do logic here to add arr[right] to curr
 

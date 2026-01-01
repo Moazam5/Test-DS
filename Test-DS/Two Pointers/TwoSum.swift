@@ -8,66 +8,69 @@
 import Foundation
 import Testing
 
-func twoSumOne(_ nums: [Int], target: Int) -> [Int] {
-	if nums.count < 2 {
+extension TwoPointers {
+	static func twoSumOne(_ nums: [Int], target: Int) -> [Int] {
+		if nums.count < 2 {
+			return []
+		}
+
+		var (i,j) = (0, nums.count - 1)
+		while i < j {
+			let sum = nums[i] + nums[j]
+			if sum == target {
+				return [i, j]
+			} else if sum < target {
+				i += 1
+			} else {
+				j -= 1
+			}
+		}
 		return []
 	}
 
-	var (i,j) = (0, nums.count - 1)
-	while i < j {
-		let sum = nums[i] + nums[j]
-		if sum == target {
-			return [i, j]
-		} else if sum < target {
-			i += 1
-		} else {
-			j -= 1
+	/// This is for when the nums array is not sorted. Beats 100% on leetcode.
+	static func twoSum(_ nums: [Int], target: Int) -> [Int] {
+		var numsDict: [Int: Int] = [:]
+		for (index, num) in nums.enumerated() {
+			let otherNumber = target - num
+			if let otherNumberIndex = numsDict[otherNumber] {
+				return [otherNumberIndex, index]
+			}
+			numsDict[num] = index
 		}
+		return []
 	}
-	return []
-}
-
-func twoSum(_ nums: [Int], target: Int) -> [Int] {
-	var numsDict: [Int: Int] = [:]
-	for (index, num) in nums.enumerated() {
-		let otherNumber = target - num
-		if let otherNumberIndex = numsDict[otherNumber] {
-			return [otherNumberIndex, index]
-		}
-		numsDict[num] = index
-	}
-	return []
 }
 
 @Suite struct TestTwoSum {
 	@Test func returnsEmptyArrayWhenGivenEmptyArray() {
-		#expect(twoSum([], target: 0) == [])
+		#expect(TwoPointers.twoSum([], target: 0) == [])
 	}
 
 	@Test func returnsEmptyArrayWhenGivenSingleElementArray() {
-		#expect(twoSum([1], target: 0) == [])
+		#expect(TwoPointers.twoSum([1], target: 0) == [])
 	}
 
 	@Test func returnsEmptyArrayWhenGivenArrayWithNoTwoSum() {
-		#expect(twoSum([1,2,3,4], target: 2) == [])
+		#expect(TwoPointers.twoSum([1,2,3,4], target: 2) == [])
 	}
 
 	@Test func returnsTwoSumWhenGivenArrayWithTwoSum() {
 		let nums = [3,4,5,6]
 		let target = 7
-		#expect(twoSum(nums, target: target) == [0,1])
+		#expect(TwoPointers.twoSum(nums, target: target) == [0,1])
 	}
 
 	@Test func returnsTwoSumWhenGivenAnotherArrayWithTwoSum() {
 		let nums = [4,5,6]
 		let target = 10
-		#expect(twoSum(nums, target: target) == [0,2])
+		#expect(TwoPointers.twoSum(nums, target: target) == [0,2])
 	}
 
 	@Test func returnsTwoSumWhenGivenUnsortedArrayWithTwoSum() {
 		let nums = [5, 4,6]
 		let target = 10
-		#expect(twoSum(nums, target: target) == [1,2])
+		#expect(TwoPointers.twoSum(nums, target: target) == [1,2])
 	}
 
 }

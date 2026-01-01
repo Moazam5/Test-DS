@@ -8,6 +8,7 @@
 import Foundation
 
 extension TwoPointers {
+	// I also tried using `.replaceOccurancesOf` but that didn't work because the string can also have ",", ":", etc.
 	struct ValidPalindrome {
 		static func isPalindrome(_ s: String) -> Bool {
 			let chars = Array(s.lowercased())
