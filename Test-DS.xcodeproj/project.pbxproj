@@ -123,6 +123,8 @@
 		FFB124C42EDCF3C700CD04C7 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB124C22EDCF3C700CD04C7 /* Subsets.swift */; };
 		FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */; };
 		FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD82DA725CB00D2C7A8 /* Playground.swift */; };
+		FFBA6FCD2F077AA7000579D5 /* LCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */; };
+		FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */; };
 		FFC2103C2D861F9600A9337D /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2103B2D861F9600A9337D /* Page5.swift */; };
 		FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
@@ -234,6 +236,7 @@
 		FFB124C22EDCF3C700CD04C7 /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
 		FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestConsecutiveSubsequence.swift; sourceTree = "<group>"; };
 		FFB34DD82DA725CB00D2C7A8 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
+		FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSTests.swift; sourceTree = "<group>"; };
 		FFC2103B2D861F9600A9337D /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 		FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
 		FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateParenthesis.swift; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 				FF1044542F01116500BD9741 /* LCSProtocol.swift */,
 				FF10444E2F01100500BD9741 /* LCSRecursive.swift */,
 				FF10445A2F01D98600BD9741 /* LCSProblems.swift */,
+				FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */,
 			);
 			path = LCS;
 			sourceTree = "<group>";
@@ -337,7 +341,6 @@
 				FF97D1FC2D566F24009DCDD5 /* Page4.swift */,
 				FFC2103B2D861F9600A9337D /* Page5.swift */,
 				FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */,
-				FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */,
 				FF7155582E374AC500585246 /* Two Pointers */,
 				FFB34DD82DA725CB00D2C7A8 /* Playground.swift */,
 				FF18D01F2E0215390054F7F8 /* Sliding Window */,
@@ -361,6 +364,7 @@
 			children = (
 				FF2061D42E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift */,
 				FF2061DA2E9C5B9B008DA0FA /* IsBalancedTests.swift */,
+				FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */,
 				FF5207592C89869C00B140AC /* Test_DSTests.swift */,
 				FF0CC8E42EEB824D00C5870D /* LinkedListTests.swift */,
 				FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */,
@@ -611,6 +615,7 @@
 				FF69F40F2ECE7B8F00FB87D3 /* RightSideViewTests.swift in Sources */,
 				FF2061D32E9C4B6E008DA0FA /* DiameterOfBinaryTree.swift in Sources */,
 				FFB124C42EDCF3C700CD04C7 /* Subsets.swift in Sources */,
+				FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */,
 				FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FF0CC8FC2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
@@ -697,6 +702,7 @@
 				FF1044552F01116500BD9741 /* LCSProtocol.swift in Sources */,
 				FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */,
 				FF0CC8EB2EEBA13100C5870D /* KnapsackProblemsTests.swift in Sources */,
+				FFBA6FCD2F077AA7000579D5 /* LCSTests.swift in Sources */,
 				FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */,
 				FF1044532F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */,
 				FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,

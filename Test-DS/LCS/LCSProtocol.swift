@@ -17,10 +17,19 @@ protocol LCS {
 
 	///	Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
 	///	Examples:
-	///
 	///	Input : X = “GeeksforGeeks”, y = “GeeksQuiz”
 	///	Output : 5
 	func longestCommonSubstring(_ s1: String, _ s2: String) -> Int
+
+	///	Given two sequences, print the longest subsequence present in both of them.
+	///	Example:
+	///	LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
+	func printLCS(_ s1: String, _ s2: String) -> String
+
+	///	Given two strings str1 and str2, find the shortest string that has both str1 and str2 as subsequences.
+	///	Examples:
+	///	Input:   str1 = "geek",  str2 = "eke" Output: "geeke"
+	func shortestCommonSupersequence(_ str1: String, _ str2: String) -> String
 }
 
 extension LCS {
