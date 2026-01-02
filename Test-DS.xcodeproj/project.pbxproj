@@ -125,6 +125,12 @@
 		FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD82DA725CB00D2C7A8 /* Playground.swift */; };
 		FFBA6FCD2F077AA7000579D5 /* LCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */; };
 		FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */; };
+		FFBA6FD02F0863D6000579D5 /* LCSProblems+PrintLCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCF2F0863D6000579D5 /* LCSProblems+PrintLCS.swift */; };
+		FFBA6FD12F0863D6000579D5 /* LCSProblems+PrintLCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCF2F0863D6000579D5 /* LCSProblems+PrintLCS.swift */; };
+		FFBA6FD32F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD22F086406000579D5 /* LCSProblems+ShortestSubersequence.swift */; };
+		FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD22F086406000579D5 /* LCSProblems+ShortestSubersequence.swift */; };
+		FFBA6FD62F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */; };
+		FFBA6FD72F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */; };
 		FFC2103C2D861F9600A9337D /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2103B2D861F9600A9337D /* Page5.swift */; };
 		FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
@@ -237,6 +243,9 @@
 		FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestConsecutiveSubsequence.swift; sourceTree = "<group>"; };
 		FFB34DD82DA725CB00D2C7A8 /* Playground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground.swift; sourceTree = "<group>"; };
 		FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSTests.swift; sourceTree = "<group>"; };
+		FFBA6FCF2F0863D6000579D5 /* LCSProblems+PrintLCS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+PrintLCS.swift"; sourceTree = "<group>"; };
+		FFBA6FD22F086406000579D5 /* LCSProblems+ShortestSubersequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+ShortestSubersequence.swift"; sourceTree = "<group>"; };
+		FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinInsertionAndDeletions.swift"; sourceTree = "<group>"; };
 		FFC2103B2D861F9600A9337D /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 		FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
 		FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateParenthesis.swift; sourceTree = "<group>"; };
@@ -269,6 +278,9 @@
 				FF1044542F01116500BD9741 /* LCSProtocol.swift */,
 				FF10444E2F01100500BD9741 /* LCSRecursive.swift */,
 				FF10445A2F01D98600BD9741 /* LCSProblems.swift */,
+				FFBA6FCF2F0863D6000579D5 /* LCSProblems+PrintLCS.swift */,
+				FFBA6FD22F086406000579D5 /* LCSProblems+ShortestSubersequence.swift */,
+				FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */,
 				FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */,
 			);
 			path = LCS;
@@ -600,6 +612,7 @@
 				FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 				FF2061CD2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FFA067F92DCF211000881478 /* TrappingRainWater.swift in Sources */,
+				FFBA6FD32F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FF2061D62E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
@@ -631,6 +644,8 @@
 				FF5207622C89871100B140AC /* Addition.swift in Sources */,
 				FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */,
+				FFBA6FD62F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
+				FFBA6FD02F0863D6000579D5 /* LCSProblems+PrintLCS.swift in Sources */,
 				FFAB5C732EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFAF465F2EC3C78E000E86D4 /* BFS.swift in Sources */,
 			);
@@ -665,6 +680,7 @@
 				FFAC3E4D2E392146001214BB /* Trees.swift in Sources */,
 				FF0CC8C42EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
 				FFC2103C2D861F9600A9337D /* Page5.swift in Sources */,
+				FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FF5207652C8CD22300B140AC /* Page2.swift in Sources */,
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
@@ -680,11 +696,13 @@
 				FF127BDD2DAD6BE700F203EF /* TwoSum.swift in Sources */,
 				FFAF221A2EC282C6000E86D4 /* InvertTree.swift in Sources */,
 				FF18D0232E0218A00054F7F8 /* Problem1.swift in Sources */,
+				FFBA6FD12F0863D6000579D5 /* LCSProblems+PrintLCS.swift in Sources */,
 				FF230B7F2DE3C9BC00AB74FC /* BinarySearch .swift in Sources */,
 				FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */,
 				FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
+				FFBA6FD72F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,
 				FF0CC8E92EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
