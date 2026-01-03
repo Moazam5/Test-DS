@@ -15,8 +15,7 @@ extension LCSProblems {
 	}
 }
 
-
 #Playground {
 	let lcs = LCSProblems()
-	lcs.minInsertionAndDeletions("pea", "heap")
+	lcs.printLCS("abbc", "bb")
 }

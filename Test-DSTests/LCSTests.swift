@@ -84,4 +84,82 @@ struct LCSProblemsTests {
 			#expect(result == 2)
 		}
 	}
+
+	// MARK: Min Deletions to Make Palindrome 
+	@Suite("Min Deletions to Make Palindrome Tests")
+	struct MinDeletionsTests {
+		@Test("Empty string requires 0 deletions")
+		func emptyString() {
+			let lcs = LCSProblems()
+			#expect(lcs.minDeletions("") == 0)
+		}
+
+		@Test("Single character requires 0 deletions")
+		func singleCharacter() {
+			let lcs = LCSProblems()
+			#expect(lcs.minDeletions("a") == 0)
+		}
+
+		@Test("Already palindrome requires 0 deletions")
+		func alreadyPalindrome() {
+			let lcs = LCSProblems()
+			#expect(lcs.minDeletions("racecar") == 0)
+			#expect(lcs.minDeletions("abba") == 0)
+		}
+
+		@Test("Typical cases")
+		func typicalCases() {
+			let lcs = LCSProblems()
+			// "bbbab" has LPS 4 -> deletions = 5 - 4 = 1
+			#expect(lcs.minDeletions("bbbab") == 1)
+			// "cbbd" has LPS 2 -> deletions = 4 - 2 = 2
+			#expect(lcs.minDeletions("cbbd") == 2)
+		}
+
+		@Test("No repeating characters")
+		func noRepeats() {
+			let lcs = LCSProblems()
+			// For "abcd", LPS = 1 -> deletions = 3
+			#expect(lcs.minDeletions("abcd") == 3)
+		}
+	}
+
+	// MARK: Longest Palindromic Subsequence Tests
+	@Suite("Longest Palindromic Subsequence Tests")
+	struct LongestPalSubseqTests {
+		@Test("Empty string has LPS length 0")
+		func emptyString() async throws {
+			let lcs = LCSProblems()
+			#expect(lcs.longestPalindromeSubseq("") == 0)
+		}
+
+		@Test("Single character has LPS length 1")
+		func singleCharacter() async throws {
+			let lcs = LCSProblems()
+			#expect(lcs.longestPalindromeSubseq("a") == 1)
+		}
+
+		@Test("Already a palindrome")
+		func alreadyPalindrome() async throws {
+			let lcs = LCSProblems()
+			#expect(lcs.longestPalindromeSubseq("racecar") == 7)
+			#expect(lcs.longestPalindromeSubseq("abba") == 4)
+		}
+
+		@Test("Typical cases")
+		func typicalCases() async throws {
+			let lcs = LCSProblems()
+			// "bbbab" -> LPS is 4 ("bbbb")
+			#expect(lcs.longestPalindromeSubseq("bbbab") == 4)
+			// "cbbd" -> LPS is 2 ("bb")
+			#expect(lcs.longestPalindromeSubseq("cbbd") == 2)
+		}
+
+		@Test("No repeating characters")
+		func noRepeats() async throws {
+			let lcs = LCSProblems()
+			// For a string like "abcd", LPS is 1
+			#expect(lcs.longestPalindromeSubseq("abcd") == 1)
+		}
+	}
 }

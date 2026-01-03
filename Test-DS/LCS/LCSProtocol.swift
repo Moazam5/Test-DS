@@ -35,10 +35,28 @@ protocol LCS {
 	/// It could be possible that the same character needs to be removed/deleted from one point of s1 and inserted at another point
 	///	Example 1: Input: s1 = "heap", s2 = "pea" Output: 3
 	/// Explanation: Minimum Deletion = 2 and Minimum Insertion = 1
-	/// p and h are deleted from the heap, and then p is inserted at the beginning. One thing to note, though p was required it was removed/deleted first from its position and then it was inserted into some other position. Thus, p contributes one to the deletion count and one to the insertion count.
+	/// p and h are deleted from the heap, and then p is inserted at the beginning.
+	/// One thing to note, though p was required it was removed/deleted first from its position and then it was inserted into some other position.
+	/// Thus, p contributes one to the deletion count and one to the insertion count.
 	/// Input: s1 = "geeksforgeeks", s2 = "geeks" Output: 8
 	/// Explanation: 8 deletions, i.e. remove all characters of the string "forgeeks".
-	func minInsertionAndDeletions(_ s1: String, _ s2: String) -> Int 
+	func minInsertionAndDeletions(_ s1: String, _ s2: String) -> Int
+
+	///	Longest Palindromic Subsequence
+	///	Given a sequence, find the length of the longest palindromic subsequence in it.
+	///	Example: Input:"bbbab" Output:4
+	func longestPalindromeSubseq(_ s: String) -> Int
+
+	///	Minimum number of deletions to make a string palindrome
+	///	Given a string of size ‘n’. The task is to remove or delete minimum number of characters from the string so that the resultant string is palindrome.
+	///	Examples :
+	///	Input : "aebcbda" Output : 2
+	func minDeletions(_ s: String) -> Int
+
+///	Given a string s, the task is to find the longest repeating subsequence, such that the two subsequences don’t have the same string character at the same position,
+	///	i.e. any ith character in the two subsequences shouldn’t have the same index in the original string.
+	func longestRepeatingSubsequence(_ s: String) -> Int
+
 }
 
 extension LCS {
@@ -68,7 +86,6 @@ extension LCS {
 	}
 
 	func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
-
 		let (m, n) = (text1.count, text2.count)
 		let arr1 = Array(text1)
 		let arr2 = Array(text2)
