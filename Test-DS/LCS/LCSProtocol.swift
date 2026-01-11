@@ -14,7 +14,8 @@ protocol LCS {
 	func longestCommonSubsequenceMemo(_ text1: String, _ text2: String) -> Int
 	/// Top Down
 	func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int
-
+	/// Top Down for Int
+	func longestCommonSubsequence(_ arr1: [Int], _ arr2: [Int]) -> Int
 	///	Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
 	///	Examples:
 	///	Input : X = “GeeksforGeeks”, y = “GeeksQuiz”
@@ -57,6 +58,13 @@ protocol LCS {
 	///	i.e. any ith character in the two subsequences shouldn’t have the same index in the original string.
 	func longestRepeatingSubsequence(_ s: String) -> Int
 
+	///	Given an integer array nums, return the length of the longest strictly increasing subsequence.
+	///	Example 1:
+	///	Input: nums = [10,9,2,5,3,7,101,18]
+	///	Output: 4
+	///	Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
+	func lengthOfLIS(_ nums: [Int]) -> Int
+
 }
 
 extension LCS {
@@ -89,6 +97,25 @@ extension LCS {
 		let (m, n) = (text1.count, text2.count)
 		let arr1 = Array(text1)
 		let arr2 = Array(text2)
+		guard !arr1.isEmpty && !arr2.isEmpty else {
+			return 0
+		}
+		var dp = Array(repeating: Array(repeating: 0, count: n + 1), count: m + 1)
+
+		for i in 1...m {
+			for j in 1...n {
+				if arr1[i - 1] == arr2[j - 1] {
+					dp[i][j] = 1 + dp[i - 1][j - 1]
+				} else {
+					dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+				}
+			}
+		}
+		return dp[m][n]
+	}
+
+	func longestCommonSubsequence(_ arr1: [Int], _ arr2: [Int]) -> Int {
+		let (m, n) = (arr1.count, arr2.count)
 		guard !arr1.isEmpty && !arr2.isEmpty else {
 			return 0
 		}

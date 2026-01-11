@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF04897A2F144F950065EF5A /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0489792F144F950065EF5A /* NumberOfIslands.swift */; };
+		FF04897B2F144F950065EF5A /* NumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0489792F144F950065EF5A /* NumberOfIslands.swift */; };
 		FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */; };
 		FF0C00CA2EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */; };
 		FF0CC8C32EE578CF00C5870D /* KnapsackRecursive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */; };
@@ -85,6 +87,8 @@
 		FF5207652C8CD22300B140AC /* Page2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207642C8CD22300B140AC /* Page2.swift */; };
 		FF5396A02F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53969F2F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift */; };
 		FF5396A12F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF53969F2F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift */; };
+		FF5396B12F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5396B02F0A66C600D09259 /* LCS+LengthOfLIS.swift */; };
+		FF5396B22F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5396B02F0A66C600D09259 /* LCS+LengthOfLIS.swift */; };
 		FF69F40C2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69F40B2ECE7B4F00FB87D3 /* RightSideView.swift */; };
 		FF69F40D2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69F40B2ECE7B4F00FB87D3 /* RightSideView.swift */; };
 		FF69F40F2ECE7B8F00FB87D3 /* RightSideViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69F40E2ECE7B8F00FB87D3 /* RightSideViewTests.swift */; };
@@ -180,6 +184,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF0489792F144F950065EF5A /* NumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberOfIslands.swift; sourceTree = "<group>"; };
 		FF0C00C82EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountNumSubsetsGivenDiff.swift; sourceTree = "<group>"; };
 		FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursive.swift; sourceTree = "<group>"; };
 		FF0CC8C52EE57D5400C5870D /* KnapsackRecursiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackRecursiveTests.swift; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 		FF5207592C89869C00B140AC /* Test_DSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_DSTests.swift; sourceTree = "<group>"; };
 		FF5207642C8CD22300B140AC /* Page2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.swift; sourceTree = "<group>"; };
 		FF53969F2F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+LongestRepeatingSubsequence.swift"; sourceTree = "<group>"; };
+		FF5396B02F0A66C600D09259 /* LCS+LengthOfLIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCS+LengthOfLIS.swift"; sourceTree = "<group>"; };
 		FF69F40B2ECE7B4F00FB87D3 /* RightSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideView.swift; sourceTree = "<group>"; };
 		FF69F40E2ECE7B8F00FB87D3 /* RightSideViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideViewTests.swift; sourceTree = "<group>"; };
 		FF7155592E374AF500585246 /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
@@ -281,6 +287,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF0489782F144F790065EF5A /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				FF0489792F144F950065EF5A /* NumberOfIslands.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
 		FF10444D2F010FCF00BD9741 /* LCS */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +307,7 @@
 				FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */,
 				FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */,
 				FF53969F2F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift */,
+				FF5396B02F0A66C600D09259 /* LCS+LengthOfLIS.swift */,
 				FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */,
 			);
 			path = LCS;
@@ -371,6 +386,7 @@
 				FFAB5C572EF3415100F183EC /* Templates */,
 				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
 				FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */,
+				FF0489782F144F790065EF5A /* Graphs */,
 				FFB124C12EDCF3AC00CD04C7 /* Backtracking */,
 				FF10444D2F010FCF00BD9741 /* LCS */,
 				FF230B7D2DE3C99F00AB74FC /* Binary Search  */,
@@ -610,6 +626,7 @@
 				FF0CC8FE2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FFAF22192EC282C6000E86D4 /* InvertTree.swift in Sources */,
 				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
+				FF5396B12F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
 				FF5396A02F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FFAB5C532EF0D89100F183EC /* TargetSum.swift in Sources */,
 				FF2061DB2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
@@ -620,6 +637,7 @@
 				FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FFB124BD2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
+				FF04897B2F144F950065EF5A /* NumberOfIslands.swift in Sources */,
 				FF10445C2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FF10443D2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
 				FFBA6FD92F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */,
@@ -672,6 +690,7 @@
 			files = (
 				FF2061D22E9C4B6E008DA0FA /* DiameterOfBinaryTree.swift in Sources */,
 				FF1FC3052E24CA8200951B00 /* LinkedListNode.swift in Sources */,
+				FF04897A2F144F950065EF5A /* NumberOfIslands.swift in Sources */,
 				FFB124BC2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
 				FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */,
 				FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */,
@@ -706,6 +725,7 @@
 				FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
+				FF5396B22F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
 				FF2061D52E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FF0CC8FF2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FF933B712CB322F800668ACE /* Page3.swift in Sources */,
