@@ -20,23 +20,22 @@ protocol GraphsQuestions {
 	func solve(_ board: inout [[Character]])
 	/// https://leetcode.com/problems/course-schedule/
 	func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool
+	/// https://leetcode.com/problems/minimum-depth-of-binary-tree/?envType=problem-list-v2&envId=depth-first-search
+	func minDepth(_ root: TreeNode?) -> Int
 
-	func hasCycleBFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
-	/// https://www.youtube.com/watch?v=zQ3zgFypzX4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=9
-	func hasCycleDFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
-
+	// MARK: Bipartite Graph Problems
 	/// https://www.youtube.com/watch?v=-vu34sct1g8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10
 	func isBipartiteBFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
 	/// https://www.youtube.com/watch?v=KG5YFfR0j8A&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=11
 	func isBipartiteDFS(adjacencyList: [Int : [Int]], vertices: Int) -> Bool
-
 	/// https://leetcode.com/problems/possible-bipartition/
 	func possibleBipartition(_ n: Int, _ dislikes: [[Int]]) -> Bool
 
+	// MARK: Graph Cycle Detection
 	func hasCycleDFSWithStateEnum(adjacencyList: [Int: [Int]]) -> Bool
 	/// https://www.youtube.com/watch?v=9twcmtQj4DU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12
 	func hasCycleDFS(adjacencyList: [Int: [Int]]) -> Bool
-
-	/// https://leetcode.com/problems/minimum-depth-of-binary-tree/?envType=problem-list-v2&envId=depth-first-search
-	func minDepth(_ root: TreeNode?) -> Int
+	func hasCycleBFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
+	/// https://www.youtube.com/watch?v=zQ3zgFypzX4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=9
+	func hasCycleDFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
 }
