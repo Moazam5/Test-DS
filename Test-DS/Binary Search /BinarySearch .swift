@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Testing 
 
 /*
  Easy
@@ -27,37 +26,56 @@ import Testing
  Output: -1
  */
 
-func search(_ nums: [Int], _ target: Int) -> Int {
-
-	func binarySearch(_ nums: [Int], target: Int, leftIndex: Int, rightIndex: Int) -> Int {
-		if leftIndex > rightIndex {
-			return -1
-		}
-		let midIndex = leftIndex + (rightIndex - leftIndex) / 2
-		if nums[midIndex] == target {
-			return midIndex
-		} else if nums[midIndex] < target {
-			return binarySearch(nums, target: target, leftIndex: midIndex + 1, rightIndex: rightIndex)
-		} else {
-			return binarySearch(nums, target: target, leftIndex: leftIndex, rightIndex: midIndex - 1)
-		}
-	}
-
-	return binarySearch(nums, target: target, leftIndex: 0, rightIndex: nums.count - 1)
+protocol BinarySearch {
+	func search(_ nums: [Int], _ target: Int) -> Int
+	/// https://leetcode.com/problems/search-a-2d-matrix/description/
+	func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool
 }
 
+class BinarySearchSolution: BinarySearch {
+	func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
+		let m = matrix.count
+				let n = matrix[0].count
 
-@Suite(.tags(.binarySearch)) struct BinarySearchTests {
-	@Test func searchWithEmptyArray() {
-		#expect(search([], 1) == -1)
+				var low = 0
+				var high = (m * n) - 1 // Total number of elements - 1
+
+				while low <= high {
+					let midIndex = low + (high - low) / 2 // 1D conceptual index
+
+					// Convert 1D index to 2D coordinates
+					let row = midIndex / n
+					let col = midIndex % n
+
+					let element = matrix[row][col]
+
+					if element == target {
+						return true
+					} else if element < target {
+						low = midIndex + 1
+					} else { // element > target
+						high = midIndex - 1
+					}
+				}
+
+				return false // Target not found
 	}
 
-	@Test func searchWithExamples() {
-		#expect(search([-1,0,2,4,6,8], 4) == 3)
-		#expect(search([1, 10, 14], 12) == 1)
-	}
-}
+	func search(_ nums: [Int], _ target: Int) -> Int {
+		func binarySearch(_ nums: [Int], target: Int, leftIndex: Int, rightIndex: Int) -> Int {
+			if leftIndex > rightIndex {
+				return -1
+			}
+			let midIndex = leftIndex + (rightIndex - leftIndex) / 2
+			if nums[midIndex] == target {
+				return midIndex
+			} else if nums[midIndex] < target {
+				return binarySearch(nums, target: target, leftIndex: midIndex + 1, rightIndex: rightIndex)
+			} else {
+				return binarySearch(nums, target: target, leftIndex: leftIndex, rightIndex: midIndex - 1)
+			}
+		}
 
-extension Tag {
-	@Tag static var binarySearch: Self
+		return binarySearch(nums, target: target, leftIndex: 0, rightIndex: nums.count - 1)
+	}
 }

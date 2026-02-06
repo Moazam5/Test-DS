@@ -1,13 +1,11 @@
 //
-//  Trees.swift
+//  TreeProblems.swift
 //  Test-DS
 //
-//  Created by Moazam Abass Mir on 7/29/25.
+//  Created by Moazam Abass Mir on 1/18/26.
 //
 
 import Foundation
-
-enum Trees {}
 
 /// Protocol to define all the methods that are supported.
 protocol TreesProblems {
@@ -25,6 +23,13 @@ protocol TreesProblems {
 	///
 	/// A height-balanced binary tree is defined as a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
 	func isBalanced(_ root: TreeNode?) -> Bool
+
+	/// Given the roots of two binary trees p and q, write a function to check if they are the same or not.
+	/// Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
+	/// https://leetcode.com/problems/same-tree/description/
+	func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool
+
+	func levelOrder(_ root: TreeNode?) -> [[Int]]
 
 	func bfs(_ root: TreeNode?) -> [Int]
 
@@ -44,64 +49,15 @@ protocol TreesProblems {
 
 	/// Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) in the tree.
 	func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int
+
+	/// https://leetcode.com/problems/insert-into-a-binary-search-tree/
+	func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode?
+
+	/// https://leetcode.com/problems/delete-node-in-a-bst/
+	func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode?
+
+	func findMinimum(_ node: TreeNode?) -> TreeNode?
+
+	func findSuccessor(root: TreeNode?, targetNode: TreeNode?) -> TreeNode?
+
 }
-
-extension TreesProblemsImpl {
-	/*
-
-			4
-		2		6
-	 1		3		7
-	 1 2 3 4 6 7
-
-	 */
-	func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
-		var index = 0  // Start at 0, increment when visiting
-		
-		func inorder(_ root: TreeNode?, index: inout Int) -> Int? {
-			guard let root else {
-				return nil
-			}
-
-			// Check left subtree
-			if let result = inorder(root.left, index: &index) {
-				return result  // Found it in left subtree!
-			}
-
-			// Visit current node
-			index += 1
-			if index == k {
-				return root.value  // Found it!
-			}
-
-			// Check right subtree
-			if let result = inorder(root.right, index: &index) {
-				return result  // Found it in right subtree!
-			}
-
-			return nil
-		}
-
-		return inorder(root, index: &index) ?? -1
-	}
-
-	func kthSmallestLessOptimal(_ root: TreeNode?, _ k: Int) -> Int {
-		var sortedValues: [Int] = []
-
-		func inorder(_ root: TreeNode?, values: inout [Int]) {
-			guard let root else {
-				return
-			}
-
-			inorder(root.left, values: &values)
-			values.append(root.value)
-			inorder(root.right, values: &values)
-		}
-		inorder(root, values: &sortedValues)
-		if sortedValues.count >= k {
-			return sortedValues[k - 1]
-		}
-		return -1
-	}
-}
-

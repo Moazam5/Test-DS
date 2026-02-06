@@ -16,3 +16,16 @@ class ListNode {
 		self.next = next
 	}
 }
+
+/*
+ It was create a function that takes a string and returns the length of the longest substring with no repeating letters.
+ */
+
+import Playgrounds
+#Playground {
+	func longestSubstring(_ str: String) -> Int {
+
+	}
+
+	longestSubstring("abccdef")
+}

@@ -26,7 +26,7 @@ func dailyTemperature(temperatures: [Int]) -> [Int] {
 	for (index, value) in temperatures.enumerated() {
 		while !stack.isEmpty, value > stack.last!.temp {
 			let element = stack.removeLast()
-			result[element.index] = index - element.index
+			result[element.index] = index - element.index  // the next higher temp
 		}
 		stack.append( (temp: value, index: index) )
 	}

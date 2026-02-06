@@ -25,4 +25,31 @@ extension TreesProblemsImpl {
 		root.right = left
 		return root
 	}
+
+	func invertTree2(_ root: TreeNode?) -> TreeNode? {
+		guard let root else {
+			return nil
+		}
+		let left = invertTree2(root.left)
+		let right = invertTree2(root.right)
+		root.left = right
+		root.right = left
+		return root
+	}
+	func maxPathSum(_ root: TreeNode?) -> Int {
+		var res = 0
+
+		func dfs(_ root: TreeNode?) -> Int {
+			guard let root else {
+				return 0
+			}
+			let left = max(0, dfs(root.left))
+			let right = max(0, dfs(root.right))
+			res = max(res, root.value + left + right)
+			return root.value + max(left, right)
+
+		}
+		dfs(root)
+		return res
+	}
 }

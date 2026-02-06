@@ -17,5 +17,5 @@ extension LCSProblems {
 
 #Playground {
 	let lcs = LCSProblems()
-	lcs.printLCS("abbc", "bb")
+	print(lcs.printLCS("abbc", "bb"))
 }

@@ -10,6 +10,8 @@ import Foundation
 //You are given the root of a binary tree. Return only the values of the nodes that are visible from the right side of the tree, ordered from top to bottom.
 
 extension TreesProblemsImpl {
+
+	// DFS
 	func rightSideView(_ root: TreeNode?) -> [Int] {
 		guard let root = root else {
 			return []
@@ -31,4 +33,28 @@ extension TreesProblemsImpl {
 		dfsHelper(root)
 		return result
 	}
+
+	// My BFS Approach
+	func rightSideView2(_ root: TreeNode?) -> [Int] {
+		 var res = [Int]()
+		 var q = Array<TreeNode?>()
+		 q.append(root)
+
+		 while !q.isEmpty {
+			 let len = q.count
+			 var rightNode: TreeNode?
+			 for _ in 0..<len {
+				 if let node = q.removeFirst() {
+					 rightNode = node
+					 q.append(node.left)
+					 q.append(node.right)
+				 }
+			 }
+			 if let right = rightNode {
+				 res.append(right.value)
+			 }
+		 }
+		 return res
+	 }
+
 }

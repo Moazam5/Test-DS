@@ -8,6 +8,7 @@
 import Foundation
 
 extension TreesProblemsImpl {
+	/// This is depth first traversal not depth first search, what are we searching? 
 	func dfs(_ root: TreeNode?) -> [Int] {
 		guard let root = root else {
 			return []

@@ -43,4 +43,24 @@ func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
 	return stepSet.count
 }
 
+extension StackSolution {
+	func carFleet(_ target: Int, _ position: [Int], _ speed: [Int]) -> Int {
+		var pair = zip(position, speed).map { ($0, $1) }
+		pair.sort { $0.0 > $1.0 }
+
+		var fleetCount = 1
+		var prevTime = Double((target - pair[0].0)) / Double(pair[0].1)
+		for i in 1..<pair.count {
+			let car = pair[i]
+			let currentDistance = target - car.0
+			let currentTime = Double(currentDistance) / Double(car.1)
+
+			if currentTime > prevTime {
+				fleetCount += 1
+				prevTime = currentTime
+			}
+		}
+		return fleetCount
+	}
+}
 

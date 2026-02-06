@@ -30,11 +30,3 @@ func searchMatrix(_ matrix: [[Int]], target: Int) -> Bool {
 	let index = binarySearch(rowWithTarget, target: target, leftIndex: 0, rightIndex: rowWithTarget.count - 1)
 	return index >= 0
 }
-
-
-@Suite(.tags(.binarySearch))
-struct BinarySearchMatrixTests {
-	@Test func searchMatrixWithExampleOne() {
-		#expect(searchMatrix([[1,2,4,8],[10,11,12,13],[14,20,30,40]], target: 10) == true)
-	}
-}

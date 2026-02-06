@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Testing
+
 /*
  You are given a string s consisting of the following characters: '(', ')', '{', '}', '[' and ']'.
 
@@ -36,26 +36,26 @@ import Testing
  Explanation: The brackets are not closed in the correct order.
  */
 
-func isValid(_ str: String) -> Bool {
-	var stack = [Character]()
-	let dict: [Character: Character] = ["}": "{", ")": "(", "]": "["]
-	for char in str {
-		if char == "(" || char == "[" || char == "{" {
-			stack.append(char)
-		} else if let matchingParen = dict[char] {
-			let last = stack.last
-			if stack.isEmpty || matchingParen != last {
-				return false
-			}
-			stack.removeLast()
-		}
+public class StackSolution: Stack {
+	func maxArea(_ heights: [Int]) -> Int {
+		return 0
 	}
-	return stack.isEmpty
+	
+	func isValid(_ str: String) -> Bool {
+		var stack = [Character]()
+		let dict: [Character: Character] = ["}": "{", ")": "(", "]": "["]
+		for char in str {
+			if char == "(" || char == "[" || char == "{" {
+				stack.append(char)
+			} else if let matchingParen = dict[char] {
+				let last = stack.last
+				if stack.isEmpty || matchingParen != last {
+					return false
+				}
+				stack.removeLast()
+			}
+		}
+		return stack.isEmpty
+	}
 }
 
-struct TestClassValidateParenthesis {
-	@Test
-	func test1() {
-		#expect(isValid("[(])") == false)
-	}
-}
