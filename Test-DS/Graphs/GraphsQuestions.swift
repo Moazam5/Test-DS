@@ -36,4 +36,7 @@ protocol GraphsQuestions {
 	func hasCycleDFSWithStateEnum(adjacencyList: [Int: [Int]]) -> Bool
 	/// https://www.youtube.com/watch?v=9twcmtQj4DU&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12
 	func hasCycleDFS(adjacencyList: [Int: [Int]]) -> Bool
+
+	/// https://leetcode.com/problems/minimum-depth-of-binary-tree/?envType=problem-list-v2&envId=depth-first-search
+	func minDepth(_ root: TreeNode?) -> Int
 }
