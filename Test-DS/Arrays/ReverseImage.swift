@@ -10,7 +10,7 @@ import Foundation
 extension ArraySolutions {
 	func flipAndInvertImage(_ image: [[Int]]) -> [[Int]] {
 		var reversed = image.map { $0.reversed() }
-
+		return [[]]
 		
 	}
 }

@@ -77,4 +77,34 @@ class GraphsImpl: GraphsQuestions {
 		return count
 	}
 
+	func numIslands2(_ grid: [[Character]]) -> Int {
+		let m = grid.count
+		let n = grid.first!.count
+		var grid = grid
+		let directions = [(0,1), (1,0), (-1,0), (0,-1)]
+		var count = 0
+
+
+		for i in 0..<m {
+			for j in 0..<n {
+				if grid[i][j] == "1" {
+					count += 1
+					dfs(i, j)
+				}
+			}
+		}
+
+		func dfs(_ i: Int, _ j: Int) {
+			guard i >= 0 && i < m && j >= 0 && j < n && grid[i][j] == "1" else {
+				return
+			}
+			grid[i][j] = "0"
+
+			for dir in directions {
+				dfs(dir.0 + i, dir.1 + j)
+			}
+		}
+		return count
+	}
+
 }
