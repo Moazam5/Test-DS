@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct LinkedListProblems {
+protocol LinkedListProblems {
+	func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
+}
+
+struct LinkedListSolutions: LinkedListProblems {
 	func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? {
 		var fast = head
 		var slow = head
