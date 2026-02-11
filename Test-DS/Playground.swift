@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import Testing
-
+import Playgrounds
 
 func playground() {
 	func knapsackTopDown(weights: [Int], values: [Int], capacity: Int) -> Int {
@@ -44,10 +43,11 @@ func playground() {
 	print(maxVal)
 }
 
-@Suite struct Playground {
-	@Test("Playground")
-	func testPlayground() async throws {
-		playground()
-	}
+#Playground {
+	let x = 2
+	print(x / 2)
+	let res = ["a"]
+	res.joined(separator: "").reversed()
+	
 
 }

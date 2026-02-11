@@ -128,7 +128,6 @@
 		FFB124C32EDCF3C700CD04C7 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB124C22EDCF3C700CD04C7 /* Subsets.swift */; };
 		FFB124C42EDCF3C700CD04C7 /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB124C22EDCF3C700CD04C7 /* Subsets.swift */; };
 		FFB34DD72DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD62DA7176300D2C7A8 /* LongestConsecutiveSubsequence.swift */; };
-		FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD82DA725CB00D2C7A8 /* Playground.swift */; };
 		FFB6559D2F174FB600C50081 /* Graphs+SearchMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6559C2F174FB600C50081 /* Graphs+SearchMatrix.swift */; };
 		FFB6559E2F174FB600C50081 /* Graphs+SearchMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6559C2F174FB600C50081 /* Graphs+SearchMatrix.swift */; };
 		FFBA6FCD2F077AA7000579D5 /* LCSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FCC2F077AA7000579D5 /* LCSTests.swift */; };
@@ -153,6 +152,11 @@
 		FFEDFF172F36AA3A00034823 /* MinDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF152F36AA3A00034823 /* MinDepth.swift */; };
 		FFEDFF192F36FA4700034823 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF182F36FA4700034823 /* FloodFill.swift */; };
 		FFEDFF1A2F36FA4700034823 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF182F36FA4700034823 /* FloodFill.swift */; };
+		FFEDFF1F2F3C182800034823 /* Playground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB34DD82DA725CB00D2C7A8 /* Playground.swift */; };
+		FFEDFF212F3C34EB00034823 /* String+ReverseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */; };
+		FFEDFF222F3C34EB00034823 /* String+ReverseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */; };
+		FFEDFF242F3D386700034823 /* Graph+AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */; };
+		FFEDFF252F3D386700034823 /* Graph+AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -327,6 +331,8 @@
 		FFEDFEE02F3592EB00034823 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
 		FFEDFF152F36AA3A00034823 /* MinDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinDepth.swift; sourceTree = "<group>"; };
 		FFEDFF182F36FA4700034823 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
+		FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseNumber.swift"; sourceTree = "<group>"; };
+		FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph+AdjacencyList.swift"; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -633,6 +639,7 @@
 				FFFC67A52F1CC8BE004FA6E2 /* ArrayQuestions.swift */,
 				FFFC67A82F1CC8D2004FA6E2 /* ArraySolutions.swift */,
 				FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */,
+				FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */,
 			);
 			path = Arrays;
 			sourceTree = "<group>";
@@ -655,6 +662,7 @@
 				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
 				FFFC68192F24C585004FA6E2 /* DirectedGraphCycleDFS.swift */,
 				FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */,
+				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 			);
 			path = "Graph Cycle Detection";
 			sourceTree = "<group>";
@@ -774,6 +782,7 @@
 				FFFC68062F241083004FA6E2 /* UndirectedGraphCycleBFS.swift in Sources */,
 				FF2061D82E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC67A92F1CC8D2004FA6E2 /* ArraySolutions.swift in Sources */,
+				FFEDFF212F3C34EB00034823 /* String+ReverseNumber.swift in Sources */,
 				FF0CC8FE2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FFEDFF192F36FA4700034823 /* FloodFill.swift in Sources */,
 				FFFC678F2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
@@ -802,6 +811,7 @@
 				FF10445C2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FF10443D2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
 				FFBA6FD92F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */,
+				FFEDFF1F2F3C182800034823 /* Playground.swift in Sources */,
 				FFFC67C02F1F58AA004FA6E2 /* IsSame.swift in Sources */,
 				FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 				FF2061CD2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
@@ -841,6 +851,7 @@
 				FFFC67932F1B87C3004FA6E2 /* ValidateParenthesis.swift in Sources */,
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
+				FFEDFF242F3D386700034823 /* Graph+AdjacencyList.swift in Sources */,
 				FFFC681E2F24D00F004FA6E2 /* CanFinish.swift in Sources */,
 				FFFC68092F242582004FA6E2 /* UndirectedGraphCycleDFS.swift in Sources */,
 				FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
@@ -882,7 +893,6 @@
 				FF2061CF2E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
 				FFFC678E2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C42F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
-				FFB34DD92DA725CB00D2C7A8 /* Playground.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC681D2F24D00F004FA6E2 /* CanFinish.swift in Sources */,
 				FF69F40D2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
@@ -891,6 +901,7 @@
 				FFFC67922F1B8790004FA6E2 /* EvalRPN.swift in Sources */,
 				FF0CC8C72EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */,
+				FFEDFF252F3D386700034823 /* Graph+AdjacencyList.swift in Sources */,
 				FFBA6FDA2F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */,
 				FFFC67CC2F20D4CB004FA6E2 /* CloneGraph.swift in Sources */,
 				FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */,
@@ -953,6 +964,7 @@
 				FF0CC8EF2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
 				FFFC67CA2F20D489004FA6E2 /* GraphsQuestions.swift in Sources */,
 				FFB124C32EDCF3C700CD04C7 /* Subsets.swift in Sources */,
+				FFEDFF222F3C34EB00034823 /* String+ReverseNumber.swift in Sources */,
 				FF0CC8F12EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FFB124BF2EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FFFC680A2F242582004FA6E2 /* UndirectedGraphCycleDFS.swift in Sources */,

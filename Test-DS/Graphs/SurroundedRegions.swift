@@ -17,6 +17,7 @@ extension GraphsImpl {
 		let (ROWS, COLS) = (board.count, board[0].count)
 		let directions = [(0,1), (1,0), (-1,0), (0,-1)]
 
+		// Left right column.
 		for i in 0..<ROWS {
 			if board[i][0] == "O" {
 				dfs(i, 0)
@@ -26,6 +27,7 @@ extension GraphsImpl {
 			}
 		}
 
+		// Top Bottom rows.
 		for j in 0..<COLS {
 			if board[0][j] == "O" {
 				dfs(0, j)
@@ -35,7 +37,7 @@ extension GraphsImpl {
 			}
 		}
 
-
+		// Update all T's back to O
 		for i in 0..<ROWS {
 			for j in 0..<COLS {
 				if board[i][j] == "T" {
