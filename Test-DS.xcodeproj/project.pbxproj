@@ -157,6 +157,8 @@
 		FFEDFF222F3C34EB00034823 /* String+ReverseNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */; };
 		FFEDFF242F3D386700034823 /* Graph+AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */; };
 		FFEDFF252F3D386700034823 /* Graph+AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */; };
+		FFEDFF272F3D392400034823 /* CountComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF262F3D392400034823 /* CountComponents.swift */; };
+		FFEDFF282F3D392400034823 /* CountComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF262F3D392400034823 /* CountComponents.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -203,8 +205,8 @@
 		FFFC68132F244B31004FA6E2 /* PossibleBipartition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68112F244B31004FA6E2 /* PossibleBipartition.swift */; };
 		FFFC68172F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */; };
 		FFFC68182F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */; };
-		FFFC681A2F24C585004FA6E2 /* DirectedGraphCycleDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* DirectedGraphCycleDFS.swift */; };
-		FFFC681B2F24C585004FA6E2 /* DirectedGraphCycleDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* DirectedGraphCycleDFS.swift */; };
+		FFFC681A2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */; };
+		FFFC681B2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */; };
 		FFFC681D2F24D00F004FA6E2 /* CanFinish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */; };
 		FFFC681E2F24D00F004FA6E2 /* CanFinish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */; };
 		FFFC68202F25935B004FA6E2 /* ReverseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */; };
@@ -333,6 +335,7 @@
 		FFEDFF182F36FA4700034823 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
 		FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseNumber.swift"; sourceTree = "<group>"; };
 		FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph+AdjacencyList.swift"; sourceTree = "<group>"; };
+		FFEDFF262F3D392400034823 /* CountComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponents.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -356,7 +359,7 @@
 		FFFC680E2F2445D8004FA6E2 /* IsBipartiteDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsBipartiteDFS.swift; sourceTree = "<group>"; };
 		FFFC68112F244B31004FA6E2 /* PossibleBipartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleBipartition.swift; sourceTree = "<group>"; };
 		FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionDFSWithState.swift; sourceTree = "<group>"; };
-		FFFC68192F24C585004FA6E2 /* DirectedGraphCycleDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectedGraphCycleDFS.swift; sourceTree = "<group>"; };
+		FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionDFS.swift; sourceTree = "<group>"; };
 		FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanFinish.swift; sourceTree = "<group>"; };
 		FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -394,6 +397,7 @@
 				FFFC67FF2F21AF7D004FA6E2 /* OrangesRotting.swift */,
 				FFFC68022F22DC95004FA6E2 /* SurroundedRegions.swift */,
 				FFEDFF182F36FA4700034823 /* FloodFill.swift */,
+				FFEDFF262F3D392400034823 /* CountComponents.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 			);
@@ -659,8 +663,8 @@
 			children = (
 				FFFC68052F241083004FA6E2 /* UndirectedGraphCycleBFS.swift */,
 				FFFC68082F242582004FA6E2 /* UndirectedGraphCycleDFS.swift */,
+				FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */,
 				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
-				FFFC68192F24C585004FA6E2 /* DirectedGraphCycleDFS.swift */,
 				FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */,
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 			);
@@ -847,7 +851,7 @@
 				FFFC67FD2F219BA9004FA6E2 /* Exist.swift in Sources */,
 				FFFC68122F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
-				FFFC681B2F24C585004FA6E2 /* DirectedGraphCycleDFS.swift in Sources */,
+				FFFC681B2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
 				FFFC67932F1B87C3004FA6E2 /* ValidateParenthesis.swift in Sources */,
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
@@ -865,6 +869,7 @@
 				FFFC67C32F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
 				FFFC67BE2F1DD86B004FA6E2 /* InsertIntoTree.swift in Sources */,
 				FF0CC8EE2EEBD75E00C5870D /* EqualSumPartition.swift in Sources */,
+				FFEDFF282F3D392400034823 /* CountComponents.swift in Sources */,
 				FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */,
 				FFFC678C2F1B7EC2004FA6E2 /* StackProtocol.swift in Sources */,
 				FFBA6FD62F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
@@ -906,6 +911,7 @@
 				FFFC67CC2F20D4CB004FA6E2 /* CloneGraph.swift in Sources */,
 				FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */,
 				FFAC3E502E392172001214BB /* TreeNode.swift in Sources */,
+				FFEDFF272F3D392400034823 /* CountComponents.swift in Sources */,
 				FFFC68132F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
 				FF1FC3082E24CADE00951B00 /* LinkedList.swift in Sources */,
 				FF2736842E66E0FE00E346CB /* DFS.swift in Sources */,
@@ -921,7 +927,7 @@
 				FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */,
 				FF5207652C8CD22300B140AC /* Page2.swift in Sources */,
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
-				FFFC681A2F24C585004FA6E2 /* DirectedGraphCycleDFS.swift in Sources */,
+				FFFC681A2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
 				FFFC680C2F242F0E004FA6E2 /* IsBipartiteBFS.swift in Sources */,
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,

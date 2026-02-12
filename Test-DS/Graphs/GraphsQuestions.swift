@@ -24,6 +24,8 @@ protocol GraphsQuestions {
 	func minDepth(_ root: TreeNode?) -> Int
 	/// https://leetcode.com/problems/flood-fill/
 	func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ color: Int) -> [[Int]]
+	/// https://neetcode.io/problems/count-connected-components
+	func countComponents(_ n: Int, _ edges: [[Int]]) -> Int
 
 	// MARK: Bipartite Graph Problems
 	/// https://www.youtube.com/watch?v=-vu34sct1g8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10

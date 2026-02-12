@@ -23,7 +23,7 @@ extension GraphsImpl {
 						if colors[neighbor] == -1 { // Not in the list so color it
 							colors[neighbor] = 1 - colors[curr]
 							q.append(neighbor)
-						} else if colors[neighbor] == colors[curr] { // If neighbor has same color, NOT bipartite
+						} else if colors[neighbor] == colors[curr] { // Check neighbor, if neighbor has same color, NOT bipartite
 							return false
 						}
 					}
