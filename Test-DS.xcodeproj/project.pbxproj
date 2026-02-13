@@ -159,6 +159,8 @@
 		FFEDFF252F3D386700034823 /* Graph+AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */; };
 		FFEDFF272F3D392400034823 /* CountComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF262F3D392400034823 /* CountComponents.swift */; };
 		FFEDFF282F3D392400034823 /* CountComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF262F3D392400034823 /* CountComponents.swift */; };
+		FFEDFF2B2F3F285400034823 /* TopologicalSortDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */; };
+		FFEDFF2C2F3F285400034823 /* TopologicalSortDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -336,6 +338,7 @@
 		FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReverseNumber.swift"; sourceTree = "<group>"; };
 		FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graph+AdjacencyList.swift"; sourceTree = "<group>"; };
 		FFEDFF262F3D392400034823 /* CountComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountComponents.swift; sourceTree = "<group>"; };
+		FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSortDFS.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -400,6 +403,7 @@
 				FFEDFF262F3D392400034823 /* CountComponents.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
+				FFEDFF292F3F284500034823 /* Topological Sort */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -629,6 +633,14 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
+		FFEDFF292F3F284500034823 /* Topological Sort */ = {
+			isa = PBXGroup;
+			children = (
+				FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */,
+			);
+			path = "Topological Sort";
+			sourceTree = "<group>";
+		};
 		FFFC67862F1B7C33004FA6E2 /* PayPal */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,6 +839,7 @@
 				FF2061D62E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
+				FFEDFF2C2F3F285400034823 /* TopologicalSortDFS.swift in Sources */,
 				FF2061D02E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
 				FF1044402EFF39B000BD9741 /* CoinChange-II.swift in Sources */,
 				FFA067FF2DCFFC8500881478 /* CarFleet.swift in Sources */,
@@ -904,6 +917,7 @@
 				FFFC67A72F1CC8BE004FA6E2 /* ArrayQuestions.swift in Sources */,
 				FF1044412EFF39B000BD9741 /* CoinChange-II.swift in Sources */,
 				FFFC67922F1B8790004FA6E2 /* EvalRPN.swift in Sources */,
+				FFEDFF2B2F3F285400034823 /* TopologicalSortDFS.swift in Sources */,
 				FF0CC8C72EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */,
 				FFEDFF252F3D386700034823 /* Graph+AdjacencyList.swift in Sources */,
