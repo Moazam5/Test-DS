@@ -9,6 +9,7 @@ import Foundation
 import Playgrounds
 
 extension GraphsImpl {
+	/// https://www.youtube.com/watch?v=73sneFXuTEg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14
 	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int] {
 		var indegree = Array(repeating: 0, count: vertices)
 		var q = Array<Int>()

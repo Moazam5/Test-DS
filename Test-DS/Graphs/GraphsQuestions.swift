@@ -42,4 +42,14 @@ protocol GraphsQuestions {
 	func hasCycleBFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
 	/// https://www.youtube.com/watch?v=zQ3zgFypzX4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=9
 	func hasCycleDFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool
+	/// https://www.youtube.com/watch?v=iTBaI90lpDQ&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=15
+	func hasCycleKahns(adjacencyList: [Int : [Int]]) -> Bool
+	/// Detailed version
+	func hasCycleKahnsDetailed(adjacencyList: [Int : [Int]], vertices: Int) -> Bool
+
+	// MARK: Topological Sort
+	/// https://www.youtube.com/watch?v=5lZ0iJMrUMk&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=13
+	func topologicalSort(adjacencyList: [Int : [Int]], vertices: Int) -> [Int]
+	/// Also known as Kahn's Algorithm ~ https://www.youtube.com/watch?v=73sneFXuTEg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14
+	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int]
 }
