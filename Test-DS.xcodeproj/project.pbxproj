@@ -645,6 +645,25 @@
 			path = "Topological Sort";
 			sourceTree = "<group>";
 		};
+		FFEDFF302F3FE04200034823 /* Undirected Graph */ = {
+			isa = PBXGroup;
+			children = (
+				FFFC68052F241083004FA6E2 /* UndirectedGraphCycleBFS.swift */,
+				FFFC68082F242582004FA6E2 /* UndirectedGraphCycleDFS.swift */,
+			);
+			path = "Undirected Graph";
+			sourceTree = "<group>";
+		};
+		FFEDFF312F3FE04C00034823 /* Directed Graph */ = {
+			isa = PBXGroup;
+			children = (
+				FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */,
+				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
+				FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */,
+			);
+			path = "Directed Graph";
+			sourceTree = "<group>";
+		};
 		FFFC67862F1B7C33004FA6E2 /* PayPal */ = {
 			isa = PBXGroup;
 			children = (
@@ -677,10 +696,8 @@
 		FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */ = {
 			isa = PBXGroup;
 			children = (
-				FFFC68052F241083004FA6E2 /* UndirectedGraphCycleBFS.swift */,
-				FFFC68082F242582004FA6E2 /* UndirectedGraphCycleDFS.swift */,
-				FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */,
-				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
+				FFEDFF302F3FE04200034823 /* Undirected Graph */,
+				FFEDFF312F3FE04C00034823 /* Directed Graph */,
 				FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */,
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 			);
