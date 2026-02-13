@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
 	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int] {
@@ -37,4 +38,16 @@ extension GraphsImpl {
 		// Cycle check
 		return topoResult.count == vertices ? topoResult : []
 	}
+}
+
+#Playground {
+	let adj: [Int: [Int]] = [
+		5: [2, 0],
+		4: [0, 1],
+		2: [3],
+		3: [1]
+	]
+	let vertices = 6
+	let graph = GraphsImpl()
+	_ = graph.topologicalSortBFS(adjacencyList: adj, vertices: vertices)
 }
