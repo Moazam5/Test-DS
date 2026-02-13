@@ -30,7 +30,7 @@ extension GraphsImpl {
 				return true
 			}
 			state[node] = .gray // mark as visiting the current node
-			
+
 			// visit the neighbors for the current node
 			if let neighbors = adjacencyList[node] {
 				for neighbor in neighbors {
