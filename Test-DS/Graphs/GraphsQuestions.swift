@@ -20,6 +20,8 @@ protocol GraphsQuestions {
 	func solve(_ board: inout [[Character]])
 	/// Course Schedule I: https://leetcode.com/problems/course-schedule/
 	func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool
+	/// https://neetcode.io/problems/course-schedule-ii/solution
+	func findOrder(_ numCourses: Int, _ prerequisites: [[Int]]) -> [Int]
 	/// https://leetcode.com/problems/minimum-depth-of-binary-tree/?envType=problem-list-v2&envId=depth-first-search
 	func minDepth(_ root: TreeNode?) -> Int
 	/// https://leetcode.com/problems/flood-fill/

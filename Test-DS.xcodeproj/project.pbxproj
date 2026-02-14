@@ -165,6 +165,8 @@
 		FFEDFF2F2F3FDAB900034823 /* TopologicalSortBFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF2D2F3FDAB900034823 /* TopologicalSortBFS.swift */; };
 		FFEDFF332F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */; };
 		FFEDFF342F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */; };
+		FFEDFF362F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */; };
+		FFEDFF372F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -345,6 +347,7 @@
 		FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSortDFS.swift; sourceTree = "<group>"; };
 		FFEDFF2D2F3FDAB900034823 /* TopologicalSortBFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSortBFS.swift; sourceTree = "<group>"; };
 		FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionKahnsAlgorithm.swift; sourceTree = "<group>"; };
+		FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseSchedule-II.swift"; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -664,6 +667,7 @@
 				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
 				FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */,
 				FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */,
+				FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */,
 			);
 			path = "Directed Graph";
 			sourceTree = "<group>";
@@ -843,6 +847,7 @@
 				FF1044582F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
+				FFEDFF362F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */,
 				FFB6559E2F174FB600C50081 /* Graphs+SearchMatrix.swift in Sources */,
 				FFEDFF172F36AA3A00034823 /* MinDepth.swift in Sources */,
 				FFFC67A62F1CC8BE004FA6E2 /* ArrayQuestions.swift in Sources */,
@@ -970,6 +975,7 @@
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
 				FFFC681A2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
 				FFFC680C2F242F0E004FA6E2 /* IsBipartiteBFS.swift in Sources */,
+				FFEDFF372F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */,
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,
 				FFEDFF1A2F36FA4700034823 /* FloodFill.swift in Sources */,
