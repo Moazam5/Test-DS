@@ -22,6 +22,7 @@ extension GraphsImpl {
 					dfs(neighbor)
 				}
 			}
+			// Add to stack after visiting all neighbors.
 			stack.append(node)
 		}
 
@@ -44,8 +45,7 @@ extension GraphsImpl {
 
 			for neighbor in adjacencyList[node, default: []] { // This is cleaner
 				dfs(neighbor)
-			}
-
+		}
 			stack.append(node)  // postorder
 		}
 

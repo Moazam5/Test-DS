@@ -169,6 +169,8 @@
 		FFEDFF372F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */; };
 		FFEDFF392F4031B400034823 /* AlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF382F4031B400034823 /* AlienDictionary.swift */; };
 		FFEDFF3A2F4031B400034823 /* AlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF382F4031B400034823 /* AlienDictionary.swift */; };
+		FFEDFF3D2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */; };
+		FFEDFF3E2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -351,6 +353,7 @@
 		FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionKahnsAlgorithm.swift; sourceTree = "<group>"; };
 		FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseSchedule-II.swift"; sourceTree = "<group>"; };
 		FFEDFF382F4031B400034823 /* AlienDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienDictionary.swift; sourceTree = "<group>"; };
+		FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathDirectedGraph.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -413,6 +416,8 @@
 				FFFC68022F22DC95004FA6E2 /* SurroundedRegions.swift */,
 				FFEDFF182F36FA4700034823 /* FloodFill.swift */,
 				FFEDFF262F3D392400034823 /* CountComponents.swift */,
+				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
+				FFEDFF3B2F40801600034823 /* Shortest Path */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
@@ -676,6 +681,14 @@
 			path = "Directed Graph";
 			sourceTree = "<group>";
 		};
+		FFEDFF3B2F40801600034823 /* Shortest Path */ = {
+			isa = PBXGroup;
+			children = (
+				FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */,
+			);
+			path = "Shortest Path";
+			sourceTree = "<group>";
+		};
 		FFFC67862F1B7C33004FA6E2 /* PayPal */ = {
 			isa = PBXGroup;
 			children = (
@@ -710,7 +723,6 @@
 			children = (
 				FFEDFF302F3FE04200034823 /* Undirected Graph */,
 				FFEDFF312F3FE04C00034823 /* Directed Graph */,
-				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 			);
 			path = "Graph Cycle Detection";
 			sourceTree = "<group>";
@@ -891,6 +903,7 @@
 				FFB124C42EDCF3C700CD04C7 /* Subsets.swift in Sources */,
 				FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */,
 				FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */,
+				FFEDFF3D2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */,
 				FFFC67BB2F1DBAE4004FA6E2 /* TreeProblems.swift in Sources */,
 				FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FFFC67C92F20D489004FA6E2 /* GraphsQuestions.swift in Sources */,
@@ -946,6 +959,7 @@
 				FF1044502F01100500BD9741 /* LCSRecursive.swift in Sources */,
 				FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FF2061CF2E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
+				FFEDFF3E2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */,
 				FFFC678E2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C42F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
