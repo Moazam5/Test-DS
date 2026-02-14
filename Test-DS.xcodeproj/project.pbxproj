@@ -213,8 +213,8 @@
 		FFFC68182F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */; };
 		FFFC681A2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */; };
 		FFFC681B2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */; };
-		FFFC681D2F24D00F004FA6E2 /* CanFinish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */; };
-		FFFC681E2F24D00F004FA6E2 /* CanFinish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */; };
+		FFFC681D2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */; };
+		FFFC681E2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */; };
 		FFFC68202F25935B004FA6E2 /* ReverseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */; };
 		FFFC68212F25935B004FA6E2 /* ReverseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */; };
 /* End PBXBuildFile section */
@@ -369,7 +369,7 @@
 		FFFC68112F244B31004FA6E2 /* PossibleBipartition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PossibleBipartition.swift; sourceTree = "<group>"; };
 		FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionDFSWithState.swift; sourceTree = "<group>"; };
 		FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionDFS.swift; sourceTree = "<group>"; };
-		FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanFinish.swift; sourceTree = "<group>"; };
+		FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseSchedule-I.swift"; sourceTree = "<group>"; };
 		FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -663,6 +663,7 @@
 				FFFC68192F24C585004FA6E2 /* CycleDetectionDFS.swift */,
 				FFFC68162F24C369004FA6E2 /* CycleDetectionDFSWithState.swift */,
 				FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */,
+				FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */,
 			);
 			path = "Directed Graph";
 			sourceTree = "<group>";
@@ -701,7 +702,6 @@
 			children = (
 				FFEDFF302F3FE04200034823 /* Undirected Graph */,
 				FFEDFF312F3FE04C00034823 /* Directed Graph */,
-				FFFC681C2F24D00F004FA6E2 /* CanFinish.swift */,
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 			);
 			path = "Graph Cycle Detection";
@@ -895,7 +895,7 @@
 				FF0D98EC2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1818A72E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFEDFF242F3D386700034823 /* Graph+AdjacencyList.swift in Sources */,
-				FFFC681E2F24D00F004FA6E2 /* CanFinish.swift in Sources */,
+				FFFC681E2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */,
 				FFFC68092F242582004FA6E2 /* UndirectedGraphCycleDFS.swift in Sources */,
 				FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
 				FFFC68042F22DC95004FA6E2 /* SurroundedRegions.swift in Sources */,
@@ -939,7 +939,7 @@
 				FFFC678E2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C42F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
-				FFFC681D2F24D00F004FA6E2 /* CanFinish.swift in Sources */,
+				FFFC681D2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */,
 				FF69F40D2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
 				FFFC67A72F1CC8BE004FA6E2 /* ArrayQuestions.swift in Sources */,
 				FF1044412EFF39B000BD9741 /* CoinChange-II.swift in Sources */,

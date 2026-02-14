@@ -8,8 +8,8 @@
 import Foundation
 
 extension GraphsImpl {
-	// Helper method to create adjacency list from the given list of edges.
-	func createAdjacencyList(from edges: [[Int]]) -> [Int: [Int]] {
+	// Helper method to create undirected adjacency list from the given list of edges.
+	func createUndirectedAdjacencyList(from edges: [[Int]]) -> [Int: [Int]] {
 		var adjacencyList: [Int: [Int]] = [:]
 
 		for edge in edges {
@@ -18,6 +18,21 @@ extension GraphsImpl {
 
 			adjacencyList[u, default: []].append(v)
 			adjacencyList[v, default: []].append(u)
+		}
+		return adjacencyList
+	}
+
+	// Helper method to create directed adjacency list from the given list of edges.
+	func createDirectedAdjacencyList(from edges: [[Int]], vertices: Int) -> [Int: [Int]] {
+		var adjacencyList: [Int: [Int]] = [:]
+		for i in 0..<vertices {
+			adjacencyList[i] = []
+		}
+
+		for edge in edges {
+			let key = edge[0]
+			let val = edge[1]
+			adjacencyList[key, default: []].append(val)
 		}
 		return adjacencyList
 	}

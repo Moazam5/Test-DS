@@ -18,7 +18,7 @@ protocol GraphsQuestions {
 	func orangesRotting(_ grid: [[Int]]) -> Int
 	/// https://leetcode.com/problems/surrounded-regions/
 	func solve(_ board: inout [[Character]])
-	/// https://leetcode.com/problems/course-schedule/
+	/// Course Schedule I: https://leetcode.com/problems/course-schedule/
 	func canFinish(_ numCourses: Int, _ prerequisites: [[Int]]) -> Bool
 	/// https://leetcode.com/problems/minimum-depth-of-binary-tree/?envType=problem-list-v2&envId=depth-first-search
 	func minDepth(_ root: TreeNode?) -> Int

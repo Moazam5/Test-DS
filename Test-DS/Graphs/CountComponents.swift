@@ -9,7 +9,7 @@ import Foundation
 
 extension GraphsImpl {
 	func countComponents(_ n: Int, _ edges: [[Int]]) -> Int {
-		let adjacencyList = self.createAdjacencyList(from: edges)
+		let adjacencyList = self.createUndirectedAdjacencyList(from: edges)
 		var count = 0
 		var visited = Set<Int>()
 
