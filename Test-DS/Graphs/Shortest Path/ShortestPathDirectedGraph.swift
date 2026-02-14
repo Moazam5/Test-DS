@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
 	/// edge[i][0] to edge[i][1] with a distance of edge[i][2] for all i.
@@ -60,6 +61,22 @@ extension GraphsImpl {
 				}
 			}
 		}
-		return distances
+		return distances.map { $0 == Int.max ? -1: $0 }
 	}
+}
+
+
+#Playground {
+	let graph = GraphsImpl()
+	let edges = [
+		[0,1,2],
+		[1,3,1],
+		[2,3,3],
+		[4,0,3],
+		[4,2,1],
+		[5,4,1],
+		[6,4,2],
+		[6,5,3]
+	]
+	_ = graph.shortestPath(7, 8, edges: edges)
 }
