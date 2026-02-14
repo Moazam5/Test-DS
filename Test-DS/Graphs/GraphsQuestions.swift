@@ -56,4 +56,10 @@ protocol GraphsQuestions {
 	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int]
 	/// Alien Dictionary ~ https://neetcode.io/problems/foreign-dictionary/question?list=neetcode150
 	func foreignDictionary(_ words: [String]) -> String
+
+	// MARK: Shortest Path
+	/// Directed Graph
+	func shortestPath(_ n: Int, _ m: Int, edges: [[Int]]) -> [Int]
+	/// Undirected Graph ~ https://www.youtube.com/watch?v=C4gxoTaI71U&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=19
+	func shortestPathUndirected(_ v: Int, edges: [[Int]], src: Int) -> [Int]
 }
