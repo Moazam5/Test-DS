@@ -72,3 +72,15 @@ extension CodeTemplatesImpl {
 	}
 }
 
+// MARK: Matrix
+
+extension CodeTemplatesImpl {
+	func matrixVisualization(rows: Int, columns: Int) {
+		for row in 0..<rows {
+			for column in 0..<columns {
+				print("[\(row) \(column)]", separator: "", terminator: " ")
+			}
+			print("")
+		}
+	}
+}

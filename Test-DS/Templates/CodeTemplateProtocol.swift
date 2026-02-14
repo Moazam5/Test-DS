@@ -12,6 +12,8 @@ protocol CodeTemplates {
 	func twoPointers(_ arr: [Int], condition: () -> Bool) -> Int
 	///	Two pointers: two inputs, exhaust both
 	func twoPointersTwoInputs(_ arr1: [Int], _ arr2: [Int], condition: () -> Bool) -> Int
+
+	func matrixVisualization(rows: Int, columns: Int)
 }
 
 

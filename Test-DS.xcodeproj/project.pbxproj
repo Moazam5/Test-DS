@@ -98,7 +98,6 @@
 		FF7155602E374E6D00585246 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */; };
 		FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */; };
 		FF933B712CB322F800668ACE /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF933B702CB322F800668ACE /* Page3.swift */; };
-		FF97D1FD2D566F24009DCDD5 /* Page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF97D1FC2D566F24009DCDD5 /* Page4.swift */; };
 		FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA067F72DCF211000881478 /* TrappingRainWater.swift */; };
 		FFA067F92DCF211000881478 /* TrappingRainWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA067F72DCF211000881478 /* TrappingRainWater.swift */; };
 		FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA067FA2DCF305B00881478 /* DailyTemperature.swift */; };
@@ -140,7 +139,6 @@
 		FFBA6FDA2F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */; };
 		FFBA6FDC2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */; };
 		FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */; };
-		FFC2103C2D861F9600A9337D /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2103B2D861F9600A9337D /* Page5.swift */; };
 		FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */; };
@@ -315,7 +313,6 @@
 		FF71555C2E374B3400585246 /* TwoPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointers.swift; sourceTree = "<group>"; };
 		FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
 		FF933B702CB322F800668ACE /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
-		FF97D1FC2D566F24009DCDD5 /* Page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4.swift; sourceTree = "<group>"; };
 		FFA067F72DCF211000881478 /* TrappingRainWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrappingRainWater.swift; sourceTree = "<group>"; };
 		FFA067FA2DCF305B00881478 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 		FFA067FD2DCFFC8500881478 /* CarFleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleet.swift; sourceTree = "<group>"; };
@@ -339,7 +336,6 @@
 		FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinInsertionAndDeletions.swift"; sourceTree = "<group>"; };
 		FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblem+LongestPalindromicSubsequence.swift"; sourceTree = "<group>"; };
 		FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinDeletions.swift"; sourceTree = "<group>"; };
-		FFC2103B2D861F9600A9337D /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 		FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
 		FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateParenthesis.swift; sourceTree = "<group>"; };
 		FFEDFEE02F3592EB00034823 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -507,15 +503,10 @@
 		FF52074C2C89869C00B140AC /* Test-DS */ = {
 			isa = PBXGroup;
 			children = (
-				FFEDFF3F2F40893400034823 /* MiscellaneousProblems.swift */,
-				FFEDFF422F40895C00034823 /* MiscellaneousSolutions.swift */,
-				FF933B702CB322F800668ACE /* Page3.swift */,
-				FF97D1FC2D566F24009DCDD5 /* Page4.swift */,
-				FFC2103B2D861F9600A9337D /* Page5.swift */,
+				FFEDFF452F408AC400034823 /* Miscellaneous */,
 				FFFC67A42F1CC8AB004FA6E2 /* Arrays */,
 				FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */,
 				FF7155582E374AC500585246 /* Two Pointers */,
-				FFB34DD82DA725CB00D2C7A8 /* Playground.swift */,
 				FF18D01F2E0215390054F7F8 /* Sliding Window */,
 				FFAB5C572EF3415100F183EC /* Templates */,
 				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
@@ -530,6 +521,7 @@
 				FFD10E142DD4658100C68764 /* Stack */,
 				FF52074D2C89869C00B140AC /* Test_DS.h */,
 				FF52074E2C89869C00B140AC /* Test_DS.docc */,
+				FFB34DD82DA725CB00D2C7A8 /* Playground.swift */,
 			);
 			path = "Test-DS";
 			sourceTree = "<group>";
@@ -689,6 +681,16 @@
 				FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */,
 			);
 			path = "Shortest Path";
+			sourceTree = "<group>";
+		};
+		FFEDFF452F408AC400034823 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				FFEDFF3F2F40893400034823 /* MiscellaneousProblems.swift */,
+				FFEDFF422F40895C00034823 /* MiscellaneousSolutions.swift */,
+				FF933B702CB322F800668ACE /* Page3.swift */,
+			);
+			path = Miscellaneous;
 			sourceTree = "<group>";
 		};
 		FFFC67862F1B7C33004FA6E2 /* PayPal */ = {
@@ -988,7 +990,6 @@
 				FF0CC8E62EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FFAC3E4D2E392146001214BB /* KthSmallest.swift in Sources */,
 				FF0CC8C42EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
-				FFC2103C2D861F9600A9337D /* Page5.swift in Sources */,
 				FFEDFF3A2F4031B400034823 /* AlienDictionary.swift in Sources */,
 				FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */,
@@ -1047,7 +1048,6 @@
 				FFB124BF2EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FFFC680A2F242582004FA6E2 /* UndirectedGraphCycleDFS.swift in Sources */,
 				FF0CC8FB2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
-				FF97D1FD2D566F24009DCDD5 /* Page4.swift in Sources */,
 				FF5396A12F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FFFC68172F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */,
