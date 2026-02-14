@@ -54,4 +54,6 @@ protocol GraphsQuestions {
 	func topologicalSort(adjacencyList: [Int : [Int]], vertices: Int) -> [Int]
 	/// Also known as Kahn's Algorithm ~ https://www.youtube.com/watch?v=73sneFXuTEg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14
 	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int]
+	/// Alien Dictionary ~ https://neetcode.io/problems/foreign-dictionary/question?list=neetcode150
+	func foreignDictionary(_ words: [String]) -> String
 }

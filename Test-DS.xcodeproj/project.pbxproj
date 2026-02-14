@@ -167,6 +167,8 @@
 		FFEDFF342F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */; };
 		FFEDFF362F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */; };
 		FFEDFF372F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */; };
+		FFEDFF392F4031B400034823 /* AlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF382F4031B400034823 /* AlienDictionary.swift */; };
+		FFEDFF3A2F4031B400034823 /* AlienDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF382F4031B400034823 /* AlienDictionary.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -348,6 +350,7 @@
 		FFEDFF2D2F3FDAB900034823 /* TopologicalSortBFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSortBFS.swift; sourceTree = "<group>"; };
 		FFEDFF322F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleDetectionKahnsAlgorithm.swift; sourceTree = "<group>"; };
 		FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseSchedule-II.swift"; sourceTree = "<group>"; };
+		FFEDFF382F4031B400034823 /* AlienDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienDictionary.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -647,6 +650,7 @@
 			children = (
 				FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */,
 				FFEDFF2D2F3FDAB900034823 /* TopologicalSortBFS.swift */,
+				FFEDFF382F4031B400034823 /* AlienDictionary.swift */,
 			);
 			path = "Topological Sort";
 			sourceTree = "<group>";
@@ -894,6 +898,7 @@
 				FF0CC8C62EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FFFC67FD2F219BA9004FA6E2 /* Exist.swift in Sources */,
 				FFFC68122F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
+				FFEDFF392F4031B400034823 /* AlienDictionary.swift in Sources */,
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FFFC681B2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
 				FFFC67932F1B87C3004FA6E2 /* ValidateParenthesis.swift in Sources */,
@@ -966,6 +971,7 @@
 				FFAC3E4D2E392146001214BB /* KthSmallest.swift in Sources */,
 				FF0CC8C42EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
 				FFC2103C2D861F9600A9337D /* Page5.swift in Sources */,
+				FFEDFF3A2F4031B400034823 /* AlienDictionary.swift in Sources */,
 				FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */,
 				FFFC67C62F20D478004FA6E2 /* Node.swift in Sources */,
