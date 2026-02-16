@@ -41,13 +41,13 @@ extension GraphsImpl {
 		var head = 0
 
 		while head < q.count {
-			let u = q[head]
+			let node = q[head]
 			head += 1
 
-			for nbr in adjacencyList[u, default: []] {
-				if dist[u] + 1 < dist[nbr] {
-					dist[nbr] = dist[u] + 1
-					q.append(nbr)
+			for neighbor in adjacencyList[node, default: []] {
+				if dist[node] + 1 < dist[neighbor] {
+					dist[neighbor] = dist[node] + 1
+					q.append(neighbor)
 				}
 			}
 		}
