@@ -177,6 +177,7 @@
 		FFEDFF4C2F41CD6F00034823 /* KthLargest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF4A2F41CD6F00034823 /* KthLargest.swift */; };
 		FFEDFF4E2F41CE8E00034823 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF4D2F41CE8E00034823 /* Heap.swift */; };
 		FFEDFF4F2F41CE8E00034823 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF4D2F41CE8E00034823 /* Heap.swift */; };
+		FFEDFF552F43205600034823 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = FFEDFF542F43205600034823 /* HeapModule */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -394,6 +395,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEDFF552F43205600034823 /* HeapModule in Frameworks */,
 				FF10444A2EFFE91400BD9741 /* Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -830,6 +832,9 @@
 				Base,
 			);
 			mainGroup = FF52073D2C89865200B140AC;
+			packageReferences = (
+				FFEDFF532F431F0900034823 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = FF52074B2C89869C00B140AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1537,6 +1542,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFEDFF532F431F0900034823 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFEDFF542F43205600034823 /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFEDFF532F431F0900034823 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF52073E2C89865200B140AC /* Project object */;
 }
