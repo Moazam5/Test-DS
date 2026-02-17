@@ -8,9 +8,9 @@
 import Foundation
 import Playgrounds
 
-// Heap is a complete binary tree.
-// Heap exists in two flavors, min heap and max heap.
-// This is a generic implementation
+/// Heap is a complete binary tree.
+/// Heap exists in two flavors, min heap and max heap.
+/// FIXME :- Make this a generic implementation. 
 struct Heap {
 	var elements = [Int]()
 	let priority: (Int, Int) -> Bool
@@ -31,12 +31,19 @@ struct Heap {
 		self.priority = sort
 	}
 
+	/// Inserts the element at the right position in the heap.
+	///
+	/// - Complexity: O(log(`count`)) element comparisons
+
 	mutating func insert(_ element: Int) {
 		self.elements.append(element)
 		self.bubbleUp(from: self.elements.count - 1)
 	}
 
-	mutating func delete(_ element: Int) -> Int? {
+	/// Removes and returns the element at the root.
+	///
+	/// - Complexity: O(log(`count`)) element comparisons
+	mutating func pop() -> Int? {
 		guard !self.elements.isEmpty else { return nil }
 		if self.elements.count == 1 { return self.elements.popLast() }
 		let top = self.elements[0]
