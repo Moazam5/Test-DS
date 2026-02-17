@@ -35,6 +35,35 @@ struct Heap {
 		self.elements.append(element)
 		self.bubbleUp(from: self.elements.count - 1)
 	}
+
+	mutating func delete(_ element: Int) -> Int? {
+		guard !self.elements.isEmpty else { return nil }
+		if self.elements.count == 1 { return self.elements.popLast() }
+		let top = self.elements[0]
+		self.elements[0] = self.elements.removeLast()
+		self.trickleDown(from: 0)
+		return top
+	}
+
+	private mutating func trickleDown(from index: Int) {
+		var parent = index
+
+		while true {
+			let left = 2 * parent + 1
+			let right = left + 1
+			var candidate = parent
+
+			if left < elements.count, priority(elements[left], elements[candidate]) {
+				candidate = left
+			}
+			if right < elements.count, priority(elements[right], elements[candidate]) {
+				candidate = right
+			}
+
+			if candidate == parent { return }
+			self.elements.swapAt(parent, candidate)
+			parent = candidate
+		}
 	}
 
 	mutating private func bubbleUp(from index: Int) {
@@ -46,12 +75,4 @@ struct Heap {
 			parent = (child - 1) / 2
 		}
 	}
-}
-
-
-#Playground {
-	var heap = Heap(sort: >)
-	heap.insert(3)
-	heap.insert(4)
-	print(heap.elements)
 }
