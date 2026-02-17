@@ -11,7 +11,7 @@ import Playgrounds
 /// Heap is a complete binary tree.
 /// Heap exists in two flavors, min heap and max heap.
 /// FIXME :- Make this a generic implementation. 
-struct Heap {
+struct MyHeap {
 	var elements = [Int]()
 	let priority: (Int, Int) -> Bool
 	
