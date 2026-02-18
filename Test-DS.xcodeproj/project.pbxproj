@@ -178,8 +178,8 @@
 		FFEDFF4E2F41CE8E00034823 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF4D2F41CE8E00034823 /* Heap.swift */; };
 		FFEDFF4F2F41CE8E00034823 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF4D2F41CE8E00034823 /* Heap.swift */; };
 		FFEDFF552F43205600034823 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = FFEDFF542F43205600034823 /* HeapModule */; };
-		FFEDFF572F440CA800034823 /* ShortestPathDijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstra.swift */; };
-		FFEDFF582F440CA800034823 /* ShortestPathDijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstra.swift */; };
+		FFEDFF572F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */; };
+		FFEDFF582F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -364,7 +364,7 @@
 		FFEDFF462F41213D00034823 /* ShortestPathUndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathUndirectedGraph.swift; sourceTree = "<group>"; };
 		FFEDFF4A2F41CD6F00034823 /* KthLargest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargest.swift; sourceTree = "<group>"; };
 		FFEDFF4D2F41CE8E00034823 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
-		FFEDFF562F440CA800034823 /* ShortestPathDijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathDijkstra.swift; sourceTree = "<group>"; };
+		FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathDijkstraPQ.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 			children = (
 				FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */,
 				FFEDFF462F41213D00034823 /* ShortestPathUndirectedGraph.swift */,
-				FFEDFF562F440CA800034823 /* ShortestPathDijkstra.swift */,
+				FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */,
 			);
 			path = "Shortest Path";
 			sourceTree = "<group>";
@@ -875,7 +875,7 @@
 				FFFC68062F241083004FA6E2 /* UndirectedGraphCycleBFS.swift in Sources */,
 				FF2061D82E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC67A92F1CC8D2004FA6E2 /* ArraySolutions.swift in Sources */,
-				FFEDFF572F440CA800034823 /* ShortestPathDijkstra.swift in Sources */,
+				FFEDFF572F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */,
 				FFEDFF212F3C34EB00034823 /* String+ReverseNumber.swift in Sources */,
 				FF0CC8FE2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FFEDFF192F36FA4700034823 /* FloodFill.swift in Sources */,
@@ -1041,7 +1041,7 @@
 				FFEDFF1A2F36FA4700034823 /* FloodFill.swift in Sources */,
 				FF10445B2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
-				FFEDFF582F440CA800034823 /* ShortestPathDijkstra.swift in Sources */,
+				FFEDFF582F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */,
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
 				FF5396B22F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,

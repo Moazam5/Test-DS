@@ -10,7 +10,7 @@ import HeapModule
 import Playgrounds
 
 extension GraphsImpl {
-	func shortestPathUndirected(_ v: Int, adjacency: [[[Int]]], src: Int) -> [Int] {
+	func shortestPathUndirectedDijkstraPQ(_ v: Int, adjacency: [[[Int]]], src: Int) -> [Int] {
 		var pq = Heap<Item>()
 		var distance = Array(repeating: Int.max / 2, count: v)
 		distance[src] = 0
@@ -65,6 +65,5 @@ extension GraphsImpl {
 	]
 
 	let graphImpl = GraphsImpl()
-	let result = graphImpl.shortestPathUndirected(4, adjacency: graph, src: 0)
-
+	let result = graphImpl.shortestPathUndirectedDijkstraPQ(4, adjacency: graph, src: 0	)
 }

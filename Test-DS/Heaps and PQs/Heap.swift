@@ -43,6 +43,7 @@ struct MyHeap {
 	/// Removes and returns the element at the root.
 	///
 	/// - Complexity: O(log(`count`)) element comparisons
+	@discardableResult
 	mutating func pop() -> Int? {
 		guard !self.elements.isEmpty else { return nil }
 		if self.elements.count == 1 { return self.elements.popLast() }

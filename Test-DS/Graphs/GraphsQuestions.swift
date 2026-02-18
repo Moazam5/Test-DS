@@ -62,4 +62,8 @@ protocol GraphsQuestions {
 	func shortestPath(_ n: Int, _ m: Int, edges: [[Int]]) -> [Int]
 	/// Undirected Graph ~ https://www.youtube.com/watch?v=C4gxoTaI71U&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=19
 	func shortestPathUndirected(_ v: Int, edges: [[Int]], src: Int) -> [Int]
+	/// https://www.youtube.com/watch?v=V6H1qAeB-l4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=21
+	func shortestPathUndirectedDijkstraPQ(_ v: Int, adjacency: [[[Int]]], src: Int) -> [Int]
+
+	
 }
