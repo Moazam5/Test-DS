@@ -14,6 +14,8 @@ protocol HeapProblems {
 	func kClosest(_ points: [[Int]], _ k: Int) -> [[Int]]
 	/// https://neetcode.io/problems/kth-largest-element-in-an-array
 	func findKthLargest(_ nums: [Int], _ k: Int) -> Int
+	/// https://neetcode.io/problems/task-scheduling/question?list=neetcode150
+	func leastInterval(_ tasks: [Character], _ n: Int) -> Int
 }
 
 struct HeapSolutions: HeapProblems {}

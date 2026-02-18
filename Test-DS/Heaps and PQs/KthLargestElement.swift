@@ -9,15 +9,15 @@ import Foundation
 
 extension HeapSolutions {
 	func findKthLargest(_ nums: [Int], _ k: Int) -> Int {
-			var minHeap = MyHeap<Int>()
-
-			for num in nums {
-				minHeap.insert(num)
-				if minHeap.count > k {
-					_ = minHeap.pop()
-				}
+		var minHeap = MyHeap<Int>()
+		
+		for num in nums {
+			minHeap.insert(num)
+			if minHeap.count > k {
+				_ = minHeap.pop()
 			}
-
-			return minHeap.pop()!
 		}
+		
+		return minHeap.pop()!
+	}
 }

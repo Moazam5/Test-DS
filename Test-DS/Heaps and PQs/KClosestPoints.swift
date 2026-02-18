@@ -21,7 +21,7 @@ extension HeapSolutions {
 		}
 		while res.count < k, let d = heap.pop() {
 			guard var bucket = dict[d], !bucket.isEmpty else { continue }
-
+			
 			// take only as many as needed
 			while res.count < k, !bucket.isEmpty {
 				res.append(bucket.removeLast())
