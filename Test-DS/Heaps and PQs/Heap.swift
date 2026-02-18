@@ -28,7 +28,7 @@ struct MyHeap {
 	}
 
 	init(contentsOf elements: [Int] = [], isMinHeap: Bool = true) {
-		self.elements = elements
+		self.elements = []
 		self.priority = { a, b in
 			if isMinHeap {
 				return a < b
@@ -36,11 +36,25 @@ struct MyHeap {
 				return a > b
 			}
 		}
+		guard elements.count > 1 else {
+			self.elements = elements
+			return
+		}
+		for element in elements {
+			self.insert(element)
+		}
 	}
 
 	init(contentsOf elements: [Int] = [], sort: @escaping (Int, Int) -> Bool) {
-		self.elements = elements
+		self.elements = []
 		self.priority = sort
+		guard elements.count > 1 else {
+			self.elements = elements
+			return
+		}
+		for element in elements {
+			self.insert(element)
+		}
 	}
 
 	/// Inserts the element at the right position in the heap.
@@ -76,7 +90,7 @@ struct MyHeap {
 			if left < elements.count, priority(elements[left], elements[candidate]) {
 				candidate = left
 			}
-			if right < elements.count, priority(elements[right], elements[candidate]) {
+			if right < self.elements.count, self.priority(elements[right], elements[candidate]) {
 				candidate = right
 			}
 
@@ -89,7 +103,7 @@ struct MyHeap {
 	mutating private func bubbleUp(from index: Int) {
 		var child = index
 		var parent = (child - 1) / 2
-		while child > 0 && priority(self.elements[child], self.elements[parent]) {
+		while child > 0 && self.priority(self.elements[child], self.elements[parent]) {
 			self.elements.swapAt(child, parent)
 			child = parent
 			parent = (child - 1) / 2
