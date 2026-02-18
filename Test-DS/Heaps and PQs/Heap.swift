@@ -11,9 +11,9 @@ import Playgrounds
 /// Heap is a complete binary tree.
 /// Heap exists in two flavors, min heap and max heap.
 /// FIXME :- Make this a generic implementation.
-struct MyHeap {
-	private var elements: [Int]
-	let priority: (Int, Int) -> Bool
+struct MyHeap<Element: Comparable> {
+	private var elements: [Element]
+	let priority: (Element, Element) -> Bool
 
 	var isEmpty: Bool {
 		self.elements.isEmpty
@@ -23,11 +23,11 @@ struct MyHeap {
 		self.elements.count
 	}
 
-	func peek() -> Int? {
+	func peek() -> Element? {
 		self.elements.first
 	}
 
-	init(contentsOf elements: [Int] = [], isMinHeap: Bool = true) {
+	init(contentsOf elements: [Element] = [], isMinHeap: Bool = true) {
 		self.elements = []
 		self.priority = { a, b in
 			if isMinHeap {
@@ -45,7 +45,7 @@ struct MyHeap {
 		}
 	}
 
-	init(contentsOf elements: [Int] = [], sort: @escaping (Int, Int) -> Bool) {
+	init(contentsOf elements: [Element] = [], sort: @escaping (Element, Element) -> Bool) {
 		self.elements = []
 		self.priority = sort
 		guard elements.count > 1 else {
@@ -61,7 +61,7 @@ struct MyHeap {
 	///
 	/// - Complexity: O(log(`count`)) element comparisons
 
-	mutating func insert(_ element: Int) {
+	mutating func insert(_ element: Element) {
 		self.elements.append(element)
 		self.bubbleUp(from: self.elements.count - 1)
 	}
@@ -70,7 +70,7 @@ struct MyHeap {
 	///
 	/// - Complexity: O(log(`count`)) element comparisons
 	@discardableResult
-	mutating func pop() -> Int? {
+	mutating func pop() -> Element? {
 		guard !self.elements.isEmpty else { return nil }
 		if self.elements.count == 1 { return self.elements.popLast() }
 		let top = self.elements[0]

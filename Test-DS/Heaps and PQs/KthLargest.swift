@@ -8,7 +8,7 @@
 import Foundation
 
 class KthLargest {
-	private var minHeap: MyHeap
+	private var minHeap: MyHeap<Int>
 	private let k: Int
 
 	init(_ k: Int, _ nums: [Int]) {
