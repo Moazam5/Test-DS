@@ -10,11 +10,11 @@ import Playgrounds
 
 /// Heap is a complete binary tree.
 /// Heap exists in two flavors, min heap and max heap.
-/// FIXME :- Make this a generic implementation. 
+/// FIXME :- Make this a generic implementation.
 struct MyHeap {
-	var elements = [Int]()
+	private var elements: [Int]
 	let priority: (Int, Int) -> Bool
-	
+
 	var isEmpty: Bool {
 		self.elements.isEmpty
 	}
@@ -27,7 +27,19 @@ struct MyHeap {
 		self.elements.first
 	}
 
-	init(sort: @escaping (Int, Int) -> Bool) {
+	init(contentsOf elements: [Int] = [], isMinHeap: Bool = true) {
+		self.elements = elements
+		self.priority = { a, b in
+			if isMinHeap {
+				return a < b
+			} else {
+				return a > b
+			}
+		}
+	}
+
+	init(contentsOf elements: [Int] = [], sort: @escaping (Int, Int) -> Bool) {
+		self.elements = elements
 		self.priority = sort
 	}
 
