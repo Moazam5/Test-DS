@@ -180,6 +180,12 @@
 		FFEDFF552F43205600034823 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = FFEDFF542F43205600034823 /* HeapModule */; };
 		FFEDFF572F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */; };
 		FFEDFF582F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */; };
+		FFEDFF5A2F4687EE00034823 /* HeapProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF592F4687EE00034823 /* HeapProblems.swift */; };
+		FFEDFF5B2F4687EE00034823 /* HeapProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF592F4687EE00034823 /* HeapProblems.swift */; };
+		FFEDFF5D2F46884D00034823 /* LastStoneWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF5C2F46884D00034823 /* LastStoneWeight.swift */; };
+		FFEDFF5E2F46884D00034823 /* LastStoneWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF5C2F46884D00034823 /* LastStoneWeight.swift */; };
+		FFEDFF602F46888B00034823 /* KClosestPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */; };
+		FFEDFF612F46888B00034823 /* KClosestPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -365,6 +371,9 @@
 		FFEDFF4A2F41CD6F00034823 /* KthLargest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargest.swift; sourceTree = "<group>"; };
 		FFEDFF4D2F41CE8E00034823 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathDijkstraPQ.swift; sourceTree = "<group>"; };
+		FFEDFF592F4687EE00034823 /* HeapProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapProblems.swift; sourceTree = "<group>"; };
+		FFEDFF5C2F46884D00034823 /* LastStoneWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastStoneWeight.swift; sourceTree = "<group>"; };
+		FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KClosestPoints.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -713,8 +722,11 @@
 		FFEDFF492F41CD3D00034823 /* Heaps and PQs */ = {
 			isa = PBXGroup;
 			children = (
-				FFEDFF4A2F41CD6F00034823 /* KthLargest.swift */,
 				FFEDFF4D2F41CE8E00034823 /* Heap.swift */,
+				FFEDFF592F4687EE00034823 /* HeapProblems.swift */,
+				FFEDFF4A2F41CD6F00034823 /* KthLargest.swift */,
+				FFEDFF5C2F46884D00034823 /* LastStoneWeight.swift */,
+				FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */,
 			);
 			path = "Heaps and PQs";
 			sourceTree = "<group>";
@@ -872,6 +884,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF69F40C2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
+				FFEDFF5B2F4687EE00034823 /* HeapProblems.swift in Sources */,
 				FFFC68062F241083004FA6E2 /* UndirectedGraphCycleBFS.swift in Sources */,
 				FF2061D82E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC67A92F1CC8D2004FA6E2 /* ArraySolutions.swift in Sources */,
@@ -882,6 +895,7 @@
 				FFFC678F2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C72F20D478004FA6E2 /* Node.swift in Sources */,
 				FFAF22192EC282C6000E86D4 /* InvertTree.swift in Sources */,
+				FFEDFF602F46888B00034823 /* KClosestPoints.swift in Sources */,
 				FFEDFEE12F3592EB00034823 /* LRUCache.swift in Sources */,
 				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FFFC68202F25935B004FA6E2 /* ReverseImage.swift in Sources */,
@@ -958,6 +972,7 @@
 				FFFC681E2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */,
 				FFFC68092F242582004FA6E2 /* UndirectedGraphCycleDFS.swift in Sources */,
 				FFAB5C612EF343F000F183EC /* CodeTemplateProtocol.swift in Sources */,
+				FFEDFF5E2F46884D00034823 /* LastStoneWeight.swift in Sources */,
 				FFFC68042F22DC95004FA6E2 /* SurroundedRegions.swift in Sources */,
 				FFEDFF442F40895C00034823 /* MiscellaneousSolutions.swift in Sources */,
 				FF1044462EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
@@ -999,6 +1014,7 @@
 				FF2061CF2E9C4B3F008DA0FA /* MaxDepth.swift in Sources */,
 				FFEDFF402F40893400034823 /* MiscellaneousProblems.swift in Sources */,
 				FFEDFF3E2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */,
+				FFEDFF5A2F4687EE00034823 /* HeapProblems.swift in Sources */,
 				FFFC678E2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C42F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
@@ -1030,6 +1046,7 @@
 				FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */,
 				FFFC67C62F20D478004FA6E2 /* Node.swift in Sources */,
+				FFEDFF612F46888B00034823 /* KClosestPoints.swift in Sources */,
 				FFFC68032F22DC95004FA6E2 /* SurroundedRegions.swift in Sources */,
 				FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */,
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
@@ -1087,6 +1104,7 @@
 				FF0CC8FB2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
 				FF5396A12F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
+				FFEDFF5D2F46884D00034823 /* LastStoneWeight.swift in Sources */,
 				FFFC68172F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */,
 				FF1044552F01116500BD9741 /* LCSProtocol.swift in Sources */,
 				FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */,
