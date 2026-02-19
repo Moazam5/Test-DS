@@ -190,6 +190,8 @@
 		FFEDFF642F46894000034823 /* KthLargestElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF622F46894000034823 /* KthLargestElement.swift */; };
 		FFEDFF662F46899A00034823 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF652F46899A00034823 /* TaskScheduler.swift */; };
 		FFEDFF672F46899A00034823 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF652F46899A00034823 /* TaskScheduler.swift */; };
+		FFEDFF692F4689E800034823 /* DesignTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF682F4689E800034823 /* DesignTwitter.swift */; };
+		FFEDFF6A2F4689E800034823 /* DesignTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF682F4689E800034823 /* DesignTwitter.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -380,6 +382,7 @@
 		FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KClosestPoints.swift; sourceTree = "<group>"; };
 		FFEDFF622F46894000034823 /* KthLargestElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElement.swift; sourceTree = "<group>"; };
 		FFEDFF652F46899A00034823 /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
+		FFEDFF682F4689E800034823 /* DesignTwitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTwitter.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -735,6 +738,7 @@
 				FFEDFF5F2F46888B00034823 /* KClosestPoints.swift */,
 				FFEDFF622F46894000034823 /* KthLargestElement.swift */,
 				FFEDFF652F46899A00034823 /* TaskScheduler.swift */,
+				FFEDFF682F4689E800034823 /* DesignTwitter.swift */,
 			);
 			path = "Heaps and PQs";
 			sourceTree = "<group>";
@@ -965,6 +969,7 @@
 				FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */,
 				FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FFEDFF3D2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */,
+				FFEDFF6A2F4689E800034823 /* DesignTwitter.swift in Sources */,
 				FFFC67BB2F1DBAE4004FA6E2 /* TreeProblems.swift in Sources */,
 				FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */,
 				FFFC67C92F20D489004FA6E2 /* GraphsQuestions.swift in Sources */,
@@ -1067,6 +1072,7 @@
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,
 				FFEDFF1A2F36FA4700034823 /* FloodFill.swift in Sources */,
+				FFEDFF692F4689E800034823 /* DesignTwitter.swift in Sources */,
 				FF10445B2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FFEDFF642F46894000034823 /* KthLargestElement.swift in Sources */,
 				FF0C00C92EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
