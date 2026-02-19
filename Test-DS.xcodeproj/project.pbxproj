@@ -192,6 +192,8 @@
 		FFEDFF672F46899A00034823 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF652F46899A00034823 /* TaskScheduler.swift */; };
 		FFEDFF692F4689E800034823 /* DesignTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF682F4689E800034823 /* DesignTwitter.swift */; };
 		FFEDFF6A2F4689E800034823 /* DesignTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF682F4689E800034823 /* DesignTwitter.swift */; };
+		FFEDFF6C2F468A2000034823 /* FindMedian.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF6B2F468A2000034823 /* FindMedian.swift */; };
+		FFEDFF6D2F468A2000034823 /* FindMedian.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEDFF6B2F468A2000034823 /* FindMedian.swift */; };
 		FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */; };
 		FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
 		FFFC67892F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */; };
@@ -383,6 +385,7 @@
 		FFEDFF622F46894000034823 /* KthLargestElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargestElement.swift; sourceTree = "<group>"; };
 		FFEDFF652F46899A00034823 /* TaskScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		FFEDFF682F4689E800034823 /* DesignTwitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTwitter.swift; sourceTree = "<group>"; };
+		FFEDFF6B2F468A2000034823 /* FindMedian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMedian.swift; sourceTree = "<group>"; };
 		FFFBDED42DB12FAC002DC960 /* ContainerWithMostWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerWithMostWater.swift; sourceTree = "<group>"; };
 		FFFC67872F1B7C4B004FA6E2 /* PayPalProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPalProtocol.swift; sourceTree = "<group>"; };
 		FFFC678A2F1B7EC2004FA6E2 /* StackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProtocol.swift; sourceTree = "<group>"; };
@@ -739,6 +742,7 @@
 				FFEDFF622F46894000034823 /* KthLargestElement.swift */,
 				FFEDFF652F46899A00034823 /* TaskScheduler.swift */,
 				FFEDFF682F4689E800034823 /* DesignTwitter.swift */,
+				FFEDFF6B2F468A2000034823 /* FindMedian.swift */,
 			);
 			path = "Heaps and PQs";
 			sourceTree = "<group>";
@@ -969,6 +973,7 @@
 				FFBA6FCE2F077AA7000579D5 /* LCSTests.swift in Sources */,
 				FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */,
 				FFEDFF3D2F40802A00034823 /* ShortestPathDirectedGraph.swift in Sources */,
+				FFEDFF6C2F468A2000034823 /* FindMedian.swift in Sources */,
 				FFEDFF6A2F4689E800034823 /* DesignTwitter.swift in Sources */,
 				FFFC67BB2F1DBAE4004FA6E2 /* TreeProblems.swift in Sources */,
 				FF0CC8E52EEB824D00C5870D /* LinkedListTests.swift in Sources */,
@@ -1053,6 +1058,7 @@
 				FF1FC3082E24CADE00951B00 /* LinkedList.swift in Sources */,
 				FFEDFF4C2F41CD6F00034823 /* KthLargest.swift in Sources */,
 				FF2736842E66E0FE00E346CB /* DFS.swift in Sources */,
+				FFEDFF6D2F468A2000034823 /* FindMedian.swift in Sources */,
 				FFEDFF4E2F41CE8E00034823 /* Heap.swift in Sources */,
 				FF127BE02DAD7C8100F203EF /* ThreeSum.swift in Sources */,
 				FF0CC8E62EEB824D00C5870D /* LinkedListTests.swift in Sources */,
