@@ -16,6 +16,8 @@ protocol GraphsQuestions {
 	func exist(_ board: [[Character]], _ word: String) -> Bool
 	/// https://leetcode.com/problems/rotting-oranges/
 	func orangesRotting(_ grid: [[Int]]) -> Int
+	/// https://neetcode.io/problems/pacific-atlantic-water-flow
+	func pacificAtlantic(_ heights: [[Int]]) -> [[Int]]
 	/// https://leetcode.com/problems/surrounded-regions/
 	func solve(_ board: inout [[Character]])
 	/// Course Schedule I: https://leetcode.com/problems/course-schedule/
