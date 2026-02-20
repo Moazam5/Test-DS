@@ -10,9 +10,9 @@ import Foundation
 extension GraphsImpl {
 	func hasCycleDFSWithStateEnum(adjacencyList: [Int: [Int]]) -> Bool {
 		enum NodeState {
-			case white
-			case gray
-			case black
+			case white // not visited
+			case gray // visiting
+			case black // visited
 		}
 		// Initialize empty state dict
 		var state: [Int: NodeState] = [:]

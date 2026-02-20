@@ -6,11 +6,11 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
 	func hasCycleDFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool {
 		var visited = Set<Int>()
-
 		func dfs(node: Int, parent: Int) -> Bool {
 			visited.insert(node)
 
@@ -44,4 +44,10 @@ extension GraphsImpl {
 
 		return false
 	}
+}
+
+
+#Playground {
+
+	let graph = GraphsImpl.shared.hasCycleDFS(adjacencyList: CodeTemplatesImpl.undirectedGraphWithCycleAL)
 }

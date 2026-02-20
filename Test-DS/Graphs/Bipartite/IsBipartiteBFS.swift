@@ -12,7 +12,7 @@ extension GraphsImpl {
 		var colors = Array(repeating: -1, count: vertices)
 
 		// Returns false is the graph is not bipartite
-		func bfsCheck(_ node: Int, _ parent: Int) -> Bool {
+		func bfsCheck(_ node: Int) -> Bool {
 			var q = [node]
 			colors[node] = 0
 			
@@ -35,7 +35,7 @@ extension GraphsImpl {
 
 		for vertex in 0..<vertices {
 			if colors[vertex] == -1 {
-				if !bfsCheck(vertex, -1) {
+				if !bfsCheck(vertex) {
 					return false
 				}
 			}
@@ -50,7 +50,7 @@ extension GraphsImpl {
 		var colors = Array(repeating: -1, count: vertices)
 
 		// Returns false is the graph is not bipartite
-		func bfsCheck(_ node: Int, _ parent: Int) -> Bool {
+		func bfsCheck(_ node: Int) -> Bool {
 			var q = [node]
 			colors[node] = 0
 
@@ -71,7 +71,7 @@ extension GraphsImpl {
 		}
 		for vertex in 0..<vertices {
 			if colors[vertex] == -1 {
-				if !bfsCheck(vertex, -1) {
+				if !bfsCheck(vertex) {
 					return false
 				}
 			}

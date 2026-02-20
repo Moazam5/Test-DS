@@ -9,8 +9,11 @@ import Foundation
 import Playgrounds
 
 extension GraphsImpl {
-	/// edge[i][0] to edge[i][1] with a distance of edge[i][2] for all i.
-	func shortestPath(_ n: Int, _ m: Int, edges: [[Int]]) -> [Int] {
+	/// - Parameters:
+	///   - n: Number of nodes.
+	///   - edges: The edge array, `edge[i, j, w]` represents an edge from`i -> j` with a weight of `w`.
+	/// - Returns: Returns an array of shortest distances.
+	func shortestPath(_ n: Int, edges: [[Int]]) -> [Int] {
 		var adjacencyList: [Int: [(node: Int, weight: Int)]] = [:]
 		for edge in edges {
 			let node = edge[0]
@@ -19,8 +22,8 @@ extension GraphsImpl {
 			adjacencyList[node, default: []].append((node: neighbor, weight: weight))
 		}
 
-		// Step 1: Create stack using topo sort
-		
+		// Step 1: Create stack using topological sort
+
 		var stack = [Int]()
 		var visited = Array(repeating: 0, count: n)
 
@@ -43,15 +46,17 @@ extension GraphsImpl {
 			stack.append(node)
 		}
 
-		// Step 2a: Initialize an array with n value to infinity
-		var distances = Array(repeating: Int.max, count: n)
+		// Step 2a: Initialize a distances array with n values, initially set to infinity
+		var distances = Array(repeating: Int.max / 2, count: n)
 		// Source node, if not given set to 0
 		distances[0] = 0
 
 		// Step 2b: Update distances array
 		while !stack.isEmpty {
 			let node = stack.removeLast()
-			if distances[node] == Int.max { continue } // This is important to avoid overflowing.
+			// This is important to avoid overflowing.
+			if distances[node] == Int.max / 2 { continue }
+
 			for neighbor in adjacencyList[node, default: []] {
 				let val = neighbor.node
 				let weight = neighbor.weight
@@ -61,22 +66,14 @@ extension GraphsImpl {
 				}
 			}
 		}
-		return distances.map { $0 == Int.max ? -1: $0 }
+
+		return distances.map { $0 == Int.max / 2 ? -1: $0 }
 	}
 }
 
 
 #Playground {
 	let graph = GraphsImpl()
-	let edges = [
-		[0,1,2],
-		[1,3,1],
-		[2,3,3],
-		[4,0,3],
-		[4,2,1],
-		[5,4,1],
-		[6,4,2],
-		[6,5,3]
-	]
-	_ = graph.shortestPath(7, 8, edges: edges)
+	
+	_ = graph.shortestPath(7, edges: CodeTemplatesImpl.directedShortestPathEdges)
 }

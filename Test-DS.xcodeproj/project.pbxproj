@@ -459,8 +459,8 @@
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
-				FFEDFF3B2F40801600034823 /* Shortest Path */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
+				FFEDFF3B2F40801600034823 /* Shortest Path */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";

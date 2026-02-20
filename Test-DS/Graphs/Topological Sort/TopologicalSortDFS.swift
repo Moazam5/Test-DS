@@ -17,11 +17,10 @@ extension GraphsImpl {
 				return
 			}
 			visited[node] = 1
-			if let neighbors = adjacencyList[node] {
-				for neighbor in neighbors {
-					dfs(neighbor)
-				}
+			for neighbor in adjacencyList[node, default: []] {
+				dfs(neighbor)
 			}
+
 			// Add to stack after visiting all neighbors.
 			stack.append(node)
 		}
@@ -45,7 +44,7 @@ extension GraphsImpl {
 
 			for neighbor in adjacencyList[node, default: []] { // This is cleaner
 				dfs(neighbor)
-		}
+			}
 			stack.append(node)  // postorder
 		}
 

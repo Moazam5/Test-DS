@@ -61,7 +61,7 @@ protocol GraphsQuestions {
 
 	// MARK: Shortest Path
 	/// Directed Graph
-	func shortestPath(_ n: Int, _ m: Int, edges: [[Int]]) -> [Int]
+	func shortestPath(_ n: Int, edges: [[Int]]) -> [Int]
 	/// Undirected Graph ~ https://www.youtube.com/watch?v=C4gxoTaI71U&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=19
 	func shortestPathUndirected(_ v: Int, edges: [[Int]], src: Int) -> [Int]
 	/// https://www.youtube.com/watch?v=V6H1qAeB-l4&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=21
