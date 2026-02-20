@@ -8,6 +8,8 @@
 import Foundation
 
 class GraphsImpl: GraphsQuestions {
+
+	nonisolated(unsafe) static let shared = GraphsImpl()
 	/// DFS
 	func numIslands(_ grid: [[Character]]) -> Int {
 		let m = grid.count

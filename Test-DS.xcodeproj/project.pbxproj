@@ -79,6 +79,8 @@
 		FF230B7F2DE3C9BC00AB74FC /* BinarySearch .swift in Sources */ = {isa = PBXBuildFile; fileRef = FF230B7E2DE3C9BC00AB74FC /* BinarySearch .swift */; };
 		FF2736842E66E0FE00E346CB /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2736832E66E0FE00E346CB /* DFS.swift */; };
 		FF2736852E66E0FE00E346CB /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2736832E66E0FE00E346CB /* DFS.swift */; };
+		FF35E01D2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
+		FF35E01E2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
@@ -324,6 +326,7 @@
 		FF2061DA2E9C5B9B008DA0FA /* IsBalancedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsBalancedTests.swift; sourceTree = "<group>"; };
 		FF230B7E2DE3C9BC00AB74FC /* BinarySearch .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinarySearch .swift"; sourceTree = "<group>"; };
 		FF2736832E66E0FE00E346CB /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
+		FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeTemplateImpl+HelperObjects.swift"; sourceTree = "<group>"; };
 		FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search2dMatrix.swift; sourceTree = "<group>"; };
 		FF52074A2C89869C00B140AC /* Test_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF52074D2C89869C00B140AC /* Test_DS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_DS.h; sourceTree = "<group>"; };
@@ -454,9 +457,9 @@
 				FFEDFF182F36FA4700034823 /* FloodFill.swift */,
 				FFEDFF262F3D392400034823 /* CountComponents.swift */,
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
-				FFEDFF3B2F40801600034823 /* Shortest Path */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
+				FFEDFF3B2F40801600034823 /* Shortest Path */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
 			);
 			path = Graphs;
@@ -596,6 +599,7 @@
 			children = (
 				FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */,
 				FF1044442EFFE49800BD9741 /* CodeTemplateImpl.swift */,
+				FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1004,6 +1008,7 @@
 				FF10444F2F01100500BD9741 /* LCSRecursive.swift in Sources */,
 				FFEDFF472F41213D00034823 /* ShortestPathUndirectedGraph.swift in Sources */,
 				FF1044522F01108200BD9741 /* UnboundedKnapsackTests.swift in Sources */,
+				FF35E01D2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */,
 				FF1044562F01116500BD9741 /* LCSProtocol.swift in Sources */,
 				FFFC67CD2F20D4CB004FA6E2 /* CloneGraph.swift in Sources */,
 				FFFC67C32F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
@@ -1091,6 +1096,7 @@
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
 				FF5396B22F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
+				FF35E01E2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */,
 				FF2061D52E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FFFC67BA2F1DBAE4004FA6E2 /* TreeProblems.swift in Sources */,
 				FFFC680F2F2445D8004FA6E2 /* IsBipartiteDFS.swift in Sources */,
