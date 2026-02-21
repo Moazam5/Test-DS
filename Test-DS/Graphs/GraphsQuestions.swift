@@ -30,6 +30,10 @@ protocol GraphsQuestions {
 	func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ color: Int) -> [[Int]]
 	/// https://neetcode.io/problems/count-connected-components
 	func countComponents(_ n: Int, _ edges: [[Int]]) -> Int
+	/// https://leetcode.com/problems/word-ladder/
+	func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int
+	/// https://leetcode.com/problems/word-ladder-ii/
+	func findLadders(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> [[String]]
 
 	// MARK: Bipartite Graph Problems
 	/// https://www.youtube.com/watch?v=-vu34sct1g8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10

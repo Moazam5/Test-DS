@@ -81,6 +81,10 @@
 		FF2736852E66E0FE00E346CB /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2736832E66E0FE00E346CB /* DFS.swift */; };
 		FF35E01D2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
 		FF35E01E2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
+		FF35E0202F49A16F00AC1BA4 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */; };
+		FF35E0212F49A16F00AC1BA4 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */; };
+		FF35E0232F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */; };
+		FF35E0242F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
@@ -327,6 +331,8 @@
 		FF230B7E2DE3C9BC00AB74FC /* BinarySearch .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinarySearch .swift"; sourceTree = "<group>"; };
 		FF2736832E66E0FE00E346CB /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
 		FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeTemplateImpl+HelperObjects.swift"; sourceTree = "<group>"; };
+		FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
+		FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLadder-II.swift"; sourceTree = "<group>"; };
 		FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search2dMatrix.swift; sourceTree = "<group>"; };
 		FF52074A2C89869C00B140AC /* Test_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF52074D2C89869C00B140AC /* Test_DS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_DS.h; sourceTree = "<group>"; };
@@ -457,6 +463,8 @@
 				FFEDFF182F36FA4700034823 /* FloodFill.swift */,
 				FFEDFF262F3D392400034823 /* CountComponents.swift */,
 				FFEDFF232F3D386700034823 /* Graph+AdjacencyList.swift */,
+				FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */,
+				FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
@@ -912,6 +920,7 @@
 				FFFC68062F241083004FA6E2 /* UndirectedGraphCycleBFS.swift in Sources */,
 				FF2061D82E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC67A92F1CC8D2004FA6E2 /* ArraySolutions.swift in Sources */,
+				FF35E0202F49A16F00AC1BA4 /* WordLadder.swift in Sources */,
 				FFEDFF572F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */,
 				FFEDFF212F3C34EB00034823 /* String+ReverseNumber.swift in Sources */,
 				FF0CC8FE2EEEB7A200C5870D /* Permutations.swift in Sources */,
@@ -947,6 +956,7 @@
 				FF04897B2F144F950065EF5A /* NumberOfIslands.swift in Sources */,
 				FF10445C2F01D98600BD9741 /* LCSProblems.swift in Sources */,
 				FFEDFF332F3FE07B00034823 /* CycleDetectionKahnsAlgorithm.swift in Sources */,
+				FF35E0242F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */,
 				FF10443D2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
 				FFBA6FD92F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */,
 				FFEDFF1F2F3C182800034823 /* Playground.swift in Sources */,
@@ -1081,6 +1091,7 @@
 				FFEDFF612F46888B00034823 /* KClosestPoints.swift in Sources */,
 				FFFC68032F22DC95004FA6E2 /* SurroundedRegions.swift in Sources */,
 				FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */,
+				FF35E0232F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */,
 				FFAF46602EC3C78E000E86D4 /* BFS.swift in Sources */,
 				FFFC681A2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
 				FFFC680C2F242F0E004FA6E2 /* IsBipartiteBFS.swift in Sources */,
@@ -1107,6 +1118,7 @@
 				FF127BDD2DAD6BE700F203EF /* TwoSum.swift in Sources */,
 				FFAF221A2EC282C6000E86D4 /* InvertTree.swift in Sources */,
 				FFEDFF6F2F47A8E000034823 /* PacificAtlanticWaterFlow.swift in Sources */,
+				FF35E0212F49A16F00AC1BA4 /* WordLadder.swift in Sources */,
 				FF18D0232E0218A00054F7F8 /* Problem1.swift in Sources */,
 				FFBA6FD12F0863D6000579D5 /* LCSProblems+PrintLCS.swift in Sources */,
 				FF230B7F2DE3C9BC00AB74FC /* BinarySearch .swift in Sources */,

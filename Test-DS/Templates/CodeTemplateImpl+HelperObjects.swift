@@ -35,4 +35,8 @@ extension CodeTemplatesImpl {
 		[6,4,2],
 		[6,5,3]
 	]
+
+	static let letters: [Character] = {
+		(97...122).map { Character(UnicodeScalar($0)!) }
+	}()
 }
