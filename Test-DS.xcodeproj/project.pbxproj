@@ -85,6 +85,8 @@
 		FF35E0212F49A16F00AC1BA4 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */; };
 		FF35E0232F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */; };
 		FF35E0242F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */; };
+		FF35E0262F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */; };
+		FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
@@ -333,6 +335,7 @@
 		FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeTemplateImpl+HelperObjects.swift"; sourceTree = "<group>"; };
 		FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLadder-II.swift"; sourceTree = "<group>"; };
+		FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathBellmanFord.swift; sourceTree = "<group>"; };
 		FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search2dMatrix.swift; sourceTree = "<group>"; };
 		FF52074A2C89869C00B140AC /* Test_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF52074D2C89869C00B140AC /* Test_DS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_DS.h; sourceTree = "<group>"; };
@@ -733,6 +736,7 @@
 				FFEDFF3C2F40802A00034823 /* ShortestPathDirectedGraph.swift */,
 				FFEDFF462F41213D00034823 /* ShortestPathUndirectedGraph.swift */,
 				FFEDFF562F440CA800034823 /* ShortestPathDijkstraPQ.swift */,
+				FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */,
 			);
 			path = "Shortest Path";
 			sourceTree = "<group>";
@@ -1001,6 +1005,7 @@
 				FF0CC8C62EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FFFC67FD2F219BA9004FA6E2 /* Exist.swift in Sources */,
 				FFFC68122F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
+				FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */,
 				FFEDFF392F4031B400034823 /* AlienDictionary.swift in Sources */,
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
 				FFFC681B2F24C585004FA6E2 /* CycleDetectionDFS.swift in Sources */,
@@ -1097,6 +1102,7 @@
 				FFFC680C2F242F0E004FA6E2 /* IsBipartiteBFS.swift in Sources */,
 				FFEDFF372F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */,
 				FFAB5C722EF3F45200F183EC /* UnboundedKnapsack.swift in Sources */,
+				FF35E0262F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */,
 				FFFBDED52DB12FAC002DC960 /* ContainerWithMostWater.swift in Sources */,
 				FFEDFF1A2F36FA4700034823 /* FloodFill.swift in Sources */,
 				FFEDFF692F4689E800034823 /* DesignTwitter.swift in Sources */,
