@@ -87,6 +87,8 @@
 		FF35E0242F49D0F600AC1BA4 /* WordLadder-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */; };
 		FF35E0262F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */; };
 		FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */; };
+		FF35E02A2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */; };
+		FF35E02B2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
@@ -336,6 +338,7 @@
 		FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLadder-II.swift"; sourceTree = "<group>"; };
 		FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathBellmanFord.swift; sourceTree = "<group>"; };
+		FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimsAlgorithm.swift; sourceTree = "<group>"; };
 		FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search2dMatrix.swift; sourceTree = "<group>"; };
 		FF52074A2C89869C00B140AC /* Test_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF52074D2C89869C00B140AC /* Test_DS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_DS.h; sourceTree = "<group>"; };
@@ -471,6 +474,7 @@
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
+				FF35E0282F4BD59300AC1BA4 /* Minimum Spanning Tree */,
 				FFEDFF3B2F40801600034823 /* Shortest Path */,
 			);
 			path = Graphs;
@@ -532,6 +536,14 @@
 				FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */,
 			);
 			path = "Binary Search ";
+			sourceTree = "<group>";
+		};
+		FF35E0282F4BD59300AC1BA4 /* Minimum Spanning Tree */ = {
+			isa = PBXGroup;
+			children = (
+				FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */,
+			);
+			path = "Minimum Spanning Tree";
 			sourceTree = "<group>";
 		};
 		FF52073D2C89865200B140AC = {
@@ -938,6 +950,7 @@
 				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FFFC68202F25935B004FA6E2 /* ReverseImage.swift in Sources */,
 				FF5396B12F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
+				FF35E02B2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */,
 				FF5396A02F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FFAB5C532EF0D89100F183EC /* TargetSum.swift in Sources */,
 				FF2061DB2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
@@ -1131,6 +1144,7 @@
 				FF1818A62E0482EB0054F7F8 /* Problem4.swift in Sources */,
 				FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */,
 				FFFC67AA2F1CC8D2004FA6E2 /* ArraySolutions.swift in Sources */,
+				FF35E02A2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */,
 				FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FFFC678B2F1B7EC2004FA6E2 /* StackProtocol.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
