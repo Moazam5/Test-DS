@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 struct DisjointSet {
 	var rank: [Int] = []
@@ -67,4 +68,27 @@ struct DisjointSet {
 			self.size[ultimateParentU] += self.size[ultimateParentV]
 		}
 	}
+}
+
+#Playground {
+	var ds = DisjointSet(n: 7)
+	ds.unionBySize(u: 1, v: 2)
+	ds.unionBySize(u: 2, v: 3)
+	ds.unionBySize(u: 4, v: 5)
+	ds.unionBySize(u: 6, v: 7)
+	ds.unionBySize(u: 5, v: 6)
+
+	if ds.findUltimateParent(node: 3) == ds.findUltimateParent(node: 7) {
+		print("Same")
+	} else {
+		print("Not Same")
+	}
+	ds.unionBySize(u: 3, v: 7)
+
+	if ds.findUltimateParent(node: 3) == ds.findUltimateParent(node: 7) {
+		print("Same")
+	} else {
+		print("Not Same")
+	}
+
 }
