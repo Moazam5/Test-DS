@@ -14,8 +14,9 @@ extension GraphsImpl {
 	/// Your task is to compute the shortest distances from the source to all other vertices.
 	/// If a vertex is unreachable from the source, its distance should be marked as 108.
 	/// Additionally, if the graph contains a negative weight cycle, return [-1] to indicate that shortest paths cannot be reliably computed.
+	@discardableResult
 	func bellmanFord(_ vertices: Int, _ edges: [[Int]], _ src: Int) -> [Int] {
-		let INF = Int.max / 2
+		let INF = Int.max / 4
 		var distances = Array(repeating: INF, count: vertices)
 		distances[src] = 0
 
@@ -25,8 +26,11 @@ extension GraphsImpl {
 				let v = edge[1]
 				let w = edge[2]
 
+				if distances[u] == INF {
+					continue
+				}
 				let uToV = distances[u] + w
-				if distances[u] != INF && uToV < distances[v] {
+				if uToV < distances[v] {
 					distances[v] = uToV
 				}
 			}
@@ -36,9 +40,11 @@ extension GraphsImpl {
 			let u = edge[0]
 			let v = edge[1]
 			let w = edge[2]
-
+			if distances[u] == INF {
+				continue
+			}
 			let uToV = distances[u] + w
-			if distances[u] != INF && uToV < distances[v] {
+			if uToV < distances[v] {
 				return [-1]
 			}
 		}
@@ -47,3 +53,8 @@ extension GraphsImpl {
 }
 
 // TODO: Add playground with an example.
+import Playgrounds
+#Playground {
+	let d = GraphsImpl.shared.bellmanFord(5, [[2,1,1],[2,3,1],[3,4,1]], 2)
+	let r = d.max() ?? -1
+}
