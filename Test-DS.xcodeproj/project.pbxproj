@@ -89,6 +89,8 @@
 		FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */; };
 		FF35E02A2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */; };
 		FF35E02B2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */; };
+		FF35E02D2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E02C2F4C22DC00AC1BA4 /* DisjointSet.swift */; };
+		FF35E02E2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E02C2F4C22DC00AC1BA4 /* DisjointSet.swift */; };
 		FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */; };
 		FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */ = {isa = PBXBuildFile; fileRef = FF52074E2C89869C00B140AC /* Test_DS.docc */; };
 		FF52075A2C89869C00B140AC /* Test_DSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5207592C89869C00B140AC /* Test_DSTests.swift */; };
@@ -107,6 +109,8 @@
 		FF71555E2E374B3400585246 /* TwoPointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555C2E374B3400585246 /* TwoPointers.swift */; };
 		FF7155602E374E6D00585246 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */; };
 		FF7155612E374E6D00585246 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */; };
+		FF7A59892F564F2700208079 /* RemoveDuplicateSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A59882F564F2700208079 /* RemoveDuplicateSortedList.swift */; };
+		FF7A598A2F564F2700208079 /* RemoveDuplicateSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7A59882F564F2700208079 /* RemoveDuplicateSortedList.swift */; };
 		FF933B712CB322F800668ACE /* Page3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF933B702CB322F800668ACE /* Page3.swift */; };
 		FFA067F82DCF211000881478 /* TrappingRainWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA067F72DCF211000881478 /* TrappingRainWater.swift */; };
 		FFA067F92DCF211000881478 /* TrappingRainWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA067F72DCF211000881478 /* TrappingRainWater.swift */; };
@@ -339,6 +343,7 @@
 		FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLadder-II.swift"; sourceTree = "<group>"; };
 		FF35E0252F4B193200AC1BA4 /* ShortestPathBellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathBellmanFord.swift; sourceTree = "<group>"; };
 		FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimsAlgorithm.swift; sourceTree = "<group>"; };
+		FF35E02C2F4C22DC00AC1BA4 /* DisjointSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisjointSet.swift; sourceTree = "<group>"; };
 		FF43E5FE2DE90629008815D4 /* Search2dMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search2dMatrix.swift; sourceTree = "<group>"; };
 		FF52074A2C89869C00B140AC /* Test_DS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Test_DS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF52074D2C89869C00B140AC /* Test_DS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_DS.h; sourceTree = "<group>"; };
@@ -352,6 +357,7 @@
 		FF7155592E374AF500585246 /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		FF71555C2E374B3400585246 /* TwoPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointers.swift; sourceTree = "<group>"; };
 		FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
+		FF7A59882F564F2700208079 /* RemoveDuplicateSortedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveDuplicateSortedList.swift; sourceTree = "<group>"; };
 		FF933B702CB322F800668ACE /* Page3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3.swift; sourceTree = "<group>"; };
 		FFA067F72DCF211000881478 /* TrappingRainWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrappingRainWater.swift; sourceTree = "<group>"; };
 		FFA067FA2DCF305B00881478 /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
@@ -524,6 +530,7 @@
 				FF1FC3072E24CADE00951B00 /* LinkedList.swift */,
 				FF1044572F0124E700BD9741 /* LinkedListProblems.swift */,
 				FFEDFEE02F3592EB00034823 /* LRUCache.swift */,
+				FF7A59882F564F2700208079 /* RemoveDuplicateSortedList.swift */,
 			);
 			path = "Linked List";
 			sourceTree = "<group>";
@@ -542,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */,
+				FF35E02C2F4C22DC00AC1BA4 /* DisjointSet.swift */,
 			);
 			path = "Minimum Spanning Tree";
 			sourceTree = "<group>";
@@ -986,6 +994,7 @@
 				FFFC67912F1B8790004FA6E2 /* EvalRPN.swift in Sources */,
 				FFBA6FD32F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FFEDFF4B2F41CD6F00034823 /* KthLargest.swift in Sources */,
+				FF35E02E2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FF2061D62E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
@@ -1018,6 +1027,7 @@
 				FF0CC8C62EE57D5400C5870D /* KnapsackRecursiveTests.swift in Sources */,
 				FFFC67FD2F219BA9004FA6E2 /* Exist.swift in Sources */,
 				FFFC68122F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
+				FF7A598A2F564F2700208079 /* RemoveDuplicateSortedList.swift in Sources */,
 				FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */,
 				FFEDFF392F4031B400034823 /* AlienDictionary.swift in Sources */,
 				FFB124C02EDBAA0100CD04C7 /* ValidBST.swift in Sources */,
@@ -1078,6 +1088,7 @@
 				FFFC67C42F1F7BA1004FA6E2 /* LevelOrder.swift in Sources */,
 				FF2061D92E9C5B34008DA0FA /* IsBalanced.swift in Sources */,
 				FFFC681D2F24D00F004FA6E2 /* CourseSchedule-I.swift in Sources */,
+				FF7A59892F564F2700208079 /* RemoveDuplicateSortedList.swift in Sources */,
 				FF69F40D2ECE7B4F00FB87D3 /* RightSideView.swift in Sources */,
 				FFFC67A72F1CC8BE004FA6E2 /* ArrayQuestions.swift in Sources */,
 				FFEDFF482F41213D00034823 /* ShortestPathUndirectedGraph.swift in Sources */,
@@ -1148,6 +1159,7 @@
 				FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FFFC678B2F1B7EC2004FA6E2 /* StackProtocol.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
+				FF35E02D2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FFBA6FD72F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,

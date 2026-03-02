@@ -24,6 +24,7 @@ extension GraphsImpl {
 			if item.weight != distance[item.value] { continue }
 
 			// adjacency[item.value] is the edge list for this node
+			// I keep falling for this one, its a 2d array when you get a value for it and when you do for, its 1d for the value, ie, edge
 			for edge in adjacency[item.value] {
 				let edgeValue = edge[0]
 				let edgeWeight = edge[1]
@@ -53,16 +54,16 @@ extension GraphsImpl {
 			return lhs.weight < rhs.weight
 		}
 	}
-
 }
 
-#Playground {
+#Playground {	
 	let graph: [[[Int]]] = [
 		[[1, 1], [3, 4]],      // edges from node 0
 		[[0, 1], [2, 2], [3, 3]], // node 1
 		[[1, 2]],              // node 2
 		[[0, 4], [1, 3]]       // node 3
 	]
+
 
 	let graphImpl = GraphsImpl()
 	let result = graphImpl.shortestPathUndirectedDijkstraPQ(4, adjacency: graph, src: 0	)

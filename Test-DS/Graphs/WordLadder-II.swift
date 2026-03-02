@@ -21,7 +21,6 @@ extension GraphsImpl {
 		var level = 1
 		var usedOnLevel = Set<String>()
 		var ans = [[String]]()
-
 		while head < q.count {
 			let nodes = q[head]
 			head += 1
