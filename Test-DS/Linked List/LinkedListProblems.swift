@@ -8,7 +8,9 @@
 import Foundation
 
 protocol LinkedListProblems {
-	func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode? 
+	func removeNthFromEnd(_ head: ListNode?, _ n: Int) -> ListNode?
+	/// https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+	func deleteDuplicates(_ head: ListNode?) -> ListNode?
 }
 
 struct LinkedListSolutions: LinkedListProblems {
