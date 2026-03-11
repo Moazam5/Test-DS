@@ -12,6 +12,8 @@ protocol GraphsQuestions {
 	func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool
 	/// https://leetcode.com/problems/clone-graph/
 	func cloneGraph(_ node: Node?) -> Node?
+	/// https://neetcode.io/problems/islands-and-treasure/question?list=neetcode150
+	func islandsAndTreasure(_ grid: inout [[Int]])
 	/// https://leetcode.com/problems/word-search/
 	func exist(_ board: [[Character]], _ word: String) -> Bool
 	/// https://leetcode.com/problems/rotting-oranges/
