@@ -16,11 +16,7 @@ struct DisjointSet {
 	init(n: Int) {
 		self.rank = Array(repeating: 0, count: n + 1) // n + 1 to support 1 indexed graphs
 		self.size = Array(repeating: 1, count: n + 1)
-		self.parent = [Int]()
-		self.parent.reserveCapacity(n + 1)
-		for i in 0...n {
-			self.parent.append(i)
-		}
+		self.parent = Array(0...n)
 	}
 
 	mutating func findUltimateParent(node: Int) -> Int {
@@ -55,7 +51,7 @@ struct DisjointSet {
 		let ultimateParentU = self.findUltimateParent(node: u)
 		let ultimateParentV = self.findUltimateParent(node: v)
 
-		// If they belong to the same component, then return
+		// If they belong to the same component, then return.
 		if ultimateParentU == ultimateParentV {
 			return
 		}
@@ -90,5 +86,4 @@ struct DisjointSet {
 	} else {
 		print("Not Same")
 	}
-
 }
