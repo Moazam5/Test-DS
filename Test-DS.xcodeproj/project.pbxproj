@@ -582,9 +582,7 @@
 				FF7155582E374AC500585246 /* Two Pointers */,
 				FF18D01F2E0215390054F7F8 /* Sliding Window */,
 				FFAB5C572EF3415100F183EC /* Templates */,
-				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
-				FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */,
-				FF10444D2F010FCF00BD9741 /* LCS */,
+				FF7A598B2F58DB8600208079 /* Dynamic Programming */,
 				FFB124C12EDCF3AC00CD04C7 /* Backtracking */,
 				FF1FC3032E24CA6700951B00 /* Linked List */,
 				FF230B7D2DE3C99F00AB74FC /* Binary Search  */,
@@ -623,6 +621,16 @@
 				FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */,
 			);
 			path = "Two Pointers";
+			sourceTree = "<group>";
+		};
+		FF7A598B2F58DB8600208079 /* Dynamic Programming */ = {
+			isa = PBXGroup;
+			children = (
+				FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */,
+				FFAB5C702EF3F42A00F183EC /* UnboundedKnapsack */,
+				FF10444D2F010FCF00BD9741 /* LCS */,
+			);
+			path = "Dynamic Programming";
 			sourceTree = "<group>";
 		};
 		FFAB5C572EF3415100F183EC /* Templates */ = {

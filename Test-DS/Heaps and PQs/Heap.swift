@@ -12,7 +12,7 @@ import Playgrounds
 /// Heap exists in two flavors, min heap and max heap.
 /// FIXME :- Make this a generic implementation.
 struct MyHeap<Element: Comparable> {
-	private var elements: [Element]
+	var elements: [Element]
 	let priority: (Element, Element) -> Bool
 
 	var isEmpty: Bool {

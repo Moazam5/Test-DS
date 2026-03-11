@@ -10,13 +10,12 @@ import Foundation
 struct CodeTemplatesImpl: CodeTemplates {
 	// MARK: Two pointers
 
-	func twoPointers(_ arr: [Int], condition: () -> Bool) -> Int {
+	func twoPointers(_ arr: [Int], condition: (Int, Int) -> Bool) -> Int {
 		var (left, ans) = (0, 0)
 		var right = arr.count - 1
-
 		while left < right {
 			// Do some logic here with left and right
-			if condition() {
+			if condition(arr[left], arr[right]) {
 				left += 1
 			} else {
 				right -= 1

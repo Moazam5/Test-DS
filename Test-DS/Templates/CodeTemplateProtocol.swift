@@ -9,7 +9,7 @@ import Foundation
 
 protocol CodeTemplates {
 	/// Two pointers: one input, opposite ends
-	func twoPointers(_ arr: [Int], condition: () -> Bool) -> Int
+	func twoPointers(_ arr: [Int], condition: (Int, Int) -> Bool) -> Int
 	///	Two pointers: two inputs, exhaust both
 	func twoPointersTwoInputs(_ arr1: [Int], _ arr2: [Int], condition: () -> Bool) -> Int
 

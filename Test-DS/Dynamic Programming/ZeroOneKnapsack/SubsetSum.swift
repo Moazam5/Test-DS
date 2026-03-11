@@ -15,7 +15,7 @@ struct KnapsackProblems: Knapsack {
 
 		var dp: [[Bool]] = (0..<numRows).map { i in
 			(0..<numCols).map { j in
-				if j == 0 || (i == 0 && j == 0){
+				if j == 0 || (i == 0 && j == 0) { // The second check if redundant. 
 					return true
 				} else {
 					return false

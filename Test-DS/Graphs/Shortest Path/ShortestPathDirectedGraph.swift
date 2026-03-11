@@ -51,6 +51,7 @@ extension GraphsImpl {
 		// Source node, if not given set to 0
 		distances[0] = 0
 
+		print(stack)
 		// Step 2b: Update distances array
 		while !stack.isEmpty {
 			let node = stack.removeLast()
@@ -74,6 +75,10 @@ extension GraphsImpl {
 
 #Playground {
 	let graph = GraphsImpl()
-	
+	let a: Character = "b"
+//	let t =  a.asciiValue! - Character("z").asciiValue!
 	_ = graph.shortestPath(7, edges: CodeTemplatesImpl.directedShortestPathEdges)
+
+	_ = graph.shortestPath(4, edges:
+	[[0,1,200], [1,2,100], [1,3, 300], [2,3,100]])
 }
