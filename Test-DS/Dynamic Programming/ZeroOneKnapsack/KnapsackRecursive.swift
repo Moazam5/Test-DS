@@ -48,3 +48,8 @@ extension Knapsack {
 	}
 }
 
+struct KnapsackImpl: Knapsack {
+	static let standard: KnapsackImpl = .init()
+}
+
+

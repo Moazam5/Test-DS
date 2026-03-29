@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct KnapsackProblems: Knapsack {
+extension KnapsackProblems {
 	/// Given an array `list` of non-negative integers and a value sum, the task is to check if there is a subset of the given array whose sum is equal to the given sum.
 	func subsetSum(list: [Int], sum: Int) -> Bool {
 		let numRows = list.count + 1
