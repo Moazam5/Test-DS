@@ -18,6 +18,11 @@ protocol Knapsack {
 	func canPartition(_ nums: [Int]) -> Bool
 	/// Given an array `arr[]` of length `n` and an integer `target`, the task is to find the **number of subsets** with a sum equal to target.
 	func countOfSubsetSum(_ list: [Int], _ sum: Int) -> Int
+	/// Given an array arr[] of size n, the task is to divide it into two sets S1 and S2 such that the absolute difference between their sums is minimum.
+	func findMinDifference(_ list: [Int]) -> Int
 	/// Given an array Arr[] and a difference diff, find the number of subsets that array can be divided so that each the difference between the two subset is the given diff.
 	func countSubsetsWithGivenDiff(_ nums: [Int], diff: Int) -> Int
+	/// You are given an integer array nums and an integer target.
+	/// You want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers.
+	func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int
 }
