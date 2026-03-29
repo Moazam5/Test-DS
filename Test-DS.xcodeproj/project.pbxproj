@@ -105,6 +105,8 @@
 		FF6C0C902F79CAA300DEDD85 /* KnapsackProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */; };
 		FF6C0C922F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */; };
 		FF6C0C932F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */; };
+		FF6C0C952F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */; };
+		FF6C0C962F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */; };
 		FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555C2E374B3400585246 /* TwoPointers.swift */; };
@@ -357,6 +359,7 @@
 		FF69F40E2ECE7B8F00FB87D3 /* RightSideViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideViewTests.swift; sourceTree = "<group>"; };
 		FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProblems.swift; sourceTree = "<group>"; };
 		FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProtocol.swift; sourceTree = "<group>"; };
+		FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendenceRecord.swift; sourceTree = "<group>"; };
 		FF7155592E374AF500585246 /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		FF71555C2E374B3400585246 /* TwoPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointers.swift; sourceTree = "<group>"; };
 		FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
@@ -812,6 +815,7 @@
 			children = (
 				FFFC67A52F1CC8BE004FA6E2 /* ArrayQuestions.swift */,
 				FFFC67A82F1CC8D2004FA6E2 /* ArraySolutions.swift */,
+				FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */,
 				FFFC681F2F25935B004FA6E2 /* ReverseImage.swift */,
 				FFEDFF202F3C34EB00034823 /* String+ReverseNumber.swift */,
 			);
@@ -984,6 +988,7 @@
 				FF0CC8E82EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF0CC8CA2EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FFEDFF362F3FFDDD00034823 /* CourseSchedule-II.swift in Sources */,
+				FF6C0C962F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */,
 				FFEDFF4F2F41CE8E00034823 /* Heap.swift in Sources */,
 				FFB6559E2F174FB600C50081 /* Graphs+SearchMatrix.swift in Sources */,
 				FFEDFF172F36AA3A00034823 /* MinDepth.swift in Sources */,
@@ -1153,6 +1158,7 @@
 				FF2061D52E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
 				FFFC67BA2F1DBAE4004FA6E2 /* TreeProblems.swift in Sources */,
 				FFFC680F2F2445D8004FA6E2 /* IsBipartiteDFS.swift in Sources */,
+				FF6C0C952F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */,
 				FF0CC8FF2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FF933B712CB322F800668ACE /* Page3.swift in Sources */,
 				FFAB5C522EF0D89100F183EC /* TargetSum.swift in Sources */,
