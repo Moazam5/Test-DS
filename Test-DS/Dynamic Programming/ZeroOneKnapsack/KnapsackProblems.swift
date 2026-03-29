@@ -8,5 +8,5 @@
 import Foundation
 
 struct KnapsackProblems: Knapsack {
-
+	static let standard: KnapsackProblems = .init()
 }

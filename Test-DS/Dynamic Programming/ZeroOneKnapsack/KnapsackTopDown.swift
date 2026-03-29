@@ -47,5 +47,5 @@ import Playgrounds
 #Playground {
 	let weights = [1, 3, 4, 5]
 	let vals = [1, 4, 5, 7]
-	let res = KnapsackImpl.standard.knapsackTopDown(weights: weights, values: vals, capacity: 7)
+	let res = KnapsackProblems.standard.knapsackTopDown(weights: weights, values: vals, capacity: 7)
 }
