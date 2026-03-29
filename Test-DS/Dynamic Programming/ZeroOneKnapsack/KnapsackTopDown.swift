@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension Knapsack {
 	func knapsackTopDown(weights: [Int], values: [Int], capacity: Int) -> Int {
@@ -43,7 +44,6 @@ extension Knapsack {
 	}
 }
 
-import Playgrounds
 #Playground {
 	let weights = [1, 3, 4, 5]
 	let vals = [1, 4, 5, 7]

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension KnapsackProblems {
 	/// Given an array `list` of non-negative integers and a value sum, the task is to check if there is a subset of the given array whose sum is equal to the given sum.
@@ -15,7 +16,7 @@ extension KnapsackProblems {
 
 		var dp: [[Bool]] = (0..<numRows).map { i in
 			(0..<numCols).map { j in
-				if j == 0 || (i == 0 && j == 0) { // The second check if redundant. 
+				if j == 0 || (i == 0 && j == 0) { // The second check is redundant. 
 					return true
 				} else {
 					return false
@@ -35,4 +36,9 @@ extension KnapsackProblems {
 		}
 		return dp[numRows - 1][numCols - 1]
 	}
+}
+
+#Playground {
+	let list = [2, 3, 7, 8, 10]
+	let res = KnapsackProblems.standard.subsetSum(list: list, sum: 11)
 }

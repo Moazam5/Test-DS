@@ -103,6 +103,8 @@
 		FF69F4102ECE7B8F00FB87D3 /* RightSideViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69F40E2ECE7B8F00FB87D3 /* RightSideViewTests.swift */; };
 		FF6C0C8F2F79CAA300DEDD85 /* KnapsackProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */; };
 		FF6C0C902F79CAA300DEDD85 /* KnapsackProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */; };
+		FF6C0C922F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */; };
+		FF6C0C932F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */; };
 		FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555C2E374B3400585246 /* TwoPointers.swift */; };
@@ -354,6 +356,7 @@
 		FF69F40B2ECE7B4F00FB87D3 /* RightSideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideView.swift; sourceTree = "<group>"; };
 		FF69F40E2ECE7B8F00FB87D3 /* RightSideViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideViewTests.swift; sourceTree = "<group>"; };
 		FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProblems.swift; sourceTree = "<group>"; };
+		FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProtocol.swift; sourceTree = "<group>"; };
 		FF7155592E374AF500585246 /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		FF71555C2E374B3400585246 /* TwoPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointers.swift; sourceTree = "<group>"; };
 		FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
@@ -649,6 +652,7 @@
 		FFAB5C6F2EF3F3DF00F183EC /* ZeroOneKnapsack */ = {
 			isa = PBXGroup;
 			children = (
+				FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */,
 				FF0CC8C22EE578CF00C5870D /* KnapsackRecursive.swift */,
 				FF0CC8C82EE5960200C5870D /* KnapsackTopDown.swift */,
 				FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */,
@@ -1013,6 +1017,7 @@
 				FFA067FF2DCFFC8500881478 /* CarFleet.swift in Sources */,
 				FF0C00CA2EF0CE3300C5870D /* CountNumSubsetsGivenDiff.swift in Sources */,
 				FF0CC8C32EE578CF00C5870D /* KnapsackRecursive.swift in Sources */,
+				FF6C0C932F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */,
 				FFFC680D2F242F0E004FA6E2 /* IsBipartiteBFS.swift in Sources */,
 				FFAC3E512E392172001214BB /* TreeNode.swift in Sources */,
 				FF6C0C902F79CAA300DEDD85 /* KnapsackProblems.swift in Sources */,
@@ -1179,6 +1184,7 @@
 				FFFC67FE2F219BA9004FA6E2 /* Exist.swift in Sources */,
 				FF0CC8E92EEB9D4C00C5870D /* SubsetSum.swift in Sources */,
 				FF2061DC2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
+				FF6C0C922F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */,
 				FF0CC8C92EE5960200C5870D /* KnapsackTopDown.swift in Sources */,
 				FF18D0272E0287440054F7F8 /* Problem2.swift in Sources */,
 				FF10443E2EFE86F900BD9741 /* CoinChange-I.swift in Sources */,
