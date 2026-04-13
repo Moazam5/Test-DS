@@ -107,6 +107,12 @@
 		FF6C0C932F79D03D00DEDD85 /* KnapsackProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */; };
 		FF6C0C952F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */; };
 		FF6C0C962F79D8AD00DEDD85 /* StudentAttendenceRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */; };
+		FF6C0C992F87021D00DEDD85 /* PartitionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C982F87021D00DEDD85 /* PartitionLabel.swift */; };
+		FF6C0C9A2F87021D00DEDD85 /* PartitionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0C982F87021D00DEDD85 /* PartitionLabel.swift */; };
+		FF6C0D652F8CA54800DEDD85 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0D642F8CA54800DEDD85 /* MergeSort.swift */; };
+		FF6C0D662F8CA54800DEDD85 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0D642F8CA54800DEDD85 /* MergeSort.swift */; };
+		FF6C0D682F8CA63400DEDD85 /* SortingProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0D672F8CA63400DEDD85 /* SortingProblems.swift */; };
+		FF6C0D692F8CA63400DEDD85 /* SortingProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6C0D672F8CA63400DEDD85 /* SortingProblems.swift */; };
 		FF71555A2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555B2E374AF500585246 /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7155592E374AF500585246 /* ValidPalindrome.swift */; };
 		FF71555D2E374B3400585246 /* TwoPointers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF71555C2E374B3400585246 /* TwoPointers.swift */; };
@@ -360,6 +366,9 @@
 		FF6C0C8E2F79CAA300DEDD85 /* KnapsackProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProblems.swift; sourceTree = "<group>"; };
 		FF6C0C912F79D03D00DEDD85 /* KnapsackProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnapsackProtocol.swift; sourceTree = "<group>"; };
 		FF6C0C942F79D8AD00DEDD85 /* StudentAttendenceRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttendenceRecord.swift; sourceTree = "<group>"; };
+		FF6C0C982F87021D00DEDD85 /* PartitionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartitionLabel.swift; sourceTree = "<group>"; };
+		FF6C0D642F8CA54800DEDD85 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		FF6C0D672F8CA63400DEDD85 /* SortingProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingProblems.swift; sourceTree = "<group>"; };
 		FF7155592E374AF500585246 /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		FF71555C2E374B3400585246 /* TwoPointers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPointers.swift; sourceTree = "<group>"; };
 		FF71555F2E374E6D00585246 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
@@ -600,6 +609,8 @@
 				FFEDFF492F41CD3D00034823 /* Heaps and PQs */,
 				FFFC67862F1B7C33004FA6E2 /* PayPal */,
 				FFD10E142DD4658100C68764 /* Stack */,
+				FF6C0D632F8CA52D00DEDD85 /* Sorting */,
+				FF6C0C972F87020800DEDD85 /* Greedy */,
 				FF52074D2C89869C00B140AC /* Test_DS.h */,
 				FF52074E2C89869C00B140AC /* Test_DS.docc */,
 				FFB34DD82DA725CB00D2C7A8 /* Playground.swift */,
@@ -618,6 +629,23 @@
 				FF1044512F01108200BD9741 /* UnboundedKnapsackTests.swift */,
 			);
 			path = "Test-DSTests";
+			sourceTree = "<group>";
+		};
+		FF6C0C972F87020800DEDD85 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C0C982F87021D00DEDD85 /* PartitionLabel.swift */,
+			);
+			path = Greedy;
+			sourceTree = "<group>";
+		};
+		FF6C0D632F8CA52D00DEDD85 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				FF6C0D672F8CA63400DEDD85 /* SortingProblems.swift */,
+				FF6C0D642F8CA54800DEDD85 /* MergeSort.swift */,
+			);
+			path = Sorting;
 			sourceTree = "<group>";
 		};
 		FF7155582E374AC500585246 /* Two Pointers */ = {
@@ -965,11 +993,13 @@
 				FFEDFF212F3C34EB00034823 /* String+ReverseNumber.swift in Sources */,
 				FF0CC8FE2EEEB7A200C5870D /* Permutations.swift in Sources */,
 				FFEDFF192F36FA4700034823 /* FloodFill.swift in Sources */,
+				FF6C0D662F8CA54800DEDD85 /* MergeSort.swift in Sources */,
 				FFEDFF632F46894000034823 /* KthLargestElement.swift in Sources */,
 				FFFC678F2F1B7EF0004FA6E2 /* MinStack.swift in Sources */,
 				FFFC67C72F20D478004FA6E2 /* Node.swift in Sources */,
 				FFAF22192EC282C6000E86D4 /* InvertTree.swift in Sources */,
 				FFEDFF602F46888B00034823 /* KClosestPoints.swift in Sources */,
+				FF6C0C9A2F87021D00DEDD85 /* PartitionLabel.swift in Sources */,
 				FFEDFEE12F3592EB00034823 /* LRUCache.swift in Sources */,
 				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
 				FFFC68202F25935B004FA6E2 /* ReverseImage.swift in Sources */,
@@ -1014,6 +1044,7 @@
 				FFEDFF4B2F41CD6F00034823 /* KthLargest.swift in Sources */,
 				FF35E02E2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FF2061D62E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
+				FF6C0D682F8CA63400DEDD85 /* SortingProblems.swift in Sources */,
 				FF52074F2C89869C00B140AC /* Test_DS.docc in Sources */,
 				FF18D0242E0218A00054F7F8 /* Problem1.swift in Sources */,
 				FFEDFF2C2F3F285400034823 /* TopologicalSortDFS.swift in Sources */,
@@ -1134,6 +1165,7 @@
 				FFBA6FD42F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
 				FFFC67882F1B7C4B004FA6E2 /* PayPalProtocol.swift in Sources */,
 				FFFC67C62F20D478004FA6E2 /* Node.swift in Sources */,
+				FF6C0D692F8CA63400DEDD85 /* SortingProblems.swift in Sources */,
 				FFEDFF612F46888B00034823 /* KClosestPoints.swift in Sources */,
 				FFFC68032F22DC95004FA6E2 /* SurroundedRegions.swift in Sources */,
 				FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */,
@@ -1153,6 +1185,7 @@
 				FFEDFF582F440CA800034823 /* ShortestPathDijkstraPQ.swift in Sources */,
 				FF0D98ED2E5C3F3800EED894 /* TreesProblemsTests.swift in Sources */,
 				FF1044452EFFE49800BD9741 /* CodeTemplateImpl.swift in Sources */,
+				FF6C0C992F87021D00DEDD85 /* PartitionLabel.swift in Sources */,
 				FF5396B22F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
 				FF35E01E2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */,
 				FF2061D52E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
@@ -1178,6 +1211,7 @@
 				FF1044592F0124E700BD9741 /* LinkedListProblems.swift in Sources */,
 				FFFC678B2F1B7EC2004FA6E2 /* StackProtocol.swift in Sources */,
 				FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */,
+				FF6C0D652F8CA54800DEDD85 /* MergeSort.swift in Sources */,
 				FF35E02D2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FFBA6FD72F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
