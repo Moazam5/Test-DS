@@ -8,7 +8,7 @@
 import Foundation
 
 extension GraphsImpl {
-	/// This method calculates the shortest distance in an undirected graph having a unit distance.
+	/// This method calculates the shortest distance in an undirected graph having a **unit distance**.
 	/// - Parameters:
 	///   - v: The number of vertices/nodes.
 	///   - edges: The edge list.

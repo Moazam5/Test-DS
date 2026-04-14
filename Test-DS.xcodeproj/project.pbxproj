@@ -495,6 +495,7 @@
 				FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */,
 				FFFC681C2F24D00F004FA6E2 /* CourseSchedule-I.swift */,
 				FFEDFF352F3FFDDD00034823 /* CourseSchedule-II.swift */,
+				FFEDFF382F4031B400034823 /* AlienDictionary.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
@@ -769,7 +770,6 @@
 			children = (
 				FFEDFF2A2F3F285400034823 /* TopologicalSortDFS.swift */,
 				FFEDFF2D2F3FDAB900034823 /* TopologicalSortBFS.swift */,
-				FFEDFF382F4031B400034823 /* AlienDictionary.swift */,
 			);
 			path = "Topological Sort";
 			sourceTree = "<group>";
