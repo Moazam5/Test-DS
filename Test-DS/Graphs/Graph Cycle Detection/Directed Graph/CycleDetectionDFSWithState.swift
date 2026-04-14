@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
+	@discardableResult
 	func hasCycleDFSWithStateEnum(adjacencyList: [Int: [Int]]) -> Bool {
 		enum NodeState {
 			case white // not visited
@@ -39,7 +41,7 @@ extension GraphsImpl {
 					}
 				}
 			}
-			state[node] = .black  // ✅ Mark as fully processed
+			state[node] = .black  // Mark as fully processed
 			return false
 		}
 
@@ -52,4 +54,10 @@ extension GraphsImpl {
 		}
 		return false
 	}
+}
+
+#Playground {
+	GraphsImpl.shared.hasCycleDFSWithStateEnum(adjacencyList: CodeTemplatesImpl.directedGraphWithCycle)
+
+	GraphsImpl.shared.hasCycleDFSWithStateEnum(adjacencyList: CodeTemplatesImpl.directedGraphWithoutCycle)
 }

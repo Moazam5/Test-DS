@@ -36,6 +36,19 @@ extension CodeTemplatesImpl {
 		[6,5,3]
 	]
 
+	static let directedGraphWithCycle: [Int: [Int]] = [
+		0: [1],
+		1: [2],
+		2: [0]  // ← cycle back to 0
+	]
+
+	static let directedGraphWithoutCycle: [Int: [Int]] = [
+		0: [1, 2],
+		1: [3],
+		2: [3],
+		3: []
+	]
+
 	static let letters: [Character] = {
 		(97...122).map { Character(UnicodeScalar($0)!) }
 	}()
