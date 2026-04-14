@@ -6,11 +6,14 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
+	@discardableResult
 	func hasCycleKahns(adjacencyList: [Int : [Int]]) -> Bool {
-		// Built on top of topo sort.
+		// Built on top of topologoical sort.
 		let topoResult = self.topologicalSortBFS(adjacencyList: adjacencyList, vertices: adjacencyList.keys.count)
+		// Only need to check if the result contains all the vertices, if not then a cycle is detected.
 		return topoResult.count != adjacencyList.keys.count
 	}
 
@@ -44,4 +47,10 @@ extension GraphsImpl {
 		}
 		return total != vertices
 	}
+}
+
+#Playground {
+	GraphsImpl.shared.hasCycleKahns(adjacencyList: CodeTemplatesImpl.directedGraphWithCycle)
+
+	GraphsImpl.shared.hasCycleKahns(adjacencyList: CodeTemplatesImpl.directedGraphWithoutCycle)
 }
