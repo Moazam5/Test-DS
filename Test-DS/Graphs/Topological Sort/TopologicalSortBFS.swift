@@ -10,7 +10,7 @@ import Playgrounds
 
 extension GraphsImpl {
 	/// https://www.youtube.com/watch?v=73sneFXuTEg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=14
-	/// This is also knows as Kahns Algorithm
+	/// This is also knows as **Kahn's Algorithm**
 	func topologicalSortBFS(adjacencyList: [Int : [Int]], vertices: Int) -> [Int] {
 		var indegree = Array(repeating: 0, count: vertices)
 		var q = Array<Int>()
@@ -22,6 +22,7 @@ extension GraphsImpl {
 				indegree[neighbor] += 1
 			}
 		}
+		// Add vertex with in-degree 0 to the Q.
 		for (index, ind) in indegree.enumerated() where ind == 0 {
 			q.append(index)
 		}
@@ -32,6 +33,7 @@ extension GraphsImpl {
 
 			for neighbor in adjacencyList[node, default: []] {
 				indegree[neighbor] -= 1
+				// Check for 0 in-degree vertex after the update.
 				if indegree[neighbor] == 0 {
 					q.append(neighbor)
 				}
