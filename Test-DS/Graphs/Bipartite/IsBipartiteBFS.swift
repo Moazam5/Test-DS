@@ -18,14 +18,12 @@ extension GraphsImpl {
 			
 			while !q.isEmpty {
 				let curr = q.removeFirst()
-				if let neighbors = adjacencyList[curr] {
-					for neighbor in neighbors {
-						if colors[neighbor] == -1 { // Not in the list so color it
-							colors[neighbor] = 1 - colors[curr]
-							q.append(neighbor)
-						} else if colors[neighbor] == colors[curr] { // Check neighbor, if neighbor has same color, NOT bipartite
-							return false
-						}
+				for neighbor in adjacencyList[curr, default: []] {
+					if colors[neighbor] == -1 { // Not in the list so color it
+						colors[neighbor] = 1 - colors[curr]
+						q.append(neighbor)
+					} else if colors[neighbor] == colors[curr] { // Check neighbor, if neighbor has same color, NOT bipartite
+						return false
 					}
 				}
 			}

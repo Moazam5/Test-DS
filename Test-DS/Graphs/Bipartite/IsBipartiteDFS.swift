@@ -14,17 +14,15 @@ extension GraphsImpl {
 		func dfsCheck(_ node: Int, _ color: Int) -> Bool {
 			colors[node] = color
 
-			if let neighbors = adjacencyList[node] {
-				for neighbor in neighbors {
-					if colors[neighbor] == -1 {
-						// Color with opposite color and recurse
-						if !dfsCheck(neighbor, 1 - color) {
-							return false
-						}
-					} else if colors[neighbor] == color {
-						// Same color as current node - not bipartite
+			for neighbor in adjacencyList[node, default: []]  {
+				if colors[neighbor] == -1 {
+					// Color with opposite color and recurse
+					if !dfsCheck(neighbor, 1 - color) {
 						return false
 					}
+				} else if colors[neighbor] == color {
+					// Same color as current node - not bipartite
+					return false
 				}
 			}
 
