@@ -11,23 +11,25 @@ import Playgrounds
 extension GraphsImpl {
 	@discardableResult
 	func hasCycleKahns(adjacencyList: [Int : [Int]]) -> Bool {
-		// Built on top of topologoical sort.
+		/// Builds on top of topological sort using Kahn's Algorithm.
 		let topoResult = self.topologicalSortBFS(adjacencyList: adjacencyList, vertices: adjacencyList.keys.count)
 		// Only need to check if the result contains all the vertices, if not then a cycle is detected.
 		return topoResult.count != adjacencyList.keys.count
 	}
 
-	// Detailed version
+	/// **Detailed version**
 	func hasCycleKahnsDetailed(adjacencyList: [Int : [Int]], vertices: Int) -> Bool {
 		var indegree = Array(repeating: 0, count: vertices)
 		var q = Array<Int>()
 		q.reserveCapacity(vertices)
+		// Update the in-degree
 		for vertex in 0..<vertices {
 			for neighbor in adjacencyList[vertex, default: []] {
 				indegree[neighbor] += 1
 			}
 		}
 
+		// Add vertices with 0 in-degree to the Q.
 		for i in 0..<vertices where indegree[i] == 0 {
 			q.append(i)
 		}
