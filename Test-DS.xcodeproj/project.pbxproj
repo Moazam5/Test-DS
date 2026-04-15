@@ -163,6 +163,8 @@
 		FFBA6FDA2F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */; };
 		FFBA6FDC2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */; };
 		FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */; };
+		FFBDE1952F8F1C4F0046D145 /* BoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */; };
+		FFBDE1962F8F1C4F0046D145 /* BoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */; };
 		FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */; };
@@ -397,6 +399,7 @@
 		FFBA6FD52F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinInsertionAndDeletions.swift"; sourceTree = "<group>"; };
 		FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblem+LongestPalindromicSubsequence.swift"; sourceTree = "<group>"; };
 		FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinDeletions.swift"; sourceTree = "<group>"; };
+		FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMoore.swift; sourceTree = "<group>"; };
 		FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
 		FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateParenthesis.swift; sourceTree = "<group>"; };
 		FFEDFEE02F3592EB00034823 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -610,6 +613,7 @@
 				FFEDFF492F41CD3D00034823 /* Heaps and PQs */,
 				FFFC67862F1B7C33004FA6E2 /* PayPal */,
 				FFD10E142DD4658100C68764 /* Stack */,
+				FFBDE1932F8F1C350046D145 /* Important Algorithm  */,
 				FF6C0D632F8CA52D00DEDD85 /* Sorting */,
 				FF6C0C972F87020800DEDD85 /* Greedy */,
 				FF52074D2C89869C00B140AC /* Test_DS.h */,
@@ -748,6 +752,14 @@
 				FFB124C22EDCF3C700CD04C7 /* Subsets.swift */,
 			);
 			path = Backtracking;
+			sourceTree = "<group>";
+		};
+		FFBDE1932F8F1C350046D145 /* Important Algorithm  */ = {
+			isa = PBXGroup;
+			children = (
+				FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */,
+			);
+			path = "Important Algorithm ";
 			sourceTree = "<group>";
 		};
 		FFD10E142DD4658100C68764 /* Stack */ = {
@@ -999,6 +1011,7 @@
 				FFFC67C72F20D478004FA6E2 /* Node.swift in Sources */,
 				FFAF22192EC282C6000E86D4 /* InvertTree.swift in Sources */,
 				FFEDFF602F46888B00034823 /* KClosestPoints.swift in Sources */,
+				FFBDE1962F8F1C4F0046D145 /* BoyerMoore.swift in Sources */,
 				FF6C0C9A2F87021D00DEDD85 /* PartitionLabel.swift in Sources */,
 				FFEDFEE12F3592EB00034823 /* LRUCache.swift in Sources */,
 				FF0CC8F22EEC0EA100C5870D /* CountOfSubsetSum.swift in Sources */,
@@ -1239,6 +1252,7 @@
 				FF5396A12F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FFEDFF5D2F46884D00034823 /* LastStoneWeight.swift in Sources */,
+				FFBDE1952F8F1C4F0046D145 /* BoyerMoore.swift in Sources */,
 				FF1E29992F61688D00A6BA7A /* IslandAndTreasures.swift in Sources */,
 				FFFC68172F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */,
 				FF1044552F01116500BD9741 /* LCSProtocol.swift in Sources */,
