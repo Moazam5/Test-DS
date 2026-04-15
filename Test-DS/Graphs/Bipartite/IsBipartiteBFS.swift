@@ -28,7 +28,6 @@ extension GraphsImpl {
 				}
 			}
 			return true
-
 		}
 
 		for vertex in 0..<vertices {

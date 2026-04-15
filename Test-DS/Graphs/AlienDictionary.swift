@@ -9,6 +9,7 @@ import Foundation
 import Playgrounds
 
 extension GraphsImpl {
+	@discardableResult
 	func foreignDictionary(_ words: [String]) -> String {
 		var adjacencyList: [Character: Set<Character>] = [:]
 		var indegree: [Character: Int] = [:]
@@ -31,6 +32,7 @@ extension GraphsImpl {
 
 			for j in 0..<m {
 				if s1[j] != s2[j] {
+					// TODO: Break this into two steps
 					if adjacencyList[s1[j], default: []].insert(s2[j]).inserted {
 						indegree[s2[j], default: 0] += 1
 					}
@@ -39,7 +41,8 @@ extension GraphsImpl {
 				}
 			}
 
-			// invalid: longer word comes before its prefix
+			// Edge case for invalid dictionary: longer word comes before its prefix.
+			// Also not possible if there is a cycle.
 			if !foundDiff && s1.count > s2.count {
 				return ""
 			}
