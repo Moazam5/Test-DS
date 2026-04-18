@@ -13,8 +13,10 @@ extension GraphsImpl {
 	///   - n: Number of nodes.
 	///   - edges: The edge array, `edge[i, j, w]` represents an edge from`i -> j` with a weight of `w`.
 	/// - Returns: Returns an array of shortest distances.
+	@discardableResult
 	func shortestPath(_ n: Int, edges: [[Int]]) -> [Int] {
 		var adjacencyList: [Int: [(node: Int, weight: Int)]] = [:]
+		let MAX = Int.max / 2
 		for edge in edges {
 			let node = edge[0]
 			let neighbor = edge[1]
@@ -47,16 +49,15 @@ extension GraphsImpl {
 		}
 
 		// Step 2a: Initialize a distances array with n values, initially set to infinity
-		var distances = Array(repeating: Int.max / 2, count: n)
-		// Source node, if not given set to 0
-		distances[0] = 0
+		var distances = Array(repeating: MAX, count: n)
+		// Source node, if not given set to 0. I have chosen n - 1 for now.
+		distances[n - 1] = 0
 
-		print(stack)
 		// Step 2b: Update distances array
 		while !stack.isEmpty {
 			let node = stack.removeLast()
-			// This is important to avoid overflowing.
-			if distances[node] == Int.max / 2 { continue }
+			// Check if distance of this node is int max, then no need to continue. This is important to avoid overflowing.
+			if distances[node] == MAX { continue }
 
 			for neighbor in adjacencyList[node, default: []] {
 				let val = neighbor.node
@@ -68,17 +69,14 @@ extension GraphsImpl {
 			}
 		}
 
-		return distances.map { $0 == Int.max / 2 ? -1: $0 }
+		return distances.map { $0 == MAX / 2 ? -1: $0 }
 	}
 }
 
 
 #Playground {
-	let graph = GraphsImpl()
-	let a: Character = "b"
-//	let t =  a.asciiValue! - Character("z").asciiValue!
-	_ = graph.shortestPath(7, edges: CodeTemplatesImpl.directedShortestPathEdges)
+	GraphsImpl.shared.shortestPath(7, edges: CodeTemplatesImpl.directedShortestPathEdges)
 
-	_ = graph.shortestPath(4, edges:
+	GraphsImpl.shared.shortestPath(4, edges:
 	[[0,1,200], [1,2,100], [1,3, 300], [2,3,100]])
 }

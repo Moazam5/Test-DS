@@ -8,8 +8,16 @@
 import Foundation
 
 class GraphsImpl: GraphsQuestions {
-
 	nonisolated(unsafe) static let shared = GraphsImpl()
+
+	var MAX: Int {
+		Int.max / 4
+	}
+
+	var MIN: Int {
+		Int.min / 4
+	}
+
 	/// DFS
 	func numIslands(_ grid: [[Character]]) -> Int {
 		let m = grid.count

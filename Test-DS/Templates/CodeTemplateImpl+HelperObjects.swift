@@ -19,10 +19,13 @@ extension CodeTemplatesImpl {
 	]
 
 	static let topologicalSortAL: [Int: [Int]] = [
-		5: [2, 0],
-		4: [0, 1],
+		0: [1],
+		1: [3],
 		2: [3],
-		3: [1]
+		3: [],
+		4: [0,2],
+		5: [4],
+		6: [4,5]
 	]
 
 	static let directedShortestPathEdges = [

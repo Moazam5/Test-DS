@@ -45,6 +45,6 @@ extension GraphsImpl {
 }
 
 #Playground {
-	let vertices = 6
+	let vertices = 7
 	let graph = GraphsImpl.shared.topologicalSortBFS(adjacencyList: CodeTemplatesImpl.topologicalSortAL, vertices: vertices)
 }

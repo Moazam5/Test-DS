@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
 	func topologicalSort(adjacencyList: [Int : [Int]], vertices: Int) -> [Int] {
@@ -33,7 +34,6 @@ extension GraphsImpl {
 
 		return stack.reversed()
 	}
-
 	func topologicalSortChatGPT(adjacencyList: [Int : [Int]], vertices: Int) -> [Int] {
 		var stack = [Int]()
 		var visited = Array(repeating: false, count: vertices) // Uses bool
@@ -56,5 +56,10 @@ extension GraphsImpl {
 
 		return stack.reversed()
 	}
-
 }
+
+#Playground {
+	let vertices = 7
+	let res = GraphsImpl.shared.topologicalSort(adjacencyList: CodeTemplatesImpl.topologicalSortAL, vertices: vertices)
+}
+
