@@ -56,15 +56,6 @@ extension GraphsImpl {
 	}
 }
 
-#Playground {	
-	let graph: [[[Int]]] = [
-		[[1, 1], [3, 4]],      // edges from node 0
-		[[0, 1], [2, 2], [3, 3]], // node 1
-		[[1, 2]],              // node 2
-		[[0, 4], [1, 3]]       // node 3
-	]
-
-
-	let graphImpl = GraphsImpl()
-	let result = graphImpl.shortestPathUndirectedDijkstraPQ(4, adjacency: graph, src: 0	)
+#Playground {
+	let result = GraphsImpl.shared.shortestPathUndirectedDijkstraPQ(6, adjacency: CodeTemplatesImpl.shortestPathDijkstra, src: 0)
 }

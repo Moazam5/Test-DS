@@ -52,6 +52,15 @@ extension CodeTemplatesImpl {
 		3: []
 	]
 
+	static let shortestPathDijkstra: [[[Int]]] = [
+		[[1, 4], [2, 4]],      // edges from node 0
+		[[2, 2], [0, 4]], // node 1
+		[[0, 4], [1, 2], [3, 3], [4, 1], [5,6]],// node 2
+		[[2, 3], [5, 2]],       // node 3
+		[[2, 1], [5, 3]], // node 4
+		[[2, 6], [3, 2], [4, 3]] // node 5
+	]
+
 	static let letters: [Character] = {
 		(97...122).map { Character(UnicodeScalar($0)!) }
 	}()
