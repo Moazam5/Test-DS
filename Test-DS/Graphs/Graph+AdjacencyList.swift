@@ -25,9 +25,6 @@ extension GraphsImpl {
 	// Helper method to create directed adjacency list from the given list of edges.
 	func createDirectedAdjacencyList(from edges: [[Int]], vertices: Int) -> [Int: [Int]] {
 		var adjacencyList: [Int: [Int]] = [:]
-		for i in 0..<vertices {
-			adjacencyList[i] = []
-		}
 
 		for edge in edges {
 			let key = edge[0]

@@ -22,7 +22,6 @@ public class Node:  Equatable {
 
 }
 
-
 extension Node {
 	public static func == (lhs: Node, rhs: Node) -> Bool {
 		return lhs.val == rhs.val && lhs.neighbors == rhs.neighbors
