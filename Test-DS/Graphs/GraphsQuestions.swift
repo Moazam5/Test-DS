@@ -38,6 +38,8 @@ protocol GraphsQuestions {
 	func findLadders(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> [[String]]
 
 	func minimumEffortPath(_ heights: [[Int]]) -> Int
+	/// https://www.youtube.com/watch?v=_BvEJ3VIDWw&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=39
+	func minimumMultiplications(_ arr: [Int], _ start: Int, _ end: Int) -> Int
 
 	// MARK: Bipartite Graph Problems
 	/// https://www.youtube.com/watch?v=-vu34sct1g8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10
