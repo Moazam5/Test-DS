@@ -37,6 +37,8 @@ protocol GraphsQuestions {
 	/// https://leetcode.com/problems/word-ladder-ii/
 	func findLadders(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> [[String]]
 
+	func minimumEffortPath(_ heights: [[Int]]) -> Int
+
 	// MARK: Bipartite Graph Problems
 	/// https://www.youtube.com/watch?v=-vu34sct1g8&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=10
 	func isBipartiteBFS(adjacencyList: [Int: [Int]], vertices: Int) -> Bool

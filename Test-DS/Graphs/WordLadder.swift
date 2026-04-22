@@ -12,7 +12,7 @@ extension GraphsImpl {
 	func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
 		var wordSet = Set(wordList)
 		var q = [(word: String, level: Int)]()
-		q.append((beginWord, 1))
+		q.append((beginWord, 1)) // Add being word to the Q.
 		wordSet.remove(beginWord)
 		let letters = (97...122).map { Character(UnicodeScalar($0)!) }
 		var head = 0
@@ -25,11 +25,12 @@ extension GraphsImpl {
 					newWord[i] = letter
 					let newString = String(newWord)
 					if wordSet.contains(newString) {
+						// Check if end word is reached.
 						if newString == endWord {
 							return node.level + 1
 						}
 						q.append((newString, node.level + 1))
-						wordSet.remove(newString)
+						wordSet.remove(newString) // Ensure to remove the reached word from the word list, this is so you don't visit it again.
 					}
 				}
 			}
