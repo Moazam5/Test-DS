@@ -131,6 +131,8 @@
 		FFA1A6E62F96C681000FFB29 /* ShortestPathInUndirectedGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1A6E42F96C681000FFB29 /* ShortestPathInUndirectedGraph.swift */; };
 		FFA1A6E82F978439000FFB29 /* PathWithMinEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1A6E72F978439000FFB29 /* PathWithMinEffort.swift */; };
 		FFA1A6E92F978439000FFB29 /* PathWithMinEffort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1A6E72F978439000FFB29 /* PathWithMinEffort.swift */; };
+		FFA1CBFD2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1CBFC2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift */; };
+		FFA1CBFE2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1CBFC2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift */; };
 		FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */; };
 		FFAB5C522EF0D89100F183EC /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C512EF0D89100F183EC /* TargetSum.swift */; };
 		FFAB5C532EF0D89100F183EC /* TargetSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB5C512EF0D89100F183EC /* TargetSum.swift */; };
@@ -169,6 +171,10 @@
 		FFBA6FDD2F08778D000579D5 /* LCSProblems+MinDeletions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */; };
 		FFBDE1952F8F1C4F0046D145 /* BoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */; };
 		FFBDE1962F8F1C4F0046D145 /* BoyerMoore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */; };
+		FFC96E842F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC96E832F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift */; };
+		FFC96E852F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC96E832F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift */; };
+		FFC96E872F9F4EF300DF9EB4 /* NumberOfIslands-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC96E862F9F4EF300DF9EB4 /* NumberOfIslands-II.swift */; };
+		FFC96E882F9F4EF300DF9EB4 /* NumberOfIslands-II.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC96E862F9F4EF300DF9EB4 /* NumberOfIslands-II.swift */; };
 		FFCBC4562DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */; };
 		FFD1BD7E2DB4CA95006BB494 /* ValidateParenthesis.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */; };
@@ -385,6 +391,7 @@
 		FFA067FD2DCFFC8500881478 /* CarFleet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleet.swift; sourceTree = "<group>"; };
 		FFA1A6E42F96C681000FFB29 /* ShortestPathInUndirectedGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestPathInUndirectedGraph.swift; sourceTree = "<group>"; };
 		FFA1A6E72F978439000FFB29 /* PathWithMinEffort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathWithMinEffort.swift; sourceTree = "<group>"; };
+		FFA1CBFC2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinMultiplicationsToReachEnd.swift; sourceTree = "<group>"; };
 		FFA6EB1F2DA394AC000C2D82 /* ValidateSuduko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSuduko.swift; sourceTree = "<group>"; };
 		FFAB5C512EF0D89100F183EC /* TargetSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSum.swift; sourceTree = "<group>"; };
 		FFAB5C5F2EF343F000F183EC /* CodeTemplateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTemplateProtocol.swift; sourceTree = "<group>"; };
@@ -406,6 +413,8 @@
 		FFBA6FD82F086E5B000579D5 /* LCSProblem+LongestPalindromicSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblem+LongestPalindromicSubsequence.swift"; sourceTree = "<group>"; };
 		FFBA6FDB2F08778D000579D5 /* LCSProblems+MinDeletions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LCSProblems+MinDeletions.swift"; sourceTree = "<group>"; };
 		FFBDE1942F8F1C4F0046D145 /* BoyerMoore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoyerMoore.swift; sourceTree = "<group>"; };
+		FFC96E832F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KruskalsAlgorithm.swift; sourceTree = "<group>"; };
+		FFC96E862F9F4EF300DF9EB4 /* NumberOfIslands-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberOfIslands-II.swift"; sourceTree = "<group>"; };
 		FFCBC4552DEFA2F6008F4503 /* KeyValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
 		FFD1BD7D2DB4CA95006BB494 /* ValidateParenthesis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateParenthesis.swift; sourceTree = "<group>"; };
 		FFEDFEE02F3592EB00034823 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -507,6 +516,8 @@
 				FFEDFF382F4031B400034823 /* AlienDictionary.swift */,
 				FFA1A6E42F96C681000FFB29 /* ShortestPathInUndirectedGraph.swift */,
 				FFA1A6E72F978439000FFB29 /* PathWithMinEffort.swift */,
+				FFA1CBFC2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift */,
+				FFC96E862F9F4EF300DF9EB4 /* NumberOfIslands-II.swift */,
 				FFFC68152F244F28004FA6E2 /* Graph Cycle Detection */,
 				FFFC68142F244B6D004FA6E2 /* Bipartite */,
 				FFEDFF292F3F284500034823 /* Topological Sort */,
@@ -580,6 +591,7 @@
 			children = (
 				FF35E0292F4BD5E400AC1BA4 /* PrimsAlgorithm.swift */,
 				FF35E02C2F4C22DC00AC1BA4 /* DisjointSet.swift */,
+				FFC96E832F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift */,
 			);
 			path = "Minimum Spanning Tree";
 			sourceTree = "<group>";
@@ -1059,11 +1071,13 @@
 				FFCBC4572DEFA2F6008F4503 /* KeyValueStore.swift in Sources */,
 				FF2061CD2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
 				FFA067F92DCF211000881478 /* TrappingRainWater.swift in Sources */,
+				FFC96E882F9F4EF300DF9EB4 /* NumberOfIslands-II.swift in Sources */,
 				FFFC68182F24C369004FA6E2 /* CycleDetectionDFSWithState.swift in Sources */,
 				FF1E299A2F61688D00A6BA7A /* IslandAndTreasures.swift in Sources */,
 				FFFC68102F2445D8004FA6E2 /* IsBipartiteDFS.swift in Sources */,
 				FFFC67912F1B8790004FA6E2 /* EvalRPN.swift in Sources */,
 				FFBA6FD32F086406000579D5 /* LCSProblems+ShortestSubersequence.swift in Sources */,
+				FFC96E852F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift in Sources */,
 				FFEDFF4B2F41CD6F00034823 /* KthLargest.swift in Sources */,
 				FF35E02E2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FF2061D62E9C4FDF008DA0FA /* DiameterOfBinaryTreeTests.swift in Sources */,
@@ -1098,6 +1112,7 @@
 				FFFC67C92F20D489004FA6E2 /* GraphsQuestions.swift in Sources */,
 				FF0CC8FC2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
 				FFFC67FD2F219BA9004FA6E2 /* Exist.swift in Sources */,
+				FFA1CBFE2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift in Sources */,
 				FFFC68122F244B31004FA6E2 /* PossibleBipartition.swift in Sources */,
 				FF7A598A2F564F2700208079 /* RemoveDuplicateSortedList.swift in Sources */,
 				FF35E0272F4B193200AC1BA4 /* ShortestPathBellmanFord.swift in Sources */,
@@ -1143,6 +1158,7 @@
 				FF1FC3052E24CA8200951B00 /* LinkedListNode.swift in Sources */,
 				FF04897A2F144F950065EF5A /* NumberOfIslands.swift in Sources */,
 				FFFC68012F21AF7D004FA6E2 /* OrangesRotting.swift in Sources */,
+				FFC96E842F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift in Sources */,
 				FFB124BC2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
 				FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */,
 				FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */,
@@ -1239,6 +1255,7 @@
 				FF35E02D2F4C22DC00AC1BA4 /* DisjointSet.swift in Sources */,
 				FFBA6FD72F086521000579D5 /* LCSProblems+MinInsertionAndDeletions.swift in Sources */,
 				FFA6EB202DA394AC000C2D82 /* ValidateSuduko.swift in Sources */,
+				FFC96E872F9F4EF300DF9EB4 /* NumberOfIslands-II.swift in Sources */,
 				FFA067FE2DCFFC8500881478 /* CarFleet.swift in Sources */,
 				FFFC67C12F1F58AA004FA6E2 /* IsSame.swift in Sources */,
 				FFEDFF432F40895C00034823 /* MiscellaneousSolutions.swift in Sources */,
@@ -1263,6 +1280,7 @@
 				FF0CC8FB2EEE350F00C5870D /* MinSubsetSumDifference.swift in Sources */,
 				FF5396A12F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
 				FF2061CC2E9C4B0A008DA0FA /* TreeProblemsImpl.swift in Sources */,
+				FFA1CBFD2F987ABC000FFB29 /* MinMultiplicationsToReachEnd.swift in Sources */,
 				FFEDFF5D2F46884D00034823 /* LastStoneWeight.swift in Sources */,
 				FFBDE1952F8F1C4F0046D145 /* BoyerMoore.swift in Sources */,
 				FF1E29992F61688D00A6BA7A /* IslandAndTreasures.swift in Sources */,

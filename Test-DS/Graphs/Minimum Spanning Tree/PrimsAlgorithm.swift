@@ -63,7 +63,7 @@ extension GraphsImpl {
 			for neighbor in adj[item.node] {
 				let adjNode = neighbor[0]
 				let adjWeight = neighbor[1]
-				if !visited[adjNode] {
+				if !visited[adjNode] { // This can be removed 
 					pq.insert(HeapItem(weight: adjWeight, node: adjNode, parent: item.node))
 				}
 			}
@@ -84,14 +84,6 @@ extension GraphsImpl {
 }
 
 #Playground {
-	let adj: [[[Int]]] = [
-		[[1,2], [2,1]],                // 0
-		[[0,2], [2,1], [4,2]],         // 1
-		[[0,1], [1,1], [4,2], [3,2]],  // 2
-		[[2,2], [4,1]],                // 3
-		[[1,2], [2,2], [3,1]]          // 4
-	]
-
-	GraphsImpl.shared.spanningTreeSum(5, adj: adj)
-	GraphsImpl.shared.spanningTreeMST(5, adj: adj)
+	GraphsImpl.shared.spanningTreeSum(5, adj: CodeTemplatesImpl.minSpanningTreeADJList)
+	GraphsImpl.shared.spanningTreeMST(5, adj: CodeTemplatesImpl.minSpanningTreeADJList)
 }
