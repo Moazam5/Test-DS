@@ -12,15 +12,16 @@ extension GraphsImpl {
 		var visited = Set<Int>()
 		var visiting = Set<Int>()
 		var adjacencyList: [Int: [Int]] = self.createDirectedAdjacencyList(from: prerequisites, vertices: numCourses)
-		for i in 0..<numCourses {
-			adjacencyList[i] = []
-		}
-		
-		for prerequisite in prerequisites {
-			let key = prerequisite[0]
-			let val = prerequisite[1]
-			adjacencyList[key]?.append(val)
-		}
+
+//		for i in 0..<numCourses {
+//			adjacencyList[i] = []
+//		}
+//		
+//		for prerequisite in prerequisites {
+//			let key = prerequisite[0]
+//			let val = prerequisite[1]
+//			adjacencyList[key]?.append(val)
+//		}
 		
 		// Returns true if cycle is detected.
 		func dfs(_ node: Int) -> Bool {
