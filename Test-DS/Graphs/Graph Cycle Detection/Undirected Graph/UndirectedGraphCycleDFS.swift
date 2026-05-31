@@ -48,6 +48,5 @@ extension GraphsImpl {
 
 
 #Playground {
-
 	let graph = GraphsImpl.shared.hasCycleDFS(adjacencyList: CodeTemplatesImpl.undirectedGraphWithCycleAL)
 }

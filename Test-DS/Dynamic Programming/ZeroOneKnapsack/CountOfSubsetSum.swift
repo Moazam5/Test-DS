@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension KnapsackProblems {
 	/// Given an array `arr[]` of length `n` and an integer `target`, the task is to find the **number of subsets** with a sum equal to target.
@@ -58,4 +59,18 @@ extension KnapsackProblems {
 		}
 		return dp[numRows - 1][numCols - 1]
 	}
+}
+
+#Playground {
+	let list = [1, 2, 3, 3]
+	_ = KnapsackProblems.standard.countOfSubsetSum(list, 6)
+	// OUTPUT: {1,2,3a}, {1,2,3b}, {3a,3b}
+		/*
+		 j=0  j=1  j=2  j=3  j=4  j=5  j=6
+		 i=0 (∅)        1    0    0    0    0    0    0
+		 i=1 ([1])      1    1    0    0    0    0    0
+		 i=2 ([1,2])    1    1    1    1    0    0    0
+		 i=3 ([1,2,3])  1    1    1    2    1    1    1
+		 i=4 (all)      1    1    1    3    2    2    3   ← answer at dp[4][6]
+		 */
 }
