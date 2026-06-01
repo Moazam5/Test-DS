@@ -30,6 +30,8 @@ protocol BinarySearch {
 	func search(_ nums: [Int], _ target: Int) -> Int
 	/// https://leetcode.com/problems/search-a-2d-matrix/description/
 	func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool
+	/// https://www.geeksforgeeks.org/dsa/find-closest-number-array/
+	func findClosest(_ nums: [Int], target: Int) -> Int
 }
 
 class BinarySearchSolution: BinarySearch {
