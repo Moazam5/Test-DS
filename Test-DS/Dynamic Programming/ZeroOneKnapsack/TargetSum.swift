@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Testing
+import Playgrounds
 
 extension KnapsackProblems {
 
@@ -19,4 +19,8 @@ extension KnapsackProblems {
 	func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int {
 			return countSubsetsWithGivenDiff(nums, diff: target)
 		}
+}
+
+#Playground {
+	_ = KnapsackProblems.standard.findTargetSumWays([1, 1, 2, 3], 1)
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension KnapsackProblems {
 	/// Given an array Arr[] and a difference diff, find the number of subsets that array can be divided so that each the difference between the two subset is the given diff.
@@ -33,4 +34,8 @@ extension KnapsackProblems {
 		// Pass the calculated s1Target to the subset sum counter.
 		return self.countOfSubsetSum(nums, s1Target)
 	}
+}
+
+#Playground {
+	_ = KnapsackProblems.standard.countSubsetsWithGivenDiff([1, 1, 2, 3], diff: 1)
 }

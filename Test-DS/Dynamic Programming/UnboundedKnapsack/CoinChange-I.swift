@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension UnboundedKnapsackProblems {
 	//	Coin Change Problem Maximum Number of ways
@@ -49,4 +50,9 @@ extension UnboundedKnapsackProblems {
 		}
 		return dp[numRows - 1][numCols - 1]
 	}
+}
+
+#Playground {
+	_ = UnboundedKnapsackProblems.shared.coinChange([1,2,3], 4)
+	_ = UnboundedKnapsackProblems.shared.coinChange([3, 1, 2], 4)
 }

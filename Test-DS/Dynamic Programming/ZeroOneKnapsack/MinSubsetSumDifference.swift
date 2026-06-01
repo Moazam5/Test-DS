@@ -35,7 +35,7 @@ extension KnapsackProblems {
 			}
 		}
 
-		var minDiff = Int.max // Initialize with a very large value
+		var minDiff = MAX // Initialize with a very large value
 
 		// Iterate through all possible subset sums 'j' that can be formed using all elements.
 		// We only need to check sums up to totalSum / 2.
@@ -53,3 +53,12 @@ extension KnapsackProblems {
 		return minDiff
 	}
 }
+
+/*
+ s1 + s2 = S
+
+ s1 - s2 = MIN
+
+ 2s1 = S - min
+ min = S - 2s1
+ */

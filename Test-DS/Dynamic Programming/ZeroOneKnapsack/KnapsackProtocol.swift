@@ -26,3 +26,9 @@ protocol Knapsack {
 	/// You want to build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers.
 	func findTargetSumWays(_ nums: [Int], _ target: Int) -> Int
 }
+
+extension Knapsack {
+	var MAX: Int {
+		Int.max / 4
+	}
+}

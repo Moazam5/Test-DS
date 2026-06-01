@@ -66,7 +66,7 @@ extension KnapsackProblems {
 	_ = KnapsackProblems.standard.countOfSubsetSum(list, 6)
 	// OUTPUT: {1,2,3a}, {1,2,3b}, {3a,3b}
 		/*
-		 j=0  j=1  j=2  j=3  j=4  j=5  j=6
+						j=0  j=1  j=2  j=3  j=4  j=5  j=6
 		 i=0 (∅)        1    0    0    0    0    0    0
 		 i=1 ([1])      1    1    0    0    0    0    0
 		 i=2 ([1,2])    1    1    1    1    0    0    0
