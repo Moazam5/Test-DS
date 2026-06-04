@@ -8,6 +8,7 @@
 import Foundation
 
 extension LCS {
+	/// Solution where the input is string
 	func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
 		let (m, n) = (text1.count, text2.count)
 		let arr1 = Array(text1)
@@ -29,6 +30,7 @@ extension LCS {
 		return dp[m][n]
 	}
 
+	/// Solution where input is an array
 	func longestCommonSubsequence(_ arr1: [Int], _ arr2: [Int]) -> Int {
 		let (m, n) = (arr1.count, arr2.count)
 		guard !arr1.isEmpty && !arr2.isEmpty else {
