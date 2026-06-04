@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension LCS {
 	/// Solution where the input is string
@@ -49,4 +50,17 @@ extension LCS {
 		}
 		return dp[m][n]
 	}
+}
+
+#Playground {
+	_ = LCSSolution.shared.longestCommonSubsequence("geek", "eke")
+	/*
+	 text1 = "ace", text2 = "abcde"
+	""	a	b	c	d	e
+""	0	0	0	0	0	0
+ a	0	1	1	1	1	1
+ c	0	1	1	2	2	2
+ e	0	1	1	2	2	3
+
+	 */
 }

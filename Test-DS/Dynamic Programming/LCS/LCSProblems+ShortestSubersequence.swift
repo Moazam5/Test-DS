@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension LCSSolution {
+	/// Given two strings str1 and str2, find the shortest string that has both str1 and str2 as subsequences.
 	func shortestCommonSupersequence(_ str1: String, _ str2: String) -> String {
 		let arr1 = Array(str1)
 		let arr2 = Array(str2)
@@ -61,4 +63,9 @@ extension LCSSolution {
 
 		return String(result.reversed())
 	}
+}
+
+#Playground {
+	let lcs = LCSSolution.shared.printLCS("geekd", "eke")
+	let res = LCSSolution.shared.shortestCommonSupersequence("geek", "eke") // geeke
 }

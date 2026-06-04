@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension LCSSolution {
+	/// Print the longest common subsequence.
 	func printLCS(_ s1: String, _ s2: String) -> String {
 		let arr1 = Array(s1)
 		let arr2 = Array(s2)
@@ -44,4 +46,8 @@ extension LCSSolution {
 		}
 		return String(str.reversed())
 	}
+}
+
+#Playground {
+	let str = LCSSolution.shared.printLCS("acbcf", "abcdaf")
 }

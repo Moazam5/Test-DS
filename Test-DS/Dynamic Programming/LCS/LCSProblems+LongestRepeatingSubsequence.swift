@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension LCSSolution {
 	// TODO: Add tests for this, also need to add printing portion which would require function signature change.
@@ -31,7 +32,7 @@ extension LCSSolution {
 	}
 }
 
-import Playgrounds
+
 #Playground {
 	let lcs = LCSSolution()
 
