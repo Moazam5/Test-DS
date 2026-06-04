@@ -7,6 +7,7 @@
 
 import Foundation
 import Playgrounds
+
 protocol LCS {
 	/// Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
 	func longestCommonSubsequenceRecursive(_ text1: String, _ text2: String) -> Int
@@ -64,72 +65,6 @@ protocol LCS {
 	///	Output: 4
 	///	Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
 	func lengthOfLIS(_ nums: [Int]) -> Int
-
 }
 
-extension LCS {
-	func longestCommonSubsequenceMemo(_ text1: String, _ text2: String) -> Int {
-		let (m, n) = (text1.count, text2.count)
-		let arr1 = Array(text1)
-		let arr2 = Array(text2)
-		var memo = Array(repeating: Array(repeating: -1, count: n + 1), count: m + 1)
 
-		func dfs(m: Int, n: Int, memo: inout [[Int]]) -> Int {
-			if m == 0 || n == 0 {
-				return 0
-			}
-			if memo[m][n] != -1 {
-				return memo[m][n]
-			}
-
-			if arr1[m - 1] == arr2[n - 1] {
-				memo[m][n] = 1 + dfs(m: m - 1, n: n - 1, memo: &memo)
-			} else {
-				memo[m][n] = max(dfs(m: m, n: n - 1, memo: &memo), dfs(m: m - 1, n: n, memo: &memo))
-			}
-			return memo[m][n]
-		}
-
-		return dfs(m: m, n: n, memo: &memo)
-	}
-
-	func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
-		let (m, n) = (text1.count, text2.count)
-		let arr1 = Array(text1)
-		let arr2 = Array(text2)
-		guard !arr1.isEmpty && !arr2.isEmpty else {
-			return 0
-		}
-		var dp = Array(repeating: Array(repeating: 0, count: n + 1), count: m + 1)
-
-		for i in 1...m {
-			for j in 1...n {
-				if arr1[i - 1] == arr2[j - 1] {
-					dp[i][j] = 1 + dp[i - 1][j - 1]
-				} else {
-					dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-				}
-			}
-		}
-		return dp[m][n]
-	}
-
-	func longestCommonSubsequence(_ arr1: [Int], _ arr2: [Int]) -> Int {
-		let (m, n) = (arr1.count, arr2.count)
-		guard !arr1.isEmpty && !arr2.isEmpty else {
-			return 0
-		}
-		var dp = Array(repeating: Array(repeating: 0, count: n + 1), count: m + 1)
-
-		for i in 1...m {
-			for j in 1...n {
-				if arr1[i - 1] == arr2[j - 1] {
-					dp[i][j] = 1 + dp[i - 1][j - 1]
-				} else {
-					dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-				}
-			}
-		}
-		return dp[m][n]
-	}
-}

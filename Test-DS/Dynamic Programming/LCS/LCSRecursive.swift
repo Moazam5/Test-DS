@@ -14,8 +14,8 @@ extension LCS {
 				return 0
 			}
 
-			let mIndex = text1.index(text1.startIndex, offsetBy: m - 1)
-			let nIndex = text2.index(text2.startIndex, offsetBy: n - 1)
+			let mIndex = text1.index(text1.startIndex, offsetBy: m - 1) // last index
+			let nIndex = text2.index(text2.startIndex, offsetBy: n - 1) // last index
 			if text1[mIndex] == text2[nIndex] {
 				return 1 + dfs(m: m - 1, n: n - 1)
 			} else {
