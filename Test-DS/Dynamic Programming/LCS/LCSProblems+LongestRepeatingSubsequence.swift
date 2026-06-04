@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LCSProblems {
+extension LCSSolution {
 	// TODO: Add tests for this, also need to add printing portion which would require function signature change.
 	func longestRepeatingSubsequence(_ s: String) -> Int {
 		let (m, n) = (s.count, s.count)
@@ -33,7 +33,7 @@ extension LCSProblems {
 
 import Playgrounds
 #Playground {
-	let lcs = LCSProblems()
+	let lcs = LCSSolution()
 
 	func lcsTest(_ text1: String, _ text2: String) -> Int {
 		let (m, n) = (text1.count, text2.count)

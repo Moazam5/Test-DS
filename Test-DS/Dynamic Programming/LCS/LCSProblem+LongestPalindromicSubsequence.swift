@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LCSProblems {
+extension LCSSolution {
 	func longestPalindromeSubseq(_ s: String) -> Int {
 		return self.longestCommonSubsequence(s, String(s.reversed()))
 	}

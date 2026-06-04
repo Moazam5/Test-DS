@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LCSProblems {
+extension LCSSolution {
 	func printLCS(_ s1: String, _ s2: String) -> String {
 		let arr1 = Array(s1)
 		let arr2 = Array(s2)

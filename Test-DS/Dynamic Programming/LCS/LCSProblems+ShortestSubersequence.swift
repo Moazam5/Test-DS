@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LCSProblems {
+extension LCSSolution {
 	func shortestCommonSupersequence(_ str1: String, _ str2: String) -> String {
 		let arr1 = Array(str1)
 		let arr2 = Array(str2)

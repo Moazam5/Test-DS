@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension LCSProblems {
+extension LCSSolution {
 	func minDeletions(_ s: String) -> Int {
 		let lcsCount = self.longestCommonSubsequence(s, String(s.reversed()))
 		return s.count - lcsCount

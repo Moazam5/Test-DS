@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LCSProblems: LCS {
+struct LCSSolution: LCS {
 	func longestCommonSubstring(_ s1: String, _ s2: String) -> Int {
 		guard !s1.isEmpty || !s2.isEmpty else {
 			return 0
@@ -36,7 +36,7 @@ import Playgrounds
 	let str1 = "abc"
 	let str2 = "def"
 	let str3 = str1 + str2
-	let lcs = LCSProblems()
+	let lcs = LCSSolution()
 	lcs.shortestCommonSupersequence("geek", "eke")
 	lcs.printLCS("geek", "eekee")
 	print(str1 + str2)

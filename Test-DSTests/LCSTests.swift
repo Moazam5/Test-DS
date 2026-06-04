@@ -10,7 +10,7 @@ import Testing
 struct LCSProblemsTests {
 	@Suite("Print LCS")
 	struct TestPrintLCS {
-		private let sut = LCSProblems()
+		private let sut = LCSSolution()
 
 		@Test
 		func test_printLCS_basicExample() {
@@ -47,21 +47,21 @@ struct LCSProblemsTests {
 	struct MinInsertionAndDeletionsTests {
 		@Test("Identical strings require 0 operations")
 		func identicalStrings() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			let result = lcs.minInsertionAndDeletions("abcde", "abcde")
 			#expect(result == 0)
 		}
 
 		@Test("One empty, one non-empty requires length operations")
 		func oneEmptyString() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.minInsertionAndDeletions("", "kitten") == 6)
 			#expect(lcs.minInsertionAndDeletions("puppy", "") == 5)
 		}
 
 		@Test("General case small strings")
 		func generalCase() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// s1 = "heap", s2 = "pea"
 			// LCS("heap","pea") = "ea" length 2
 			// deletions = 4-2 = 2, insertions = 3-2 = 1, total = 3
@@ -77,7 +77,7 @@ struct LCSProblemsTests {
 
 		@Test("Already subsequence case")
 		func subsequenceCase() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// s2 is a subsequence of s1 -> only deletions needed
 			let result = lcs.minInsertionAndDeletions("abcde", "ace")
 			// LCS = 3, deletions = 5-3 = 2, insertions = 3-3 = 0, total = 2
@@ -90,26 +90,26 @@ struct LCSProblemsTests {
 	struct MinDeletionsTests {
 		@Test("Empty string requires 0 deletions")
 		func emptyString() {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.minDeletions("") == 0)
 		}
 
 		@Test("Single character requires 0 deletions")
 		func singleCharacter() {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.minDeletions("a") == 0)
 		}
 
 		@Test("Already palindrome requires 0 deletions")
 		func alreadyPalindrome() {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.minDeletions("racecar") == 0)
 			#expect(lcs.minDeletions("abba") == 0)
 		}
 
 		@Test("Typical cases")
 		func typicalCases() {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// "bbbab" has LPS 4 -> deletions = 5 - 4 = 1
 			#expect(lcs.minDeletions("bbbab") == 1)
 			// "cbbd" has LPS 2 -> deletions = 4 - 2 = 2
@@ -118,7 +118,7 @@ struct LCSProblemsTests {
 
 		@Test("No repeating characters")
 		func noRepeats() {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// For "abcd", LPS = 1 -> deletions = 3
 			#expect(lcs.minDeletions("abcd") == 3)
 		}
@@ -129,26 +129,26 @@ struct LCSProblemsTests {
 	struct LongestPalSubseqTests {
 		@Test("Empty string has LPS length 0")
 		func emptyString() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.longestPalindromeSubseq("") == 0)
 		}
 
 		@Test("Single character has LPS length 1")
 		func singleCharacter() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.longestPalindromeSubseq("a") == 1)
 		}
 
 		@Test("Already a palindrome")
 		func alreadyPalindrome() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			#expect(lcs.longestPalindromeSubseq("racecar") == 7)
 			#expect(lcs.longestPalindromeSubseq("abba") == 4)
 		}
 
 		@Test("Typical cases")
 		func typicalCases() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// "bbbab" -> LPS is 4 ("bbbb")
 			#expect(lcs.longestPalindromeSubseq("bbbab") == 4)
 			// "cbbd" -> LPS is 2 ("bb")
@@ -157,7 +157,7 @@ struct LCSProblemsTests {
 
 		@Test("No repeating characters")
 		func noRepeats() async throws {
-			let lcs = LCSProblems()
+			let lcs = LCSSolution()
 			// For a string like "abcd", LPS is 1
 			#expect(lcs.longestPalindromeSubseq("abcd") == 1)
 		}

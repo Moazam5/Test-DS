@@ -8,7 +8,7 @@
 import Foundation
 import Playgrounds
 
-extension LCSProblems {
+extension LCSSolution {
 	func minInsertionAndDeletions(_ s1: String, _ s2: String) -> Int {
 		let lcs = self.longestCommonSubsequence(s1, s2)
 		return (s1.count - lcs) + (s2.count - lcs)
@@ -16,6 +16,6 @@ extension LCSProblems {
 }
 
 #Playground {
-	let lcs = LCSProblems()
+	let lcs = LCSSolution()
 	print(lcs.printLCS("abbc", "bb"))
 }
