@@ -9,11 +9,9 @@ import Foundation
 import Playgrounds
 
 extension UnboundedKnapsackProblems {
-	///	You are given an integer array coins representing coins of different denominations (e.g. 1 dollar, 5 dollars, etc) and an integer amount representing a target amount of money.
+	///	Coin Change Problem Minimum Numbers of coins
+	/// Given a value V, if we want to make change for V cents, and we have infinite supply of each of C = { C1, C2, .. , Cm} valued coins, what is the minimum number of coins to make the change?
 	///
-	///	Return the number of distinct combinations that total up to amount. If it's impossible to make up the amount, return 0.
-	///
-	///	You may assume that you have an unlimited number of each coin and that each value in coins is unique.
 	func coinChangeII(_ coins: [Int], _ amount: Int) -> Int {
 		if amount <= 0 {
 			return 0
@@ -21,6 +19,7 @@ extension UnboundedKnapsackProblems {
 
 		let numRows = coins.count + 1
 		let numCols = amount + 1
+		// This is a twist only for this problem. 
 		var dp = Array(repeating: Array(repeating: Int.max, count: numCols), count: numRows)
 
 		// Base case: 0 coins needed to make amount 0
@@ -44,4 +43,10 @@ extension UnboundedKnapsackProblems {
 
 		return dp[numRows - 1][numCols - 1] == Int.max ? -1 : dp[numRows - 1][numCols - 1]
 	}
+}
+
+#Playground {
+	_ = UnboundedKnapsackProblems.shared.coinChangeII([1,2,3], 5)
+	_ = UnboundedKnapsackProblems.shared.coinChangeII([25, 10, 5], 30)
+
 }
