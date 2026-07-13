@@ -82,6 +82,8 @@
 		FF2B02B7300417F5000C8356 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B02B5300417F5000C8356 /* SelectionSort.swift */; };
 		FF2B02B93004D0CC000C8356 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B02B83004D0CC000C8356 /* QuickSort.swift */; };
 		FF2B02BA3004D0CC000C8356 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B02B83004D0CC000C8356 /* QuickSort.swift */; };
+		FF2B02BC30058763000C8356 /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B02BB30058763000C8356 /* RadixSort.swift */; };
+		FF2B02BD30058763000C8356 /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B02BB30058763000C8356 /* RadixSort.swift */; };
 		FF35E01D2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
 		FF35E01E2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */; };
 		FF35E0202F49A16F00AC1BA4 /* WordLadder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */; };
@@ -382,6 +384,7 @@
 		FF2B02B230038A31000C8356 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		FF2B02B5300417F5000C8356 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		FF2B02B83004D0CC000C8356 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		FF2B02BB30058763000C8356 /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
 		FF35E01C2F486C9300AC1BA4 /* CodeTemplateImpl+HelperObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CodeTemplateImpl+HelperObjects.swift"; sourceTree = "<group>"; };
 		FF35E01F2F49A16F00AC1BA4 /* WordLadder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLadder.swift; sourceTree = "<group>"; };
 		FF35E0222F49D0F600AC1BA4 /* WordLadder-II.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordLadder-II.swift"; sourceTree = "<group>"; };
@@ -709,6 +712,7 @@
 				FF2B02B230038A31000C8356 /* BubbleSort.swift */,
 				FF2B02B5300417F5000C8356 /* SelectionSort.swift */,
 				FF2B02B83004D0CC000C8356 /* QuickSort.swift */,
+				FF2B02BB30058763000C8356 /* RadixSort.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -1083,6 +1087,7 @@
 				FF5396B12F0A66C600D09259 /* LCS+LengthOfLIS.swift in Sources */,
 				FF35E02B2F4BD5E400AC1BA4 /* PrimsAlgorithm.swift in Sources */,
 				FF5396A02F08D4CA00D09259 /* LCSProblems+LongestRepeatingSubsequence.swift in Sources */,
+				FF2B02BD30058763000C8356 /* RadixSort.swift in Sources */,
 				FFAB5C532EF0D89100F183EC /* TargetSum.swift in Sources */,
 				FF2061DB2E9C5B9B008DA0FA /* IsBalancedTests.swift in Sources */,
 				FF1FC3092E24CADE00951B00 /* LinkedList.swift in Sources */,
@@ -1214,6 +1219,7 @@
 				FFFC68012F21AF7D004FA6E2 /* OrangesRotting.swift in Sources */,
 				FFC96E842F9D5CFD00DF9EB4 /* KruskalsAlgorithm.swift in Sources */,
 				FF9053142FCD634F000B8A7F /* RodCutting.swift in Sources */,
+				FF2B02BC30058763000C8356 /* RadixSort.swift in Sources */,
 				FFB124BC2ED6489A00CD04C7 /* GoodNodes.swift in Sources */,
 				FF43E5FF2DE90629008815D4 /* Search2dMatrix.swift in Sources */,
 				FFA067FB2DCF305B00881478 /* DailyTemperature.swift in Sources */,
