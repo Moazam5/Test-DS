@@ -18,6 +18,8 @@ class GraphsImpl: GraphsQuestions {
 		Int.min / 4
 	}
 
+	var directions: [(Int, Int)] { [(0, 1), (1, 0), (-1, 0), (0, -1)] }
+
 	/// DFS
 	func numIslands(_ grid: [[Character]]) -> Int {
 		let m = grid.count
@@ -27,7 +29,6 @@ class GraphsImpl: GraphsQuestions {
 
 		func dfs(_ index: (Int, Int)) {
 			let (i, j) = index
-			let directions = [(0, 1), (1, 0), (-1, 0), (0, -1)]
 			for dir in directions {
 				let (r, c) = (i + dir.0, j + dir.1)
 				if r >= 0, r < m, c >= 0, c < n, grid[r][c] == "1" {
@@ -55,7 +56,6 @@ class GraphsImpl: GraphsQuestions {
 		let cols = grid[0].count
 		var grid = grid
 		var count = 0
-		let directions = [(0,1), (1,0), (-1,0), (0,-1)]
 
 		func bfs(_ i: Int, _ j: Int) {
 			var q = [(i, j)]

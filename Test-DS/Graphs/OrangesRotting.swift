@@ -14,13 +14,12 @@ extension GraphsImpl {
 		var freshOrangeCount = 0
 		var grid = grid
 		var q: [(row: Int, col: Int)] = []
-		let directions = [(0,1), (1,0), (-1,0), (0,-1)]
 
 		for i in 0..<ROWS {
 			for j in 0..<COLS {
 				if grid[i][j] == 1 {
 					freshOrangeCount += 1
-				} else if grid[i][j] == 2 {
+				} else if grid[i][j] == 2 { // rotten orange
 					q.append((i, j))
 				}
 			}

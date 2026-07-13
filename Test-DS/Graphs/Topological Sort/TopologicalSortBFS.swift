@@ -15,8 +15,10 @@ extension GraphsImpl {
 		var indegree = Array(repeating: 0, count: vertices)
 		var q = Array<Int>()
 		var topoResult = Array<Int>()
+
 		q.reserveCapacity(vertices)
 		topoResult.reserveCapacity(vertices)
+
 		for vertex in 0..<vertices {
 			for neighbor in adjacencyList[vertex, default: []] {
 				indegree[neighbor] += 1
@@ -29,7 +31,7 @@ extension GraphsImpl {
 
 		while !q.isEmpty {
 			let node = q.removeFirst()
-			topoResult.append(node)
+			topoResult.append(node) // add to res
 
 			for neighbor in adjacencyList[node, default: []] {
 				indegree[neighbor] -= 1

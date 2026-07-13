@@ -9,6 +9,8 @@ import Foundation
 
 protocol SortingProblems {
 	func mergeSort(_ array: [Int]) -> [Int]
+	func bubbleSort(_ array: [Int]) -> [Int]
+	func selectionSort(_ array: [Int]) -> [Int]
 }
 
 struct SortingSolutions: SortingProblems {

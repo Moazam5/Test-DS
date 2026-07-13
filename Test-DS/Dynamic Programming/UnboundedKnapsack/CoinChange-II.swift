@@ -19,7 +19,7 @@ extension UnboundedKnapsackProblems {
 
 		let numRows = coins.count + 1
 		let numCols = amount + 1
-		// This is a twist only for this problem. 
+		// This is a twist only for this problem.
 		var dp = Array(repeating: Array(repeating: Int.max, count: numCols), count: numRows)
 
 		// Base case: 0 coins needed to make amount 0

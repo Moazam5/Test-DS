@@ -11,7 +11,6 @@ import Playgrounds
 extension GraphsImpl {
 	func exist(_ board: [[Character]], _ word: String) -> Bool {
 		let (m,n) = (board.count, board[0].count)
-		let directions = [(0,1), (1,0), (-1,0), (0,-1)]
 		let wordChars = Array(word)
 
 		// Visited array to track cells used in the current path

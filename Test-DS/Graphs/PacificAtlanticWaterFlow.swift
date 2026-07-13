@@ -13,7 +13,6 @@ extension GraphsImpl {
 		let COLS = heights[0].count
 		var atl = Set<[Int]>()
 		var pac = Set<[Int]>()
-		let dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
 		func dfs(_ i: Int, _ j: Int, _ visit: inout Set<[Int]>, _ prevHeight: Int) {
 			guard i >= 0, i < ROWS, j >= 0, j < COLS,
@@ -22,7 +21,7 @@ extension GraphsImpl {
 				return
 			}
 			visit.insert([i, j])
-			for dir in dirs {
+			for dir in directions {
 				let x = dir.0 + i
 				let y = dir.1 + j
 				dfs(x, y, &visit, heights[i][j])

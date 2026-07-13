@@ -14,8 +14,7 @@ extension GraphsImpl {
 		let n = grid[0].count
 		var q: [(row: Int, col: Int)] = []
 		var dist = 1
-		let dirs = [(0,1), (1,0), (-1,0), (0,-1)]
-
+		let max = 2147483647
 		for i in 0..<m {
 			for j in 0..<n {
 				if grid[i][j] == 0 {
@@ -29,10 +28,10 @@ extension GraphsImpl {
 			for _ in 0..<qLen {
 				let node = q.removeFirst()
 
-				for dir in dirs {
+				for dir in directions {
 					let row = node.row + dir.0
 					let col = node.col + dir.1
-					if row >= 0 && row < m && col >= 0 && col < n && grid[row][col] == 2147483647 {
+					if row >= 0 && row < m && col >= 0 && col < n && grid[row][col] == max {
 						grid[row][col] = dist
 						q.append((row, col))
 					}

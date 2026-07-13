@@ -9,6 +9,7 @@ import Foundation
 import Playgrounds
 
 extension GraphsImpl {
+	@discardableResult
 	func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
 		let firstCol = matrix.map { $0.first }
 		let index = search(firstCol as! [Int], target)

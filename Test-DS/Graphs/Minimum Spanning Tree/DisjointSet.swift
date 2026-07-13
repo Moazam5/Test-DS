@@ -28,11 +28,20 @@ struct DisjointSet {
 		return self.parent[node]
 	}
 
+	mutating func findUltimateParent(_ node: Int) -> Int {
+		if node == self.parent[node] {
+			return node
+		}
+		// Path compression.
+		self.parent[node] = self.findUltimateParent(node: self.parent[node])
+		return self.parent[node]
+	}
+
 	mutating func unionByRank(u: Int, v: Int) {
 		let ultimateParentU = self.findUltimateParent(node: u)
 		let ultimateParentV = self.findUltimateParent(node: v)
 
-		// If they belong to the same component, then return
+		// If they belong to the same component, then return, nothing else to do.
 		if ultimateParentU == ultimateParentV {
 			return
 		}
