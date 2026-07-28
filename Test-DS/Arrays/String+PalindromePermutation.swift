@@ -9,6 +9,7 @@ import Foundation
 import Playgrounds
 
 extension ArraySolutions {
+	/// https://algo.monster/liteproblems/266
 	func isPermutationOfPalindrome(_ str: String) -> Bool {
 		var freq: [Character: Int] = [:]
 		var foundOdd = false

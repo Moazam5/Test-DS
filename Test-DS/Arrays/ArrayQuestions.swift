@@ -14,4 +14,8 @@ protocol ArrayQuestions {
 	func flipAndInvertImage(_ image: [[Int]]) -> [[Int]]
 
 	func addBinary(_ a: String, _ b: String) -> String
+
+	func isPermutationOfPalindrome(_ str: String) -> Bool
+
+	func oneEditAway(_ str1: String, _ str2: String) -> Bool
 }
