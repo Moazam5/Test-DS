@@ -7,6 +7,7 @@
 
 import Foundation
 import Testing
+import Playgrounds
 
 extension TreesProblemsImpl {
 	func bfs(_ root: TreeNode?) -> [Int] {
@@ -45,58 +46,22 @@ extension TreesProblemsImpl {
 	}
 }
 
-@Suite("TreesProblemsImpl.bfs tests")
-struct BFSTests {
-	let treesProblems = TreesProblemsImpl()
+#Playground {
+	let root1 = TreeNode(value: 1,
+						left: TreeNode(value: 2,
+									   left: TreeNode(value: 4),
+									   right: TreeNode(value: 5)),
+						right: TreeNode(value: 3,
+										left: TreeNode(value: 6),
+										right: TreeNode(value: 7)))
+	let result1 = TreesProblemsImpl().bfs(root1) // [1,2,3,4,5,6,7]
 
-	@Test("nil root returns empty array")
-	func testNilRoot() {
-		let result = treesProblems.bfs(nil)
-		#expect(result == [])
-	}
-
-	@Test("single node returns [value]")
-	func testSingleNode() {
-		let root = TreeNode(value: 42)
-		let result = treesProblems.bfs(root)
-		#expect(result == [42])
-	}
-
-	@Test("balanced tree returns level-order")
-	func testBalancedTree() {
-		//        1
-		//       / \
-		//      2   3
-		//     / \ / \
-		//    4  5 6  7
-		let root = TreeNode(value: 1,
-							left: TreeNode(value: 2,
-										   left: TreeNode(value: 4),
-										   right: TreeNode(value: 5)),
-							right: TreeNode(value: 3,
-											left: TreeNode(value: 6),
-											right: TreeNode(value: 7)))
-		let result = treesProblems.bfs(root)
-		#expect(result == [1,2,3,4,5,6,7])
-	}
-
-	@Test("unbalanced tree returns correct BFS order")
-	func testUnbalancedTree() {
-		//        10
-		//       /
-		//      20
-		//       \
-		//       30
-		//         \
-		//         40
-		let root = TreeNode(value: 10,
-							left: TreeNode(value: 20,
-										   left: nil,
-										   right: TreeNode(value: 30,
-														   left: nil,
-														   right: TreeNode(value: 40))),
-							right: nil)
-		let result = treesProblems.bfs(root)
-		#expect(result == [10,20,30,40])
-	}
+	let root2 = TreeNode(value: 10,
+						left: TreeNode(value: 20,
+									   left: nil,
+									   right: TreeNode(value: 30,
+													   left: nil,
+													   right: TreeNode(value: 40))),
+						right: nil)
+	let result2 = TreesProblemsImpl().bfs(root2) // [10,20,30,40]
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 public class Node:  Equatable {
 	public var val: Int
 	public var neighbors: [Node?]
