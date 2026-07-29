@@ -74,3 +74,35 @@ class TreesProblemsImpl: TreesProblems {
 		return successor
 	}
 }
+
+// MARK: - Inserting an element in a binary search tree
+
+extension TreesProblemsImpl {
+	/// https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
+	func insert(_ value: Int, into root: TreeNode?) -> TreeNode {
+		guard let root else {
+			return TreeNode(value: value)
+		}
+
+		var trav: TreeNode? = root
+		var prev: TreeNode = root
+		let newNode = TreeNode(value: value)
+
+		while let cur = trav {
+			prev = cur
+			if cur.value > value {
+				trav = cur.left
+			} else {
+				trav = cur.right
+			}
+		}
+
+		if prev.value > value {
+			prev.left = newNode
+		} else {
+			prev.right = newNode
+		}
+
+		return root
+	}
+}
