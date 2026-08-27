@@ -28,7 +28,7 @@ extension Knapsack {
 		}
 
 		for i in 1...values.count {
-			for j in 0...capacity {
+			for j in 1...capacity {
 				// Compare the current item weight with the current column weight
 				if weights[i - 1] <= j {
 					let includeItem = values[i - 1] + dp[i - 1][j - weights[i - 1]]

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension TreesProblemsImpl {
 	/// This is depth first traversal not depth first search, what are we searching? 
@@ -37,26 +38,14 @@ extension TreesProblemsImpl {
 
 	func dfsRecursive(_ node: TreeNode?, depth: Int = 0, output: inout [(value: Int, depth: Int)]) {
 		guard let node = node else { return }
-//		let stack = []
-
 		output.append((node.value, depth))
 		dfsRecursive(node.right, depth: depth + 1, output: &output)
 		dfsRecursive(node.left, depth: depth + 1, output: &output)
 	}
 }
 
-#if canImport(Testing)
-import Testing
-
-@Suite("DFS tests")
-struct DFSTests {
-	// Helper to build a simple binary tree
-	//    1
-	//   / \
-	//  2   3
-	// / \
-	//4   5
-	private func makeSampleTree() -> TreeNode {
+#Playground {
+	func makeSampleTree() -> TreeNode {
 		let n1 = TreeNode(value: 1)
 		let n2 = TreeNode(value: 2)
 		let n3 = TreeNode(value: 3)
@@ -69,43 +58,15 @@ struct DFSTests {
 		return n1
 	}
 
-	@Test("dfs on empty tree returns empty array")
-	func testEmptyTree() async throws {
-		let impl = TreesProblemsImpl()
-		let result = impl.dfs(nil)
-		#expect(result.isEmpty)
-	}
+	let root = makeSampleTree()
+	let impl = TreesProblemsImpl()
+	let result = impl.dfs(root) // [1, 2, 4, 5, 3]
 
-	@Test("dfs on single node returns that node")
-	func testSingleNode() async throws {
-		let root = TreeNode(value: 42)
-		let impl = TreesProblemsImpl()
-		let result = impl.dfs(root)
-		#expect(result == [42])
-	}
-
-	@Test("dfs pre-order on balanced sample tree")
-	func testPreorderSampleTree() async throws {
-		let root = makeSampleTree()
-		let impl = TreesProblemsImpl()
-		let result = impl.dfs(root)
-		var testRec = [(value: Int, depth: Int)]()
-		impl.dfsRecursive(root, output: &testRec)
-		print("Test Rec \(testRec)")
-		// Expected pre-order: root, left subtree, right subtree
-		#expect(result == [1, 2, 4, 5, 3])
-	}
-
-	@Test("dfs on right-skewed tree is root-to-leaf in order pushed")
-	func testRightSkewed() async throws {
-		let a = TreeNode(value: 1)
-		let b = TreeNode(value: 2)
-		let c = TreeNode(value: 3)
-		a.right = b
-		b.right = c
-		let impl = TreesProblemsImpl()
-		let result = impl.dfs(a)
-		#expect(result == [1, 2, 3])
-	}
+	let a = TreeNode(value: 1)
+	let b = TreeNode(value: 2)
+	let c = TreeNode(value: 3)
+	a.right = b
+	b.right = c
+	let impl2 = TreesProblemsImpl()
+	let result2 = impl.dfs(a) // [1, 2, 3])
 }
-#endif

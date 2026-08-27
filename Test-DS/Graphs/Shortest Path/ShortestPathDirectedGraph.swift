@@ -16,7 +16,7 @@ extension GraphsImpl {
 	@discardableResult
 	func shortestPath(_ n: Int, edges: [[Int]]) -> [Int] {
 		var adjacencyList: [Int: [(node: Int, weight: Int)]] = [:]
-		let MAX = Int.max / 2
+
 		for edge in edges {
 			let node = edge[0]
 			let neighbor = edge[1]
@@ -27,21 +27,21 @@ extension GraphsImpl {
 		// Step 1: Create stack using topological sort
 
 		var stack = [Int]()
-		var visited = Array(repeating: 0, count: n)
+		var visited = Array(repeating: true, count: n)
 
 		for i in 0..<n {
-			if visited[i] == 0 {
+			if !visited[i] {
 				dfs(i)
 			}
 		}
 
 		func dfs(_ node: Int) {
-			guard visited[node] == 0 else {
+			guard !visited[node] else {
 				return
 			}
-			visited[node] = 1
+			visited[node] = true
 			for neighbor in adjacencyList[node, default: []] {
-				if visited[neighbor.node] == 0 {
+				if !visited[neighbor.node] {
 					dfs(neighbor.node)
 				}
 			}

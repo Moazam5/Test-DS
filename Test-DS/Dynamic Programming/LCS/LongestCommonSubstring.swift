@@ -10,6 +10,10 @@ import Foundation
 import Playgrounds
 
 extension LCSSolution {
+	///	Given two strings ‘X’ and ‘Y’, find the length of the longest common substring.
+	///	Examples:
+	///	Input : X = “GeeksforGeeks”, y = “GeeksQuiz”
+	///	Output : 5
 	@discardableResult
 	func longestCommonSubstring(_ s1: String, _ s2: String) -> Int {
 		guard !s1.isEmpty || !s2.isEmpty else {

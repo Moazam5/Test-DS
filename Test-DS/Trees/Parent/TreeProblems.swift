@@ -9,6 +9,23 @@ import Foundation
 
 /// Protocol to define all the methods that are supported.
 protocol TreesProblems {
+	/// https://leetcode.com/problems/insert-into-a-binary-search-tree/
+	func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode?
+
+	/// https://leetcode.com/problems/delete-node-in-a-bst/
+	func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode?
+
+	func findMinimum(_ node: TreeNode?) -> TreeNode?
+
+	func findSuccessor(root: TreeNode?, targetNode: TreeNode?) -> TreeNode?
+
+	func inOrderTraversal(_ root: TreeNode?) -> [Int]
+
+	func preOrderTraversal(_ root: TreeNode?) -> [Int]
+
+	func postOrderTraversal(_ root: TreeNode?) -> [Int]
+
+	
 	func invertTree(root: TreeNode?) -> TreeNode?
 	/// Returns the height of the tree.
 	func maxDepth(_ root: TreeNode?) -> Int
@@ -50,14 +67,6 @@ protocol TreesProblems {
 	/// Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) in the tree.
 	func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int
 
-	/// https://leetcode.com/problems/insert-into-a-binary-search-tree/
-	func insertIntoBST(_ root: TreeNode?, _ val: Int) -> TreeNode?
 
-	/// https://leetcode.com/problems/delete-node-in-a-bst/
-	func deleteNode(_ root: TreeNode?, _ key: Int) -> TreeNode?
-
-	func findMinimum(_ node: TreeNode?) -> TreeNode?
-
-	func findSuccessor(root: TreeNode?, targetNode: TreeNode?) -> TreeNode?
 
 }

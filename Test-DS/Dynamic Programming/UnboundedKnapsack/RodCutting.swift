@@ -22,10 +22,11 @@ extension UnboundedKnapsackProblems {
 
 		for i in 1..<rowCount {
 			for j in 0..<colCount {
+				let excluded =  dp[i - 1][j]
 				if i <= j {
-					dp[i][j] = max(dp[i][j - i] + prices[i - 1], dp[i - 1][j])
+					dp[i][j] = max(dp[i][j - i] + prices[i - 1], excluded)
 				} else {
-					dp[i][j] =  dp[i - 1][j]
+					dp[i][j] =  excluded
 				}
 			}
 		}

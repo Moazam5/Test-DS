@@ -9,6 +9,7 @@ import Foundation
 
 protocol Knapsack {
 	func knapsackRecursive(weights: [Int], values: [Int], capacity: Int) -> Int
+	func knapsackMemo(weights: [Int], values: [Int], capacity: Int) -> Int
 	func knapsackTopDown(weights: [Int], values: [Int], capacity: Int) -> Int
 
 	// MARK: - Problems

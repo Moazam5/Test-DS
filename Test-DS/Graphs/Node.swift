@@ -20,7 +20,6 @@ public class Node:  Equatable {
 		self.val = val
 		self.neighbors = neighbors
 	}
-
 }
 
 extension Node {

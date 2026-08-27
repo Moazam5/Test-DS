@@ -73,6 +73,35 @@ class TreesProblemsImpl: TreesProblems {
 
 		return successor
 	}
+
+
+	 func deleteNodeSimpler(_ root: TreeNode?, _ key: Int) -> TreeNode? {
+		 guard let root else { return nil }
+
+		 if root.value > key {
+			 root.left = deleteNode(root.left, key)
+		 } else if root.value < key {
+			 root.right = deleteNode(root.right, key)
+		 } else {
+			 if root.left == nil && root.right == nil {
+				 return nil
+			 } else if root.left == nil {
+				 return root.right
+			 } else if root.right == nil {
+				 return root.left
+			 } else {
+				 var successor = root.right
+				 while let left = successor?.left {
+					 successor = left
+				 }
+				 root.value = successor!.value
+
+				 root.right = deleteNode(root.right, key)
+			 }
+		 }
+		 return root
+
+ }
 }
 
 // MARK: - Inserting an element in a binary search tree

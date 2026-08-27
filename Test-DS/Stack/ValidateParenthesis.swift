@@ -36,7 +36,7 @@ import Foundation
  Explanation: The brackets are not closed in the correct order.
  */
 
-public class StackSolution: Stack {
+public class StackSolution: StackQuestions {
 	func maxArea(_ heights: [Int]) -> Int {
 		return 0
 	}

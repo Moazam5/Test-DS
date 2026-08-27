@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Testing
 /*
  Given an array of integers nums, return the length of the longest consecutive sequence of elements that can be formed.
 
@@ -90,21 +89,9 @@ func longestConsecutive(nums: [Int]) -> Int {
 	return lcsHelperInt(nums.sorted(), nums.sorted(), nums.count - 1, nums.count - 1) + 1
 }
 
-@Test func lcsInt() {
+import Playgrounds
 
-	print("FIrst", longestConsecutive(nums: [2,20,4,10,3,4,5]))
-	print("Yoo\(longestConsecutive(nums: [0,3,2,5,4,6,1,1]))")
-
+#Playground {
+	_ = longestConsecutive(nums: [2,20,4,10,3,4,5])
+	_ = longestConsecutive(nums: [0,3,2,5,4,6,1,1])
 }
-/*
- [0,3,2,5,4,6,1,1]
- [0,3,2,5,4,6,1,1]
- */
-
-
-
-@Test("basic")
-func testLCS() async throws {
-	print(lcs(a: "abcdef", b: "actkf"))
-}
-

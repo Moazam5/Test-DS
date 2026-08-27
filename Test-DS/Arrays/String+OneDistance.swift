@@ -32,6 +32,26 @@ extension ArraySolutions {
 		}
 		return larger.count == smaller.count + 1
 	}
+
+	func compressString(_ str: String) -> String {
+		var curr: Character = str.first!
+		var count = 1
+		var res = ""
+
+		for char in str.dropFirst() {
+			if char == curr {
+				count += 1
+			} else {
+				res.append(curr)
+				res.append("\(count)")
+				curr = char
+				count = 1
+			}
+		}
+		res.append(curr)
+		res.append("\(count)")
+		return res
+	}
 }
 
 #Playground {
@@ -39,4 +59,5 @@ extension ArraySolutions {
 	_ = ArraySolutions.shared.oneEditAway("pale", "pales")
 	_ = ArraySolutions.shared.oneEditAway("pale", "bale")
 	_ = ArraySolutions.shared.oneEditAway("pale", "bae") // false
+	_ = ArraySolutions.shared.compressString("aabbcccc")
 }

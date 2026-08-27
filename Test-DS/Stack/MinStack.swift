@@ -19,20 +19,20 @@ import Foundation
  */
 
 
-class MinStack {
+class MinStack: Stack {
 	private var stack: [(element: Int, min: Int)] = []
 
-	init() {}
+	required init() {}
 
-	func push(_ val: Int) {
+	func push(_ item: Int) {
 		let currentMin = self.getMin()
-		let newMin = min(currentMin, val)
-		let newElement = (element: val, min: newMin)
+		let newMin = min(currentMin, item)
+		let newElement = (element: item, min: newMin)
 		self.stack.append(newElement)
 	}
 
-	func pop() {
-		_ = self.stack.popLast()
+	func pop() -> Int? {
+		return self.stack.popLast()?.element
 	}
 
 	func top() -> Int {
@@ -42,31 +42,37 @@ class MinStack {
 	func getMin() -> Int {
 		self.stack.last?.min ?? Int.max
 	}
+
+	func isEmpty() -> Bool {
+		return stack.isEmpty
+	}
 }
 
 // Uses a node instead of a stack/array.
 class MinStack2 {
 	private var head: Node<Int>!
 
-		func push(_ x: Int) {
-			if head == nil {
-				head = Node(value: x, min: x)
-			} else {
-				head = Node(value: x, min: min(head.min, x), next: head)
-			}
+	func push(_ x: Int) {
+		if head == nil {
+			head = Node(value: x, min: x)
+		} else {
+			let node = Node(value: x, min: min(head.min, x), next: head)
+			node.next = head
+			head = node
 		}
+	}
 
-		func pop() {
-			head = head.next
-		}
+	func pop() {
+		head = head.next
+	}
 
-		func top() -> Int {
-			return head.value
-		}
+	func top() -> Int {
+		return head.value
+	}
 
-		func getMin() -> Int {
-			return head.min
-		}
+	func getMin() -> Int {
+		return head.min
+	}
 
 	class Node<Value> {
 		var next: Node?

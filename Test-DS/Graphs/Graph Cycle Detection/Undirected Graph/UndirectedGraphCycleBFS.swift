@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Playgrounds
 
 extension GraphsImpl {
 	// More efficient with array instead of Set
@@ -23,15 +24,14 @@ extension GraphsImpl {
 				let (node, parent) = queue[front]
 				front += 1
 
-				if let neighbors = adjacencyList[node] {
-					for neighbor in neighbors {
-						if !visited[neighbor] {
-							visited[neighbor] = true
-							queue.append((neighbor, node))
-						} else if neighbor != parent {
-							return true
-						}
+				for neighbor in adjacencyList[node, default: []] {
+					if !visited[neighbor] {
+						visited[neighbor] = true
+						queue.append((neighbor, node))
+					} else if neighbor != parent {
+						return true
 					}
+
 				}
 			}
 
@@ -59,11 +59,11 @@ extension GraphsImpl {
 
 			while !queue.isEmpty {
 				let (node, parent) = queue.removeFirst()
-
+				visited.insert(node)
 				if let neighbors = adjacencyList[node] {
 					for neighbor in neighbors {
 						if !visited.contains(neighbor) {
-							visited.insert(neighbor)
+//							visited.insert(neighbor)
 							queue.append((neighbor, node))
 						} else if neighbor != parent {
 							return true // Cycle found
@@ -86,4 +86,9 @@ extension GraphsImpl {
 
 		return false
 	}
+}
+
+
+#Playground {
+	_ = GraphsImpl.shared.hasCycleBFS(adjacencyList: CodeTemplatesImpl.undirectedGraphWithCycleAL, vertices: 7)
 }

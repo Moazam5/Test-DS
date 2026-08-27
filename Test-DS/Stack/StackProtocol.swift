@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Stack {
+protocol StackQuestions {
 	func isValid(_ str: String) -> Bool
 
 	/// Container With Most Water

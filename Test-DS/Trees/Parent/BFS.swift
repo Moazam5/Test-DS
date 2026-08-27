@@ -23,27 +23,6 @@ extension TreesProblemsImpl {
 		}
 		return res
 	}
-
-	func levelOrderTraversal(_ root: TreeNode?) -> [[Int]] {
-		if root == nil { return [] }
-		var q = [TreeNode]()
-		var res = [[Int]]()
-		q.append(root!)
-		var levelSize = 1
-		while !q.isEmpty {
-			let node = q.removeFirst()
-			levelSize -= 1
-			if let left = node.left {
-				levelSize += 1
-				q.append(left)
-			}
-			if let right = node.right {
-				q.append(right)
-				levelSize += 1
-			}
-		}
-		return res
-	}
 }
 
 #Playground {

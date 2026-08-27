@@ -16,10 +16,10 @@ extension LCSSolution {
 		if arr1.isEmpty || arr2.isEmpty {
 			return ""
 		}
-
+		
 		let (m, n) = (arr1.count, arr2.count)
 		var dp = Array(repeating: Array(repeating: 0, count: n + 1), count: m + 1) // takes care of the base case
-
+		
 		for i in 1...m {
 			for j in 1...n {
 				if arr1[i - 1] == arr2[j - 1] {
@@ -29,7 +29,7 @@ extension LCSSolution {
 				}
 			}
 		}
-
+		
 		// Printing
 		var (i, j) = (m, n)
 		var str = ""
